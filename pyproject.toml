@@ -1,0 +1,24 @@
+[project]
+name = "gregg-ocr"
+version = "0.1.0"
+description = "OCR for Gregg shorthand: page images -> Grascii strokes -> English"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "pillow",
+    "huggingface_hub",
+    "tqdm",
+    "grascii",
+]
+
+[project.optional-dependencies]
+train = ["torch", "torchvision", "transformers"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

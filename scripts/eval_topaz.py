@@ -1,0 +1,194 @@
+"""Score Topaz on line images that have a known answer.
+
+    python scripts/eval_topaz.py --book fm2 --n 300        # held-out printed book (Topaz never trained on it)
+    python scripts/eval_topaz.py --genesis                 # handwritten Genesis, scored per verse
+    python scripts/eval_topaz.py --folder data/handwritten # your own handwritten lines
+
+--genesis reads data/handwritten/genesis (scripts/build_genesis_testset.py). Each verse's lines
+are read one at a time and joined, then compared with the KJV verse. Verses cut off at the end
+of a document are skipped.
+
+Folder format (one line of shorthand per image):
+    name.png        the line image (dark ink on light paper)
+    name.txt        what it says in English
+    name.grascii    optional: the strokes in Grascii, enables stroke error
+
+Metrics:
+    stroke error   edit distance over stroke tokens / reference length (Topaz's own metric)
+    outline error  same, over whole outlines
+    word error     English WER when each outline is read as its top dictionary suggestion.
+                   This is a floor: the LLM step should do much better by using context.
+"""
+
+import argparse
+import io
+import re
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import torch
+from PIL import Image
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT / "models" / "topaz-61m"))
+from gregg_ocr import DATA, PROCESSED  # noqa: E402
+
+
+def edit(a, b) -> int:
+    prev = list(range(len(b) + 1))
+    for i, x in enumerate(a, 1):
+        cur = [i]
+        for j, y in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (x != y)))
+        prev = cur
+    return prev[-1]
+
+
+def outlines(g: str) -> list[str]:
+    return [o.lstrip("=") for o in g.split() if any(c.isalpha() for c in o)]
+
+
+def strokes(g: str) -> list[str]:
+    return [s for o in outlines(g) for s in o.split("-")]
+
+
+def words(s: str) -> list[str]:
+    return re.findall(r"[a-z0-9']+", s.lower())
+
+
+def load_book(book: str, n: int) -> list[dict]:
+    df = pd.read_parquet(PROCESSED / "topaz" / f"{book}.parquet")
+    df = df.sample(min(n, len(df)), random_state=0)
+    df = df[df.english.fillna("").str.strip() != ""]  # a few crops have no aligned key text
+    # Topaz's training crops are stored ink-high (white on black); read_line expects dark ink.
+    return [{"id": f"{book}:{r.page}:{r.para}:{i}",
+             "images": [255 - np.array(Image.open(io.BytesIO(r.png)).convert("L"))],
+             "english": r.english, "grascii": r.grascii}
+            for i, r in enumerate(df.itertuples())]
+
+
+def load_genesis() -> list[dict]:
+    root = DATA / "handwritten" / "genesis"
+    verses = pd.read_csv(root / "verses.csv").query("complete")
+    return [{"id": f"{v.doc}:{v.verse}",
+             "images": [np.array(Image.open(root / "lines" / f"{lid}.png").convert("L")) for lid in v.lines.split()],
+             "english": v.kjv, "grascii": None}
+            for v in verses.itertuples()]
+
+
+def load_folder(folder: Path) -> list[dict]:
+    items = []
+    for img in sorted(p for p in folder.iterdir() if p.suffix.lower() in {".png", ".jpg", ".jpeg"}):
+        key, gk = img.with_suffix(".txt"), img.with_suffix(".grascii")
+        if not key.exists():
+            print(f"skipping {img.name}: no {key.name}")
+            continue
+        items.append({"id": img.name, "images": [np.array(Image.open(img).convert("L"))],
+                      "english": key.read_text().strip(),
+                      "grascii": gk.read_text().strip() if gk.exists() else None})
+    return items
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    src = ap.add_mutually_exclusive_group(required=True)
+    src.add_argument("--book", help="a converted Topaz book in data/processed/topaz, e.g. fm2")
+    src.add_argument("--genesis", action="store_true", help="handwritten Genesis test set, scored per verse")
+    src.add_argument("--folder", type=Path, help="folder of line images with .txt keys")
+    ap.add_argument("--n", type=int, default=300, help="lines sampled from --book")
+    ap.add_argument("--limit", type=int, help="score only the first N items (e.g. a cheap smoke test)")
+    ap.add_argument("--llm", action="store_true",
+                    help="also turn Topaz's output into English with Claude (needs Anthropic credentials)")
+    ap.add_argument("--out", type=Path, help="write per-item results to this CSV")
+    args = ap.parse_args()
+
+    from topaz import Topaz  # third-party model code, imported only when actually scoring
+
+    device = "mps" if torch.backends.mps.is_available() else "cpu"
+    topaz = Topaz(ROOT / "models" / "topaz-61m", device)
+    if args.book:
+        items, source = load_book(args.book, args.n), args.book
+    elif args.genesis:
+        items, source = load_genesis(), "handwritten Genesis"
+    else:
+        items, source = load_folder(args.folder), args.folder
+    items = items[: args.limit]
+
+    totals = dict(stroke_err=0, stroke_ref=0, outline_err=0, outline_ref=0, word_err=0, word_ref=0,
+                  llm_err=0)
+    rows = []
+    for it in items:
+        line_preds = [topaz.read_line(img) for img in it["images"]]
+        pred = " ".join(line_preds)
+        line = topaz.lookup(pred)
+        top1 = " ".join(o["words"][0] if o.get("words") else "" for o in line.outlines)
+        we, wr = edit(words(top1), words(it["english"])), len(words(it["english"]))
+        totals["word_err"] += we
+        totals["word_ref"] += wr
+        row = {"id": it["id"], "english": it["english"], "pred_grascii": pred, "top1_english": top1,
+               "word_error": we / max(wr, 1),
+               # What the LLM sees: each line's outlines with their dictionary candidates.
+               "intermediate": "\n".join(topaz.lookup(p).intermediate() for p in line_preds)}
+        if it["grascii"]:
+            se, sr = edit(strokes(pred), strokes(it["grascii"])), len(strokes(it["grascii"]))
+            oe, orf = edit(outlines(pred), outlines(it["grascii"])), len(outlines(it["grascii"]))
+            totals["stroke_err"] += se
+            totals["stroke_ref"] += sr
+            totals["outline_err"] += oe
+            totals["outline_ref"] += orf
+            row.update(gold_grascii=it["grascii"], stroke_error=se / max(sr, 1))
+        rows.append(row)
+
+    if args.llm:
+        from concurrent.futures import ThreadPoolExecutor
+
+        from gregg_ocr.decode import EnglishDecoder
+
+        decoder = EnglishDecoder((ROOT / "models" / "topaz-61m" / "prompt.txt").read_text().rstrip(),
+                                 cache_path=ROOT / "runs" / "llm_cache.jsonl")
+        import anthropic
+
+        try:
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                decoded = list(pool.map(decoder.decode, [r["intermediate"] for r in rows]))
+        except anthropic.AuthenticationError as e:
+            sys.exit(f"Anthropic API rejected the credentials ({e.message}). "
+                     "Set ANTHROPIC_API_KEY to an API key from console.anthropic.com and re-run.")
+        answered = dict(llm_err=0, top1_err=0, ref=0, n=0)  # the same items, minus declined ones
+        for r, english in zip(rows, decoded):
+            ref = words(r["english"])
+            e = edit(words(english), ref)
+            totals["llm_err"] += e
+            r.update(llm_english=english, llm_word_error=e / max(len(ref), 1), llm_declined=not english)
+            if english:
+                answered["llm_err"] += e
+                answered["top1_err"] += edit(words(r["top1_english"]), ref)
+                answered["ref"] += len(ref)
+                answered["n"] += 1
+
+    print(f"\n{len(rows)} {'verses' if args.genesis else 'lines'} from {source}")
+    if totals["stroke_ref"]:
+        print(f"  stroke error:  {totals['stroke_err'] / totals['stroke_ref']:.1%}")
+        print(f"  outline error: {totals['outline_err'] / totals['outline_ref']:.1%}")
+    print(f"  word error (top-1 dictionary, no LLM): {totals['word_err'] / max(totals['word_ref'], 1):.1%}")
+    if args.llm:
+        print(f"  word error (Claude decoding):          {totals['llm_err'] / max(totals['word_ref'], 1):.1%}"
+              f"  (declined items count as fully wrong)")
+        if answered["n"] < len(rows):
+            print(f"  {len(rows) - answered['n']} declined by the safety classifier; on the other {answered['n']}:"
+                  f" top-1 {answered['top1_err'] / max(answered['ref'], 1):.1%},"
+                  f" Claude {answered['llm_err'] / max(answered['ref'], 1):.1%}")
+    for r in rows[:4]:
+        print(f"\n  key:   {r['english']}\n  pred:  {r['pred_grascii']}\n  top-1: {r['top1_english']}")
+        if args.llm:
+            print(f"  llm:   {r['llm_english']}")
+    if args.out:
+        pd.DataFrame(rows).to_csv(args.out, index=False)
+        print(f"\nper-line results -> {args.out}")
+
+
+if __name__ == "__main__":
+    main()

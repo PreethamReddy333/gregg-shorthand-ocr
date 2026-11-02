@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.egg-info/
+.DS_Store
+
+# Datasets and model outputs are downloaded/generated, never committed
+data/
+runs/
+models/
