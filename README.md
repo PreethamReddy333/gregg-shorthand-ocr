@@ -173,13 +173,43 @@ Sonnet 5.5 and Haiku 5.5 decline the same inputs. The local decoders avoid this.
 Reproduce the comparison with `scripts/eval_topaz.py {--book fm2 | --genesis | --folder data/inputs}
 --beam --t5 --fused [--llm]`.
 
+### Write English as Gregg
+
+```bash
+.venv/bin/python scripts/write_gregg.py "Thank you for your letter." -o note.png --key
+.venv/bin/python scripts/write_gregg.py --file passage.txt -o sheet.png --key   # a practice sheet to copy by hand
+.venv/bin/python scripts/write_gregg.py "..." --writer 7 [--tablet]              # a random synthetic writer
+.venv/bin/python scripts/write_gregg.py --check fm2 --n 150                     # Topaz reads drawn book lines back
+```
+
+English goes through the same dictionary and phrase outlines as the synthetic training data
+(`synth.Renderer`; names spelled from their pronunciation, longhand when even that fails), then
+`gregg_ocr/render.py` draws each stroke as an arc: circles inside curves and outside angles,
+S, TH, O and OO turned by the Manual's joining rules, and capitals marked with two dashes. The
+stroke proportions were tuned so Topaz reads the drawings back (`scripts/tune_render.py`).
+
+| Drawn from the correct Grascii, read back by Topaz (FM2, 150 lines) | Stroke error |
+|---|---|
+| Clean style | 15.0% |
+| Random synthetic writers | 25.5% |
+| Topaz on the real printed book lines, for comparison | 10.2% |
+
+A business letter of 50 words drawn in the clean style and read back by Topaz plus the trained
+model: 14% word error. The drawings are an approximation of the Manual, not a facsimile of
+the engraved plates. Two uses besides reading practice:
+- **Keyed handwriting.** Type any text, print the sheet, copy it by hand: every page is a keyed
+  handwritten line for fine-tuning Topaz.
+- **Synthetic training lines.** `Style.writer()` varies stroke lengths (T vs D), circle sizes,
+  curve depth, slant, pen lag and jitter per writer, the variation real hands show. Topaz misreads
+  these at 25.5%, close to its handwriting gap, so they're the targeted data to fine-tune it on.
+
 ## Layout
 
 ```
-src/gregg_ocr/      package: data loaders; decoders (beam, fused, t5, decode = Claude);
+src/gregg_ocr/      package: data loaders; decoders (beam, fused, t5, decode = Claude); render (Gregg drawing);
                     lm (trigram), lexicon (dictionary + mined pairs), synth (synthetic data)
 scripts/            download, inspect, baselines, build_genesis_testset, eval_topaz, transcribe;
-                    build_corpus, train_lm, mine_lexicon, make_synthetic, train_seq2seq, tune_*
+                    build_corpus, train_lm, mine_lexicon, make_synthetic, train_seq2seq, tune_*, write_gregg
 data/               downloaded + processed data (git-ignored)
 models/topaz-61m/   Topaz weights + inference code (MIT)
 models/             also trigram.pkl, mined_lexicon.json, gregg-t5/ (built by the scripts; git-ignored)

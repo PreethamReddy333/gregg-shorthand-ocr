@@ -102,26 +102,31 @@ class Renderer:
 
     def render(self, tokens: list[str]) -> str | None:
         """English tokens -> Grascii, or None if some word can't be written."""
+        items = self.render_items(tokens)
+        if any(o is None for o, _ in items):
+            return None
+        return " ".join(o for o, _ in items)
+
+    def render_items(self, tokens: list[str]) -> list[tuple[str | None, list[str]]]:
+        """English tokens -> (outline, the words it writes) pairs; outline None for a word that
+        can't be written."""
         out, i = [], 0
         while i < len(tokens):
             tok = tokens[i]
             if tok in PUNCT or tok.isdigit():
-                out.append(tok)
+                out.append((tok, [tok]))
                 i += 1
                 continue
             for n in (3, 2):
                 key = tuple(tokens[i:i + n])
                 if len(key) == n and key in self.phrases and self.rng.random() < self.phrase_rate:
-                    out.append(self.phrases[key])
+                    out.append((self.phrases[key], list(key)))
                     i += n
                     break
             else:
-                o = self.outline(tok)
-                if o is None:
-                    return None
-                out.append(o)
+                out.append((self.outline(tok), [tok]))
                 i += 1
-        return " ".join(out)
+        return out
 
 
 def _align(a: list[str], b: list[str]) -> list[tuple[str | None, str | None]]:
