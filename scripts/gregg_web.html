@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gregg Writer</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #e3e0d8;
+    --accent: #2f5d8a; --hover: #fdf1d6; --paper: #fffdf8; --rule: #dfe8f1;
+  }
+  :root[data-theme="dark"] { --bg: #16171a; --panel: #1f2125; --ink: #ecebe7; --muted: #9c9a94;
+    --line: #2e3035; --accent: #8db4dd; --hover: #3a3424; --paper: #111214; --rule: #23262c; }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 1000px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 18px; }
+  textarea { width: 100%; min-height: 110px; padding: 12px; font: inherit; color: var(--ink);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
+  textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 12px 0 18px;
+    color: var(--muted); font-size: 14px; }
+  .controls label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  select, input[type=number] { font: inherit; color: var(--ink); background: var(--panel);
+    border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; }
+  input[type=number] { width: 70px; }
+  button { font: inherit; color: var(--accent); background: none; border: 1px solid var(--line);
+    border-radius: 6px; padding: 3px 10px; cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  .sheet { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; }
+  .sheet.tablet { background: #000; }
+  .row { margin-bottom: 10px; }
+  .row svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .key { color: var(--muted); font-size: 14px; margin: 2px 0 8px; }
+  .gr { font: 12px ui-monospace, Menlo, monospace; color: var(--muted); margin: -4px 0 8px; word-spacing: 6px; }
+  .sheet.tablet .key, .sheet.tablet .gr { color: #8a8a8a; }
+  g.outline { cursor: default; }
+  g.outline rect { fill: transparent; }
+  g.outline:hover rect { fill: var(--hover); }
+  .sheet.tablet g.outline:hover rect { fill: #262626; }
+  #tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); padding: 4px 8px;
+    border-radius: 5px; font-size: 13px; display: none; white-space: nowrap; }
+  #tip code { font: 12px ui-monospace, Menlo, monospace; opacity: .8; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 12px; }
+  .err { color: #b3261e; }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gregg Writer</h1>
+  <p class="sub">Type English; it's written in Gregg Anniversary shorthand as you type. Hover an outline to see its word and Grascii.</p>
+  <textarea id="text" spellcheck="false">Dear Mr. Brown, thank you for your letter of the tenth. We shall be glad to send you the books you asked for.</textarea>
+  <div class="controls">
+    <label>Hand
+      <select id="style">
+        <option value="clean">Clean (Manual proportions)</option>
+        <option value="writer">Synthetic writer</option>
+      </select>
+    </label>
+    <label id="seedbox" hidden>seed <input id="seed" type="number" value="7" min="0"></label>
+    <button id="shuffle" hidden>New writer</button>
+    <label>Size <input id="size" type="range" min="20" max="60" value="34"></label>
+    <label><input id="key" type="checkbox" checked> Key</label>
+    <label><input id="grascii" type="checkbox"> Grascii</label>
+    <label><input id="tablet" type="checkbox"> Tablet</label>
+    <button id="download">Download SVG</button>
+  </div>
+  <div id="out" class="sheet"><p class="empty">Loading…</p></div>
+  <p id="note" class="note"></p>
+</main>
+<div id="tip"></div>
+<script>
+const $ = (id) => document.getElementById(id);
+const dark = matchMedia("(prefers-color-scheme: dark)");
+const setTheme = () => document.documentElement.dataset.theme = dark.matches ? "dark" : "light";
+setTheme(); dark.addEventListener("change", setTheme);
+
+let timer = null, seq = 0, lastSvgs = [];
+
+function schedule() { clearTimeout(timer); timer = setTimeout(update, 180); }
+
+async function update() {
+  const text = $("text").value;
+  const unit = +$("size").value;
+  const width = Math.max(10, ($("out").clientWidth - 40) / unit - 0.5);
+  const params = new URLSearchParams({ text, width: width.toFixed(1) });
+  if ($("style").value === "writer") params.set("writer", $("seed").value || "0");
+  const mine = ++seq;
+  let data;
+  try {
+    data = await (await fetch("/api/write?" + params)).json();
+  } catch (e) {
+    $("out").innerHTML = `<p class="err">Couldn't reach the local server: ${e}</p>`; return;
+  }
+  if (mine !== seq) return;  // a newer request is on its way
+  if (data.error) { $("out").innerHTML = `<p class="err">${data.error}</p>`; return; }
+  draw(data, unit);
+}
+
+function draw(data, unit) {
+  const out = $("out"), tablet = $("tablet").checked;
+  out.classList.toggle("tablet", tablet);
+  out.innerHTML = "";
+  lastSvgs = [];
+  if (!data.lines.length) { out.innerHTML = '<p class="empty">Type something above.</p>'; return; }
+  const ink = tablet ? "#f4f4f4" : getComputedStyle(document.documentElement).getPropertyValue("--ink").trim();
+  const pen = Math.max(1.2, data.pen * unit);
+  for (const line of data.lines) {
+    // bounds of the line, in units (y up)
+    let x0 = 0, x1 = 1, y0 = -0.6, y1 = 1.2;
+    for (const o of line.outlines) {
+      for (const p of o.paths.flat().concat(o.dots)) {
+        x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]);
+      }
+      if (o.text) x1 = Math.max(x1, o.pos[0] + 0.32 * o.text.length);
+    }
+    const pad = 0.4, W = (x1 - x0 + 2 * pad) * unit, H = (y1 - y0 + 2 * pad) * unit;
+    const X = (x) => ((x - x0 + pad) * unit).toFixed(1), Y = (y) => ((y1 - y + pad) * unit).toFixed(1);
+    let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${H.toFixed(0)}" style="max-width:${W.toFixed(0)}px">`;
+    for (const [i, o] of line.outlines.entries()) {
+      const pts = o.paths.flat().concat(o.dots);
+      let bx0 = Infinity, bx1 = -Infinity, by0 = Infinity, by1 = -Infinity;
+      for (const p of pts) { bx0 = Math.min(bx0, p[0]); bx1 = Math.max(bx1, p[0]); by0 = Math.min(by0, p[1]); by1 = Math.max(by1, p[1]); }
+      if (o.text) { bx0 = o.pos[0]; bx1 = o.pos[0] + 0.32 * o.text.length; by0 = -0.1; by1 = 0.5; }
+      svg += `<g class="outline" data-i="${i}">`;
+      if (isFinite(bx0)) svg += `<rect x="${X(bx0 - 0.15)}" y="${Y(by1 + 0.15)}" width="${((bx1 - bx0 + 0.3) * unit).toFixed(1)}" height="${((by1 - by0 + 0.3) * unit).toFixed(1)}" rx="4"/>`;
+      for (const p of o.paths)
+        svg += `<polyline points="${p.map(q => X(q[0]) + "," + Y(q[1])).join(" ")}" fill="none" stroke="${ink}" stroke-width="${pen.toFixed(2)}" stroke-linecap="round" stroke-linejoin="round"/>`;
+      for (const d of o.dots)
+        svg += `<circle cx="${X(d[0])}" cy="${Y(d[1])}" r="${(pen * 0.9).toFixed(2)}" fill="${ink}"/>`;
+      if (o.text)
+        svg += `<text x="${X(o.pos[0])}" y="${Y(o.pos[1])}" font-size="${(0.45 * unit).toFixed(1)}" font-family="Georgia, serif" fill="${ink}">${esc(o.text)}</text>`;
+      svg += "</g>";
+    }
+    svg += "</svg>";
+    lastSvgs.push({ svg, W, H });
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = svg +
+      ($("grascii").checked ? `<div class="gr">${line.outlines.map(o => esc(o.grascii)).join(" ")}</div>` : "") +
+      ($("key").checked ? `<div class="key">${esc(line.english)}</div>` : "");
+    row.querySelectorAll("g.outline").forEach(g => {
+      const o = line.outlines[+g.dataset.i];
+      g.addEventListener("mousemove", (e) => tip(e, `${esc(o.english)} &nbsp;<code>${esc(o.grascii)}</code>`));
+      g.addEventListener("mouseleave", () => $("tip").style.display = "none");
+    });
+    out.appendChild(row);
+  }
+  $("note").innerHTML = data.longhand.length
+    ? `Written in longhand (no outline found): ${data.longhand.map(esc).join(", ")}` : "";
+}
+
+function tip(e, html) {
+  const t = $("tip"); t.innerHTML = html; t.style.display = "block";
+  t.style.left = Math.min(e.clientX + 12, innerWidth - t.offsetWidth - 8) + "px";
+  t.style.top = (e.clientY + 14) + "px";
+}
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+$("download").onclick = () => {
+  if (!lastSvgs.length) return;
+  const W = Math.max(...lastSvgs.map(s => s.W)), gap = 10;
+  let y = 0, body = "";
+  for (const s of lastSvgs) {
+    body += `<g transform="translate(0 ${y})">${s.svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>`;
+    y += s.H + gap;
+  }
+  const bg = $("tablet").checked ? "#000" : "#fff";
+  const file = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${y.toFixed(0)}" width="${W.toFixed(0)}" height="${y.toFixed(0)}"><rect width="100%" height="100%" fill="${bg}"/>${body}</svg>`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([file], { type: "image/svg+xml" }));
+  a.download = "gregg.svg"; a.click();
+};
+
+$("style").onchange = () => {
+  const w = $("style").value === "writer";
+  $("seedbox").hidden = $("shuffle").hidden = !w; schedule();
+};
+$("shuffle").onclick = () => { $("seed").value = Math.floor(Math.random() * 10000); schedule(); };
+for (const id of ["text", "seed", "size"]) $(id).addEventListener("input", schedule);
+for (const id of ["key", "grascii", "tablet"]) $(id).addEventListener("change", schedule);
+addEventListener("resize", schedule);
+update();
+</script>
+</body>
+</html>
