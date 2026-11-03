@@ -57,8 +57,7 @@ textbook plates, so the work is closing the handwriting gap:
    - **Next candidate:** Pvt. Charles Malcolm Smith's 1918 Gregg field diary (Australian War
      Memorial, 21 pages, pre-Anniversary) with his own typed transcript. Copyrighted: private
      evaluation only.
-2. **Automatic English step.** Replace Topaz's copy-paste prompt with an LLM call and report
-   English word error rate, not just stroke error.
+2. **Automatic English step (done).** Claude and three local decoders, compared below.
 3. **Handwritten training data.** Ranked by value per hour:
    - Handwritten practice notes whose English is already known: people's notes on dictation
      material from keyed books (Speed Studies, Dictation Studies, Review Letters…).
@@ -84,32 +83,96 @@ context. Part of the rise across chapters is vocabulary the dictionary lacks (3%
 in chapter 1, 15% in chapter 4: Cain, Abel, Enoch, begat…), which an LLM step can recover.
 Genesis has no Grascii key, so stroke error can't be measured there.
 
-### With Claude decoding (`--llm`, Claude Opus 5.5, effort medium, structured output)
+### Grascii → English: every decoder compared (2026-11-03)
 
-| Test set | Items | Declined by safety classifier | Word error, top-1 → Claude (answered items) |
-|---|---|---|---|
-| Functional Method 2, printed, held out | 271 lines (29 without key text skipped) | 7 | 41.0% → **24.2%** |
-| Handwritten Genesis | 119 verses | 10 | 59.7% → 6.0% |
+Word error rate (lower is better). The strokes are Topaz's in every column; only the step
+from strokes to English changes.
 
-FM2 is the honest number: obscure 1930s prose, decoded one line at a time with no
-surrounding context. Genesis is flattering, because Claude knows the KJV nearly by heart
-and recognizes verses from a few words. It shows the pipeline works end to end, not how
-well it reads unfamiliar text.
+| Decoder | Context | FM2, printed (271 lines) | Handwritten Genesis (119 verses) | Your two pages (176 words) |
+|---|---|---|---|---|
+| Dictionary only (top-1 per outline) | none | 41.3% | 61.5% | 45.5% |
+| Beam search + trigram LM | none | 28.0% | 53.6% | 21.0% |
+| Beam search + trigram LM | 3 earlier lines | 27.6% | 53.6% | 21.0% |
+| Trained model (flan-t5-small) | none | 28.8% | 45.6% | 25.6% |
+| Trained model (flan-t5-small) | previous line | 28.1% | 45.4% | 21.0% |
+| LLM-guided beam (SmolLM2-360M) | 3 earlier lines | **24.7%** | pending | pending |
+| Claude Opus 5.5 (declines count as all wrong) | none | 25.9% | 13.7% | 51% on one page; the other declined |
+| Claude Opus 5.5, answered items only | none | 24.1% (264 lines) | 5.8% (109 verses) | |
+
+Everything above the Claude rows runs locally on the Mac with no API.
+
+- **Dictionary only** takes each outline's first dictionary word. **Beam search**
+  (`gregg_ocr/beam.py`) picks among each outline's 8 candidates with a trigram language
+  model trained on 5.6M words of public-domain English and Gregg book keys
+  (`scripts/build_corpus.py`, `train_lm.py`), plus 2,292 outline → word pairs mined
+  from the book keys (`scripts/mine_lexicon.py`; *had*, *him*, *made*, *I will not*…).
+- **Trained model** (`gregg_ocr/t5.py`) is flan-t5-small fine-tuned on 530k Grascii → English
+  lines: 130k real Topaz readings of book lines and 400k synthetic ones, made by writing
+  English sentences in Grascii and adding the stroke errors Topaz actually makes
+  (`scripts/make_synthetic.py`, `train_seq2seq.py`). Unlike the others it can write words
+  no dictionary offered, which is why it's best of the local decoders on Genesis
+  (*garden*, *heads*), and also why it sometimes writes non-words (*uponered*).
+- **LLM-guided beam** (`gregg_ocr/fused.py`) is the beam search with a small open LLM
+  rescoring each partial reading, given the earlier lines. Like the beam it can only choose
+  dictionary words. It reads a line in about 10 s on an M4.
+- **Claude** is the earlier run (`--llm`); its safety classifier declines some transcripts
+  (see below).
+
+**Tuning, all on the 1929 Manual (the dev set, never on test sets).** Manual and FM2 are
+excluded from the corpus and the mined lexicon.
+
+| Decoder | Dev word error |
+|---|---|
+| Dictionary only | 36.4% |
+| Beam search (`scripts/tune_beam.py`) | 20.5% |
+| Trained model, best of 12k steps | 20.0% |
+| Beam, first 150 lines | 18.6% |
+| LLM-guided beam, first 150 lines (`scripts/tune_fused.py`; trigram 0.6, LLM 1.0) | 15.4% |
+
+**How to read these numbers.**
+- **FM2 is the honest test.** It's held out from everything, and it's obscure 1930s prose. Some lines
+  are word-list drills where context can't help.
+- **Where the remaining error comes from.** With FM2's *correct* strokes the beam search
+  scores 17.7% instead of 28.0%, so Topaz's stroke errors cost about 10 points, and word choice costs
+  the rest. The right word is among the 8 candidates for 88% of words (94% with correct
+  strokes). That's the ceiling for every decoder except the trained model.
+- **Genesis flatters Claude.** It knows the KJV almost by heart and recognizes verses from a
+  few words. SmolLM2 has likely seen it too. The local decoders also suffer from KJV vocabulary
+  the dictionary lacks (*Cain*, *begat*, *thence*) and from handwriting Topaz reads less well.
+- **Your two pages are from the 1929 Manual**, which Topaz was probably trained on and which is
+  this project's dev set. Treat them as a demo, not a test.
+- **Real handwriting is the open problem.** One photographed page of a personal letter
+  (143 words, in `data/handwritten/letter`, not committed): dictionary 94.4%, beam 88.8%,
+  LLM-guided 89.5%, trained model 66.4%. The strokes are the bottleneck: Topaz confuses
+  outlines that differ only in length (T/D, P/B, F/V: *tried → drew*, *behind → pine*), and
+  longhand names break the line they're on.
+- Context barely moves the beam. The trigram LM already carries state across a passage, and
+  books mostly start a new sentence on a new line anyway.
 
 **Safety-classifier false positives.** Some transcripts are declined (`stop_reason:
 "refusal"`, category `bio`) even though they're innocuous; Grascii strings plus odd
 candidate words seem to look like encoded text. Server-side fallback (Opus 4.8, Opus 5),
-Sonnet 5.5 and Haiku 5.5 decline the same inputs. `transcribe.py` reports a declined page
-and still prints the strokes and candidates. A local decoder (n-gram or small open LM over
-the candidates) would avoid this entirely.
+Sonnet 5.5 and Haiku 5.5 decline the same inputs. The local decoders avoid this.
 
-Transcribe your own pages with `scripts/transcribe.py page.jpg` (needs `ANTHROPIC_API_KEY`).
+### Transcribe your own pages
+
+```bash
+.venv/bin/python scripts/transcribe.py page.jpg                     # beam search (default)
+.venv/bin/python scripts/transcribe.py --decoder t5 page.jpg        # trained model
+.venv/bin/python scripts/transcribe.py --decoder claude page.jpg    # needs ANTHROPIC_API_KEY
+```
+
+Reproduce the comparison with `scripts/eval_topaz.py {--book fm2 | --genesis | --folder data/inputs}
+--beam --t5 --fused [--llm]`.
 
 ## Layout
 
 ```
-src/gregg_ocr/      package: paths, safe pickle loader, dataset loaders
-scripts/            download, inspect, baselines, build_genesis_testset, eval_topaz
+src/gregg_ocr/      package: data loaders; decoders (beam, fused, t5, decode = Claude);
+                    lm (trigram), lexicon (dictionary + mined pairs), synth (synthetic data)
+scripts/            download, inspect, baselines, build_genesis_testset, eval_topaz, transcribe;
+                    build_corpus, train_lm, mine_lexicon, make_synthetic, train_seq2seq, tune_*
 data/               downloaded + processed data (git-ignored)
 models/topaz-61m/   Topaz weights + inference code (MIT)
+models/             also trigram.pkl, mined_lexicon.json, gregg-t5/ (built by the scripts; git-ignored)
 ```
