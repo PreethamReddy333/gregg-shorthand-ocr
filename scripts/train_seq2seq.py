@@ -1,10 +1,11 @@
-"""Fine-tune flan-t5-small to turn Grascii (plus the previous line as context) into English.
+"""Fine-tune flan-t5-small to turn Grascii (plus earlier lines as context) into English.
 
     python scripts/train_seq2seq.py [--steps 15000] [--batch 32]
+    python scripts/train_seq2seq.py --init models/gregg-t5 --out models/gregg-t5-v2   # continue
 
 Reads data/synth/{train,dev}.jsonl (scripts/make_synthetic.py). Every --eval-every steps it
 decodes the dev set (the held-out 1929 Manual) and keeps the checkpoint with the lowest word
-error in models/gregg-t5/. Runs on the Apple GPU (MPS) when available.
+error in --out (default models/gregg-t5/). Runs on the Apple GPU (MPS) when available.
 """
 
 import argparse
@@ -24,7 +25,7 @@ from gregg_ocr import DATA  # noqa: E402
 from gregg_ocr.text import PUNCT  # noqa: E402
 
 BASE = "google/flan-t5-small"
-MAX_SOURCE, MAX_TARGET = 192, 64
+MAX_SOURCE, MAX_TARGET = 256, 64
 
 
 def edit(a, b) -> int:
@@ -67,17 +68,24 @@ def main():
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--lr", type=float, default=5e-4)
     ap.add_argument("--eval-every", type=int, default=2000)
+    ap.add_argument("--warmup", type=int, default=500)
+    ap.add_argument("--init", default=BASE, help="model to start from (default: the pretrained base)")
+    ap.add_argument("--out", type=Path, default=ROOT / "models" / "gregg-t5")
+    ap.add_argument("--best", type=float, default=float("inf"),
+                    help="dev WER to beat before saving (when resuming, the checkpoint's own score)")
+    ap.add_argument("--context-lines", type=int, default=2,
+                    help="earlier lines in each input; must match make_synthetic.py's CONTEXT_LINES")
     args = ap.parse_args()
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    out_dir = ROOT / "models" / "gregg-t5"
-    tok = AutoTokenizer.from_pretrained(BASE)
-    model = AutoModelForSeq2SeqLM.from_pretrained(BASE).to(device)
+    out_dir = args.out
+    tok = AutoTokenizer.from_pretrained(args.init)
+    model = AutoModelForSeq2SeqLM.from_pretrained(args.init).to(device)
     train, dev = read(DATA / "synth" / "train.jsonl"), read(DATA / "synth" / "dev.jsonl")
     print(f"{len(train):,} train, {len(dev)} dev, device {device}", flush=True)
 
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
-    warmup = 500
+    warmup = args.warmup
 
     def lr_at(step):
         if step < warmup:
@@ -86,7 +94,7 @@ def main():
 
     rng = random.Random(0)
     order, pos = list(range(len(train))), len(train)
-    best, t0, running = float("inf"), time.time(), 0.0
+    best, t0, running = args.best, time.time(), 0.0
     print(f"step 0 dev WER {dev_wer(model, tok, dev, device):.1%}", flush=True)
     model.train()
     for step in range(1, args.steps + 1):
@@ -108,6 +116,9 @@ def main():
         opt.step()
         opt.zero_grad(set_to_none=True)
         running = 0.98 * running + 0.02 * loss.item() if step > 1 else loss.item()
+        if step % 100 == 0 and device == "mps":
+            # Varying line lengths make the MPS allocator cache grow until the Mac swaps.
+            torch.mps.empty_cache()
         if step % 200 == 0:
             print(f"step {step} loss {running:.3f} lr {lr_at(step):.2e} {(time.time() - t0) / step:.2f}s/step",
                   flush=True)
@@ -118,6 +129,7 @@ def main():
                 best = wer
                 model.save_pretrained(out_dir)
                 tok.save_pretrained(out_dir)
+                (out_dir / "gregg_config.json").write_text(json.dumps({"context_lines": args.context_lines}))
                 note = " (saved)"
             print(f"step {step} dev WER {wer:.1%}{note}", flush=True)
     print(f"best dev WER {best:.1%} -> {out_dir}")

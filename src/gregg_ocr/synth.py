@@ -1,7 +1,8 @@
 """Synthetic training data for the Grascii -> English model.
 
 ``Renderer`` writes English as Grascii outlines from the lexicon (using phrase outlines such as
-I-L-N "I will not" where they exist, and simple suffix rules for words the lexicon lacks).
+I-L-N "I will not" where they exist, and simple suffix rules for words the lexicon lacks). Words
+still unwritable, mostly names, are spelled from their pronunciation by ``PhoneticSpeller``.
 ``NoiseModel`` learns how Topaz misreads strokes, by comparing its real readings of book lines
 with their correct Grascii, and applies the same kinds of mistakes to clean text.
 """
@@ -16,6 +17,48 @@ SUFFIXES = [("'s", "S"), ("ies", "E-S"), ("es", "S"), ("s", "S"), ("ied", "E-D")
             ("ing", "'"), ("ly", "E"), ("er", "R"), ("est", "S-T"), ("ness", "N-S"), ("ment", "M")]
 TOKEN_SAFE = {"^": "Q"}  # characters the T5 tokenizer can't represent
 
+# Strokes that differ only in length or size, which handwriting blurs (T is short, D long; the
+# A circle is large, E small...). Printed-book noise rarely confuses them; handwriting does.
+CONFUSABLE = {"T": "D", "D": "T", "P": "B", "B": "P", "F": "V", "V": "F", "K": "G", "G": "K",
+              "N": "M", "M": "N", "A": "E", "E": "A", "O": "U", "U": "O", "TN": "MN", "MN": "TN"}
+
+# ARPAbet phonemes (CMU pronouncing dictionary) -> Gregg strokes. Gregg is phonetic, so this
+# spells a word the way a writer would sound it out; minor unstressed vowels are left out.
+PHONEMES = {"P": "P", "B": "B", "T": "T", "D": "D", "K": "K", "G": "G", "F": "F", "V": "V",
+            "TH": "TH", "DH": "TH", "S": "S", "Z": "S", "SH": "SH", "ZH": "SH", "CH": "CH", "JH": "J",
+            "M": "M", "N": "N", "NG": "NG", "L": "L", "R": "R", "HH": "'", "W": "U", "Y": "E",
+            "AE": "A", "EY": "A", "AA": "O", "AO": "O", "OW": "O", "EH": "E", "IH": "E", "IY": "E",
+            "ER": "R", "AH": "U", "UH": "U", "UW": "U", "AY": "I", "AW": "AU", "OY": "OE"}
+BLENDS = {("N", "T"): "NT", ("N", "D"): "NT", ("M", "N"): "MN", ("M", "T"): "MT", ("M", "D"): "MT",
+          ("T", "N"): "TN", ("D", "N"): "TN", ("L", "D"): "LD", ("K", "S"): "X", ("N", "K"): "NK"}
+
+
+class PhoneticSpeller:
+    """Grascii from pronunciation, for words the lexicon can't write (names, rare words)."""
+
+    def __init__(self):
+        import cmudict
+
+        self.pron = cmudict.dict()
+
+    def outline(self, word: str) -> str | None:
+        prons = self.pron.get(word)
+        if not prons:
+            return None
+        strokes = []
+        for ph in prons[0]:
+            base, stress = ph.rstrip("012"), ph[len(ph.rstrip("012")):]
+            if base == "AH" and stress == "0":  # schwa: Gregg writers leave it out
+                continue
+            s = PHONEMES.get(base)
+            if s is None:
+                continue
+            if strokes and (strokes[-1], s) in BLENDS:
+                strokes[-1] = BLENDS[(strokes[-1], s)]
+            elif not strokes or strokes[-1] != s:
+                strokes.append(s)
+        return "-".join(strokes) or None
+
 
 def model_text(grascii: str) -> str:
     """Grascii as fed to the seq2seq model. Capital marks are dropped: synthetic text has none."""
@@ -25,12 +68,21 @@ def model_text(grascii: str) -> str:
     return grascii
 
 
+def model_source(context: list[str], line: str, n_context: int = 2) -> str:
+    """The seq2seq model's input: up to ``n_context`` earlier lines, then the line to read."""
+    ctx = " / ".join(model_text(c) for c in context[-n_context:] if c) if n_context else ""
+    return f"context: {ctx} line: {model_text(line)}"
+
+
 class Renderer:
-    def __init__(self, word_to_outline: dict[str, str], phrase_rate: float = 0.7, rng=None):
+    def __init__(self, word_to_outline: dict[str, str], phrase_rate: float = 0.7, rng=None,
+                 speller: PhoneticSpeller | None = None):
         self.single = {w: o for w, o in word_to_outline.items() if " " not in w}
         self.phrases = {tuple(w.split()): o for w, o in word_to_outline.items() if 1 < len(w.split()) <= 3}
         self.phrase_rate = phrase_rate
         self.rng = rng or random.Random(0)
+        self.speller = speller
+        self.spelled = 0  # words written from pronunciation
 
     def outline(self, word: str) -> str | None:
         if word in self.single:
@@ -41,6 +93,11 @@ class Renderer:
                 for stem in (base, base + "e", base[:-1] if base[-1:] == base[-2:-1] else base):
                     if stem in self.single:
                         return f"{self.single[stem]}-{stroke}"
+        if self.speller:
+            o = self.speller.outline(word)
+            if o:
+                self.spelled += 1
+            return o
         return None
 
     def render(self, tokens: list[str]) -> str | None:
@@ -137,8 +194,14 @@ class NoiseModel:
                 f"ins {self.ins_rate:.1%}; per outline: merge {self.merge_rate:.1%}, split {self.split_rate:.1%}; "
                 f"punctuation dropped {self.punct_drop:.0%}")
 
-    def apply(self, grascii: str, rng: random.Random, scale: float = 1.0) -> str:
-        """Corrupt clean Grascii the way Topaz does (``scale`` > 1 makes it noisier)."""
+    def apply(self, grascii: str, rng: random.Random, scale: float = 1.0, hand: float = 0.0) -> str:
+        """Corrupt clean Grascii the way Topaz does (``scale`` > 1 makes it noisier). ``hand``:
+        chance per stroke of a length/size confusion, as in Topaz's reading of handwriting."""
+        if hand:
+            grascii = " ".join(
+                "-".join(CONFUSABLE[s] if s in CONFUSABLE and rng.random() < hand else s for s in item.split("-"))
+                if item not in PUNCT else item
+                for item in grascii.split())
         out = []
         for item in grascii.split():
             if item in PUNCT:

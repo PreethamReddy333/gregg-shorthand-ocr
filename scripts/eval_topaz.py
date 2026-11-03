@@ -129,6 +129,8 @@ def main():
                     help="also decode locally with the trigram beam decoder (alone and with earlier lines)")
     ap.add_argument("--t5", action="store_true",
                     help="also decode with the trained model in models/gregg-t5 (alone and with the previous line)")
+    ap.add_argument("--t5-model", type=Path, default=ROOT / "models" / "gregg-t5",
+                    help="trained model folder for --t5")
     ap.add_argument("--fused", action="store_true",
                     help="also decode with the beam search guided by a local LLM, given the earlier lines")
     ap.add_argument("--out", type=Path, help="write per-item results to this CSV")
@@ -168,7 +170,7 @@ def main():
     if args.t5:
         from gregg_ocr.t5 import T5Decoder
 
-        t5 = T5Decoder(ROOT / "models" / "gregg-t5", device)
+        t5 = T5Decoder(args.t5_model, device)
         local.update({"t5": 0, "t5_context": 0})
     rows = []
     for n, it in enumerate(items):
@@ -183,8 +185,7 @@ def main():
             local_out["beam_context"] = " ".join(beam.decode(context_preds + line_preds)[len(context_preds):])
         if args.t5:
             local_out["t5"] = " ".join(t5.decode(line_preds, use_context=False))
-            # The model was trained with one previous line as context.
-            local_out["t5_context"] = " ".join(t5.decode(line_preds, context=context_preds[-1] if context_preds else ""))
+            local_out["t5_context"] = " ".join(t5.decode(line_preds, context=context_preds))
         if args.fused:
             # The LLM conditions on the earlier lines' English, read cheaply by the trigram decoder.
             context_text = detokenize(" ".join(beam.decode(context_preds)).split()) if context_preds else ""

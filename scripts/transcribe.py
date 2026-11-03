@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "models" / "topaz-61m"))
 
 
-def make_decoder(name: str, topaz, device: str):
+def make_decoder(name: str, topaz, device: str, t5_model: Path):
     """-> function(list of Grascii lines) -> English text, or None for --decoder none."""
     if name == "beam":
         from gregg_ocr.beam import BeamDecoder
@@ -35,7 +35,7 @@ def make_decoder(name: str, topaz, device: str):
     if name == "t5":
         from gregg_ocr.t5 import T5Decoder
 
-        t5 = T5Decoder(ROOT / "models" / "gregg-t5", device)
+        t5 = T5Decoder(t5_model, device)
         return lambda lines: "\n".join(t5.decode(lines))
     if name == "claude":
         from gregg_ocr.decode import EnglishDecoder
@@ -58,6 +58,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("images", nargs="+", type=Path)
     ap.add_argument("--decoder", choices=["beam", "t5", "claude", "none"], default="beam")
+    ap.add_argument("--t5-model", type=Path, default=ROOT / "models" / "gregg-t5", help="model folder for --decoder t5")
     ap.add_argument("--lines", action="store_true", help="each image is a single line, not a page")
     ap.add_argument("-o", "--out", type=Path, help="write <image>.txt files here")
     args = ap.parse_args()
@@ -66,7 +67,7 @@ def main():
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     topaz = Topaz(ROOT / "models" / "topaz-61m", device)
-    decode = make_decoder(args.decoder, topaz, device)
+    decode = make_decoder(args.decoder, topaz, device, args.t5_model)
 
     for path in args.images:
         gray = np.array(Image.open(path).convert("L"))  # PIL reads webp, which cv2 may not

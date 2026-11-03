@@ -93,9 +93,11 @@ from strokes to English changes.
 | Dictionary only (top-1 per outline) | none | 41.3% | 61.5% | 45.5% |
 | Beam search + trigram LM | none | 28.0% | 53.6% | 21.0% |
 | Beam search + trigram LM | 3 earlier lines | 27.6% | 53.6% | 21.0% |
-| Trained model (flan-t5-small) | none | 28.8% | 45.6% | 25.6% |
-| Trained model (flan-t5-small) | previous line | 28.1% | 45.4% | 21.0% |
-| LLM-guided beam (SmolLM2-360M) | 3 earlier lines | **24.7%** | pending | pending |
+| Trained model v1 (flan-t5-small) | none | 28.8% | 45.6% | 25.6% |
+| Trained model v1 (flan-t5-small) | previous line | 28.1% | 45.4% | 21.0% |
+| Trained model v2 (flan-t5-small) | none | 24.0% | **44.2%** | 22.7% |
+| Trained model v2 (flan-t5-small) | 2 earlier lines | **23.4%** | 44.8% | **18.2%** |
+| LLM-guided beam (SmolLM2-360M) | 3 earlier lines | 24.7% | pending | pending |
 | Claude Opus 5.5 (declines count as all wrong) | none | 25.9% | 13.7% | 51% on one page; the other declined |
 | Claude Opus 5.5, answered items only | none | 24.1% (264 lines) | 5.8% (109 verses) | |
 
@@ -112,6 +114,11 @@ Everything above the Claude rows runs locally on the Mac with no API.
   (`scripts/make_synthetic.py`, `train_seq2seq.py`). Unlike the others it can write words
   no dictionary offered, which is why it's best of the local decoders on Genesis
   (*garden*, *heads*), and also why it sometimes writes non-words (*uponered*).
+  **v2** (`--t5-model models/gregg-t5-v2`) continues from v1 for 10k steps on 543k lines: the
+  synthetic text adds WikiText-103 to the literature, words the lexicon lacks are spelled from
+  their pronunciation (CMU dictionary) instead of being skipped, 40% of lines get the
+  length/size confusions handwriting causes (T/D, P/B, F/V, A/E…), and each line is read with
+  the two before it. It is the best decoder on FM2, Claude included.
 - **LLM-guided beam** (`gregg_ocr/fused.py`) is the beam search with a small open LLM
   rescoring each partial reading, given the earlier lines. Like the beam it can only choose
   dictionary words. It reads a line in about 10 s on an M4.
@@ -126,6 +133,7 @@ excluded from the corpus and the mined lexicon.
 | Dictionary only | 36.4% |
 | Beam search (`scripts/tune_beam.py`) | 20.5% |
 | Trained model, best of 12k steps | 20.0% |
+| Trained model v2, two earlier lines as context | 16.6% |
 | Beam, first 150 lines | 18.6% |
 | LLM-guided beam, first 150 lines (`scripts/tune_fused.py`; trigram 0.6, LLM 1.0) | 15.4% |
 
@@ -143,7 +151,7 @@ excluded from the corpus and the mined lexicon.
   this project's dev set. Treat them as a demo, not a test.
 - **Real handwriting is the open problem.** One photographed page of a personal letter
   (143 words, in `data/handwritten/letter`, not committed): dictionary 94.4%, beam 88.8%,
-  LLM-guided 89.5%, trained model 66.4%. The strokes are the bottleneck: Topaz confuses
+  LLM-guided 89.5%, trained model 66.4% (v2: 65.0%). The strokes are the bottleneck: Topaz confuses
   outlines that differ only in length (T/D, P/B, F/V: *tried → drew*, *behind → pine*), and
   longhand names break the line they're on.
 - Context barely moves the beam. The trigram LM already carries state across a passage, and
