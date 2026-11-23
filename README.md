@@ -1,6 +1,10 @@
 # Reading Gregg shorthand with a computer
 
 <p align="center">
+  <img src="assets/gregg-title-page.jpg" alt="Title page of Gregg Shorthand: A Light-Line Phonography for the Million, by John Robert Gregg" width="640">
+</p>
+
+<p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-blue.svg">
   <img alt="Runs locally on a Mac" src="https://img.shields.io/badge/runs-locally%20on%20Apple%20silicon-lightgrey.svg">
