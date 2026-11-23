@@ -15,6 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 train = ["torch", "torchvision", "transformers"]
+dsr = ["scipy", "scikit-image", "opencv-python-headless", "matplotlib", "pytest"]
 
 [build-system]
 requires = ["setuptools>=68"]
