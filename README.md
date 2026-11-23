@@ -1,10 +1,6 @@
 # Reading Gregg shorthand with a computer
 
 <p align="center">
-  <img src="assets/hero.png" alt="A sentence written in Gregg shorthand by this project's renderer, with its English key" width="720">
-</p>
-
-<p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-blue.svg">
   <img alt="Runs locally on a Mac" src="https://img.shields.io/badge/runs-locally%20on%20Apple%20silicon-lightgrey.svg">
