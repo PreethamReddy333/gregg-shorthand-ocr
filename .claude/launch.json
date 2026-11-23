@@ -4,7 +4,11 @@
     {
       "name": "gregg-writer",
       "runtimeExecutable": ".venv/bin/python",
-      "runtimeArgs": ["scripts/gregg_web.py", "--port", "8765"],
+      "runtimeArgs": [
+        "scripts/gregg_web.py",
+        "--port",
+        "8765"
+      ],
       "port": 8765
     }
   ]
