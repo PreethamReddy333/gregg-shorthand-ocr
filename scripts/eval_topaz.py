@@ -134,12 +134,14 @@ def main():
     ap.add_argument("--fused", action="store_true",
                     help="also decode with the beam search guided by a local LLM, given the earlier lines")
     ap.add_argument("--out", type=Path, help="write per-item results to this CSV")
+    ap.add_argument("--topaz", type=Path, default=ROOT / "models" / "topaz-61m",
+                    help="Topaz model directory, e.g. a fine-tuned one from finetune_topaz.py")
     args = ap.parse_args()
 
     from topaz import Topaz  # third-party model code, imported only when actually scoring
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    topaz = Topaz(ROOT / "models" / "topaz-61m", device)
+    topaz = Topaz(args.topaz, device)
     if args.book:
         items, source = load_book(args.book, args.n), args.book
     elif args.genesis:

@@ -22,7 +22,8 @@ from .text import PUNCT
 
 UP, DOWN = 35.0, 250.0  # chord directions of T/D and of the downstrokes, degrees
 # stroke -> (chord direction, turn, length, size class used by Style). Turns, lengths and circle
-# sizes were tuned so that Topaz reads drawn book lines back with the fewest stroke errors.
+# sizes were tuned so that Topaz reads drawn book lines back with the fewest stroke errors; LD,
+# long I, the diphthong hooks and disjoining were then tuned stroke by stroke (scripts/stroke_check.py).
 CONSONANTS = {
     "K": (0, -80, 1.04, "short"), "G": (0, -80, 2.07, "long"),
     "R": (0, 80, 1.04, "short"), "L": (0, 80, 2.07, "long"),
@@ -36,16 +37,20 @@ CONSONANTS = {
     "NT": (UP, 80, 1.31, "long"), "ND": (UP, 80, 1.31, "long"), "MT": (UP, 80, 2.29, "long"), "MD": (UP, 80, 2.29, "long"),
     "MN": (0, -10, 2.4, "long"), "MM": (0, -10, 3.05, "long"),
     "TD": (UP, 0, 2.84, "long"), "DT": (UP, 0, 2.84, "long"), "DD": (UP, 0, 2.84, "long"),
-    "LD": (15, 100, 2.4, "long"),
+    "LD": (30, 100, 2.8, "long"),
     "DF": (-50, -200, 2.18, "long"), "DV": (-50, -200, 2.18, "long"), "TV": (-50, -200, 2.18, "long"),
     "PNT": (-25, 170, 1.75, "long"), "PND": (-25, 170, 1.75, "long"),
     "JNT": (-35, 170, 2.4, "long"), "JND": (-35, 170, 2.4, "long"),
 }
 # S and TH come in two directions, chosen by the joining rules (``_directions``).
 SMALL_CURVES = {"S": (DOWN, 137, 0.57), "Z": (DOWN, 137, 0.57), "TH": (UP, 98, 0.8), "X": (-60, 120, 0.45)}
-CIRCLES = {"A": 0.32, "I": 0.34, "A&E": 0.32, "A&'": 0.32, "E": 0.165}
+CIRCLES = {"A": 0.32, "I": 0.6, "A&E": 0.32, "A&'": 0.32, "E": 0.165}
 HOOKS = {"O": (225, 183, 0.42), "U": (45, -183, 0.42)}  # start direction, turn, length
-DIPHTHONGS = {"AU": ["A", "U"], "EU": ["E", "U"], "OE": ["O", "E"]}
+# Diphthongs are a circle and a hook; the hook is marked '*' so it can be sized on its own.
+DIPHTHONGS = {"AU": ["A", "U*"], "EU": ["E", "U*"], "OE": ["O*", "E"]}
+DIPHTHONG_HOOK = 1.8   # length of a diphthong's hook relative to a plain O or OO hook
+I_INDENT = 1.0         # length of the dent that tells long I from A, in radii (0 = a plain circle)
+DISJOIN = (0.2, 0.2)   # where a disjoined stroke (^) starts, relative to the end of the last one
 
 
 @dataclass
@@ -120,7 +125,7 @@ def _directions(toks: list[str]) -> list[str]:
         return toks[j] if 0 <= j < len(toks) else None
 
     for i, t in enumerate(toks):
-        if t in ("S", "Z", "X"):
+        if t in ("S", "Z", "X", "SS", "XS"):
             prev, nxt = neighbour(i, -1), neighbour(i, 1)
             other = prev if prev in CONSONANTS else nxt if nxt in CONSONANTS else None
             if i == 0 and i + 1 < len(toks) and toks[i + 1] == "O":
@@ -155,6 +160,12 @@ def _shape(tok: str, style: Style, rng: random.Random):
     if tok in CONSONANTS:
         chord, turn, length, size = CONSONANTS[tok]
         length *= style.short if size == "short" else style.long
+    elif tok[:2] in ("SS", "XS"):
+        # "ses" and "xes": the first curve, then an S the other way (drawn by draw_outline).
+        base = "S" if tok[:2] == "SS" else "X"
+        chord, turn, length = SMALL_CURVES[base]
+        turn = turn if tok[-1] == "L" else -turn
+        length *= style.short
     elif tok[:-1] in SMALL_CURVES:
         chord, turn, length = SMALL_CURVES[tok[:-1]]
         if tok[:-1] == "TH":
@@ -164,6 +175,8 @@ def _shape(tok: str, style: Style, rng: random.Random):
         length *= style.short
     elif tok[0] in HOOKS:
         start, turn, length = HOOKS[tok[0]]
+        if tok.endswith("*"):
+            length *= DIPHTHONG_HOOK
         if tok == "OL":
             start -= 90
         elif tok == "UR":
@@ -208,7 +221,7 @@ def draw_outline(outline: str, style: Style | None = None, rng: random.Random | 
             if len(path) > 1:
                 drawing.paths.append(path)
             x, y = path[-1]
-            path, heading = [(x + 0.35, y)], None
+            path, heading = [(x + DISJOIN[0], y + DISJOIN[1])], None
             continue
         if t == "'":
             # H before a vowel: a dot above the start; -ing and the rest: a dot after the outline.
@@ -241,10 +254,18 @@ def draw_outline(outline: str, style: Style | None = None, rng: random.Random | 
                 sweep = (sign * (h_out - heading)) % 360
                 if sweep < 90:
                     sweep += 360
+            if t == "I" and I_INDENT:
+                # Long I: a large circle broken by a small inward dent where it starts.
+                d = I_INDENT * r
+                heading = _arc(path, heading - sign * 60, sign * 120, d)
             heading = _arc(path, heading, sign * sweep, math.radians(sweep) * r)
             continue
         start, turn, length = shapes[i]
         heading = _arc(path, start, turn, length)
+        if t[:2] in ("SS", "XS"):
+            s_chord, s_turn, s_len = SMALL_CURVES["S"]
+            heading = _arc(path, heading, -turn if t[:2] == "SS" else -math.copysign(s_turn, turn) * style.curve,
+                           (length if t[:2] == "SS" else s_len * style.short))
     if len(path) > 1:
         drawing.paths.append(path)
     pts = drawing.points()
