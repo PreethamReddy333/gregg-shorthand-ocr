@@ -1,7 +1,7 @@
 # Reading Gregg shorthand with a computer
 
 <p align="center">
-  <img src="assets/gregg-title-page.jpg" alt="Title page of Gregg Shorthand: A Light-Line Phonography for the Million, by John Robert Gregg" width="640">
+  <img src="assets/gregg-title-page.jpg" alt="Title page of Gregg Shorthand: A Light-Line Phonography for the Million, by John Robert Gregg" width="560">
 </p>
 
 <p align="center">
