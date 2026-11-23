@@ -6,7 +6,8 @@ __pycache__/
 # Datasets and model outputs are downloaded/generated, never committed
 data/
 runs/
-models/
+models/*
+!models/mined_lexicon.json
 
 # Local Claude Code app settings
 .claude/

@@ -1,10 +1,11 @@
 """Transcribe photos or scans of Gregg Anniversary shorthand into English.
 
-    python scripts/transcribe.py page.jpg [more pages...]       # local beam decoder (default)
-    python scripts/transcribe.py --decoder t5 page.jpg           # trained model, models/gregg-t5
+    python scripts/transcribe.py page.jpg [more pages...]       # trained model, models/gregg-t5-v2 (default)
+    python scripts/transcribe.py --decoder beam page.jpg         # beam search (build models/trigram.pkl first)
     python scripts/transcribe.py --decoder claude page.jpg       # Claude (needs ANTHROPIC_API_KEY)
     python scripts/transcribe.py --decoder none page.jpg         # strokes + dictionary candidates only
     python scripts/transcribe.py -o out/ page.jpg                # also write <page>.txt files
+    python scripts/transcribe.py --topaz models/topaz-ft/control page.jpg   # the fine-tuned reader
 
 Pipeline: Topaz finds and straightens the lines and reads each into Grascii; the decoder turns
 the strokes into English, reading each line in the context of the ones before it.
@@ -47,7 +48,7 @@ def make_decoder(name: str, topaz, device: str, t5_model: Path):
             english = claude.decode("\n".join(topaz.lookup(line).intermediate() for line in lines))
             if claude.refusals > refused_before:
                 return ("(Claude declined this transcript: a safety-classifier false positive. "
-                        "Try --decoder beam.)")
+                        "Try --decoder t5.)")
             return english
 
         return run
@@ -57,8 +58,10 @@ def make_decoder(name: str, topaz, device: str, t5_model: Path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("images", nargs="+", type=Path)
-    ap.add_argument("--decoder", choices=["beam", "t5", "claude", "none"], default="beam")
-    ap.add_argument("--t5-model", type=Path, default=ROOT / "models" / "gregg-t5", help="model folder for --decoder t5")
+    ap.add_argument("--decoder", choices=["beam", "t5", "claude", "none"], default="t5")
+    ap.add_argument("--t5-model", type=Path, default=ROOT / "models" / "gregg-t5-v2", help="model folder for --decoder t5")
+    ap.add_argument("--topaz", type=Path, default=ROOT / "models" / "topaz-61m",
+                    help="Topaz model folder, e.g. models/topaz-ft/control (fine-tuned, better on handwriting)")
     ap.add_argument("--lines", action="store_true", help="each image is a single line, not a page")
     ap.add_argument("-o", "--out", type=Path, help="write <image>.txt files here")
     args = ap.parse_args()
@@ -66,7 +69,7 @@ def main():
     from topaz import Topaz
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    topaz = Topaz(ROOT / "models" / "topaz-61m", device)
+    topaz = Topaz(args.topaz, device)
     decode = make_decoder(args.decoder, topaz, device, args.t5_model)
 
     for path in args.images:

@@ -1,0 +1,13282 @@
+{
+"'-O-L": [
+[
+"hole",
+5
+]
+],
+"'-O-N-S": [
+[
+"horns",
+3
+]
+],
+"TH-R-U": [
+[
+"through a",
+10
+]
+],
+"A-S": [
+[
+"as",
+796
+],
+[
+"as a",
+91
+],
+[
+"has a",
+26
+],
+[
+"as he",
+14
+],
+[
+"as an",
+12
+],
+[
+"as well",
+6
+],
+[
+"as i",
+5
+],
+[
+"as soon",
+5
+],
+[
+"has an",
+4
+],
+[
+"as to",
+3
+]
+],
+"B-'-A-B-L": [
+[
+"being able",
+5
+]
+],
+"T-U-R-I-S": [
+[
+"to rise",
+3
+]
+],
+"'-A-D": [
+[
+"had",
+721
+],
+[
+"had a",
+48
+],
+[
+"had to",
+9
+],
+[
+"had an",
+7
+],
+[
+"a hard",
+6
+]
+],
+"F": [
+[
+"for a",
+110
+],
+[
+"for an",
+18
+]
+],
+"B-E-D-S": [
+[
+"birds",
+13
+]
+],
+"'-A": [
+[
+"hare",
+12
+]
+],
+"O": [
+[
+"of a",
+189
+],
+[
+"oh",
+25
+],
+[
+"of an",
+21
+],
+[
+"o",
+17
+],
+[
+"owe",
+10
+],
+[
+"awe",
+7
+],
+[
+"ore",
+5
+],
+[
+"all a",
+3
+],
+[
+"yore",
+3
+]
+],
+"B-O": [
+[
+"bore",
+8
+]
+],
+"S-P-A-R-O-S": [
+[
+"sparrows",
+3
+]
+],
+"S-'": [
+[
+"sing",
+20
+]
+],
+"'-E-M": [
+[
+"him",
+519
+],
+[
+"him a",
+10
+],
+[
+"him to",
+4
+],
+[
+"him and",
+4
+]
+],
+"NT-U-S": [
+[
+"into his",
+15
+]
+],
+"B-O-N": [
+[
+"bone",
+3
+]
+],
+"G-R-E-N-'": [
+[
+"grinning",
+3
+]
+],
+"G-R-I-NT-'": [
+[
+"grinding",
+3
+]
+],
+"U-A-S-T-K-O-T": [
+[
+"waistcoat",
+3
+]
+],
+"A-L-E-S": [
+[
+"alice",
+71
+]
+],
+"F-L-A-SH-T": [
+[
+"flashed",
+11
+]
+],
+"O-R": [
+[
+"or a",
+14
+]
+],
+"B-E-N-'": [
+[
+"burning",
+3
+]
+],
+"L-A": [
+[
+"lay",
+39
+],
+[
+"like a",
+38
+]
+],
+"S-T-P-'": [
+[
+"stopping",
+3
+]
+],
+"F-O-'": [
+[
+"falling",
+8
+]
+],
+"O-T-O-S": [
+[
+"what was",
+10
+]
+],
+"K-D-N": [
+[
+"could not",
+40
+]
+],
+"U-N-S": [
+[
+"once",
+65
+],
+[
+"ones",
+24
+],
+[
+"one's",
+10
+],
+[
+"once a",
+9
+]
+],
+"K-D-S-E": [
+[
+"could see",
+15
+]
+],
+"S-L-E-P-R-E": [
+[
+"slippery",
+4
+]
+],
+"TH-S": [
+[
+"there is",
+66
+],
+[
+"there's",
+40
+],
+[
+"there is a",
+16
+]
+],
+"V-E-G": [
+[
+"very good",
+9
+]
+],
+"A-L-S-S": [
+[
+"alice's",
+3
+]
+],
+"E-M": [
+[
+"em",
+11
+],
+[
+"i'm",
+5
+],
+[
+"m",
+3
+]
+],
+"A-G-N-S-TH": [
+[
+"against the",
+10
+]
+],
+"A-S-M-CH-A-S": [
+[
+"as much as",
+3
+]
+],
+"L-I-'": [
+[
+"lying",
+15
+]
+],
+"U-N-S-I": [
+[
+"one side",
+5
+]
+],
+"T-E-S": [
+[
+"tears",
+7
+],
+[
+"tis",
+6
+]
+],
+"L-A-J": [
+[
+"a large",
+5
+]
+],
+"'-E": [
+[
+"her",
+37
+],
+[
+"here",
+5
+]
+],
+"D-R-I-D": [
+[
+"derived",
+6
+],
+[
+"dried",
+3
+]
+],
+"E-TH": [
+[
+"with a",
+130
+],
+[
+"with an",
+16
+]
+],
+"K-E-D": [
+[
+"kid",
+4
+]
+],
+"NT": [
+[
+"and a",
+64
+],
+[
+"and an",
+9
+]
+],
+"T-M-S-B": [
+[
+"it must be",
+3
+]
+],
+"M-A-D": [
+[
+"made",
+292
+],
+[
+"made a",
+31
+],
+[
+"made an",
+5
+]
+],
+"TH-U-A": [
+[
+"the way",
+4
+]
+],
+"S-U-E-M-'": [
+[
+"swimming",
+11
+]
+],
+"U-E-L-M": [
+[
+"william",
+13
+]
+],
+"L-NG-A-G": [
+[
+"long ago",
+6
+]
+],
+"T-R-E-M-B-'": [
+[
+"trembling",
+8
+]
+],
+"D-O-G-S": [
+[
+"dogs",
+7
+]
+],
+"TD-N": [
+[
+"did not",
+51
+]
+],
+"S-CH": [
+[
+"such a",
+45
+],
+[
+"such an",
+14
+]
+],
+"L-A-T-U": [
+[
+"like to",
+4
+]
+],
+"T-S": [
+[
+"it's",
+108
+],
+[
+"it's a",
+12
+]
+],
+"K-A-T": [
+[
+"quite a",
+8
+]
+],
+"I-L": [
+[
+"i'll",
+16
+]
+],
+"D-O-D-O": [
+[
+"dodo",
+3
+]
+],
+"P-R-I-SS": [
+[
+"prizes",
+4
+]
+],
+"T-U-N-S": [
+[
+"at once",
+12
+],
+[
+"tunes",
+3
+]
+],
+"N": [
+[
+"in a",
+221
+],
+[
+"in an",
+39
+],
+[
+"not a",
+19
+]
+],
+"P-U-LD": [
+[
+"pulled",
+8
+]
+],
+"NT-U-T": [
+[
+"into it",
+3
+]
+],
+"O-K-R-S": [
+[
+"of course",
+33
+],
+[
+"course",
+6
+]
+],
+"G-R-A-V-E": [
+[
+"gravely",
+5
+]
+],
+"S-A-D-E": [
+[
+"sadly",
+11
+]
+],
+"I-V": [
+[
+"i've",
+17
+]
+],
+"B": [
+[
+"be a",
+36
+],
+[
+"by a",
+29
+],
+[
+"but a",
+20
+],
+[
+"be an",
+13
+],
+[
+"by an",
+7
+],
+[
+"but an",
+3
+]
+],
+"U-R": [
+[
+"you're",
+46
+],
+[
+"you're a",
+5
+]
+],
+"D-U": [
+[
+"do",
+145
+],
+[
+"do a",
+5
+]
+],
+"A": [
+[
+"air",
+70
+],
+[
+"an air",
+4
+],
+[
+"air a",
+3
+]
+],
+"D-R-P-D": [
+[
+"dropped",
+8
+]
+],
+"F-A-N": [
+[
+"fan",
+5
+],
+[
+"fain",
+3
+]
+],
+"'-U-NT-'": [
+[
+"hunting",
+9
+]
+],
+"T-U-B": [
+[
+"to be",
+75
+],
+[
+"to be a",
+4
+]
+],
+"V-A-N-SH-D": [
+[
+"vanished",
+3
+]
+],
+"D-U-'": [
+[
+"doing",
+77
+]
+],
+"L-A-D": [
+[
+"lad",
+38
+],
+[
+"laid",
+13
+],
+[
+"a lad",
+5
+]
+],
+"B-E-L": [
+[
+"bill",
+9
+]
+],
+"T-U-P": [
+[
+"to put",
+9
+]
+],
+"F-I-R-P-L-A-S": [
+[
+"fireplace",
+3
+]
+],
+"'-E-D": [
+[
+"heard a",
+6
+]
+],
+"R-A-T-L-'": [
+[
+"rattling",
+3
+]
+],
+"S-M-O-TH-M": [
+[
+"some of them",
+4
+]
+],
+"K-A-K-S": [
+[
+"cakes",
+11
+]
+],
+"U-N-O": [
+[
+"one of",
+37
+],
+[
+"one or",
+3
+]
+],
+"'-E-LD": [
+[
+"held",
+48
+],
+[
+"held a",
+3
+]
+],
+"P-G-S": [
+[
+"pigs",
+7
+]
+],
+"G-E-'": [
+[
+"giving",
+26
+],
+[
+"giving a",
+5
+]
+],
+"U-L": [
+[
+"you'll",
+27
+]
+],
+"T": [
+[
+"at a",
+33
+],
+[
+"it a",
+17
+],
+[
+"at an",
+6
+]
+],
+"T-U-M-E": [
+[
+"to me",
+23
+]
+],
+"O-T-T-U": [
+[
+"ought to",
+4
+]
+],
+"U-NG-M-A-N": [
+[
+"a young man",
+10
+],
+[
+"young man",
+6
+]
+],
+"N-SS-NT-E": [
+[
+"incessantly",
+3
+]
+],
+"S-U-N": [
+[
+"son",
+22
+]
+],
+"S-A-J": [
+[
+"sage",
+5
+]
+],
+"L-E-M-S": [
+[
+"limbs",
+6
+],
+[
+"lem's",
+3
+]
+],
+"U": [
+[
+"you a",
+18
+]
+],
+"J-O-S": [
+[
+"jaws",
+4
+]
+],
+"B-O-N-S": [
+[
+"bones",
+13
+]
+],
+"K-A-S": [
+[
+"case",
+46
+]
+],
+"K-SH-S": [
+[
+"questions",
+29
+]
+],
+"E-N": [
+[
+"when a",
+19
+]
+],
+"U-E-NG-S": [
+[
+"wings",
+10
+]
+],
+"R-U-T-S": [
+[
+"roots",
+3
+]
+],
+"M-NT-M": [
+[
+"more and more",
+4
+]
+],
+"P-U-S-LD": [
+[
+"puzzled",
+5
+]
+],
+"T-O-S-N-T": [
+[
+"it wasn't",
+3
+]
+],
+"SH-D-N-T": [
+[
+"shouldn't",
+3
+]
+],
+"A-S-L-A-S": [
+[
+"as well as",
+19
+]
+],
+"N-AU-NT-TH-N": [
+[
+"now and then",
+8
+]
+],
+"T-U-R-K": [
+[
+"to work",
+30
+]
+],
+"EU-D": [
+[
+"used",
+110
+],
+[
+"used to",
+4
+]
+],
+"I-V-G-T": [
+[
+"i've got",
+7
+]
+],
+"F-U-T-M-A-N": [
+[
+"footman",
+3
+]
+],
+"T-N-E-R-A-T": [
+[
+"at any rate",
+3
+]
+],
+"U-N-O-TH": [
+[
+"one of the",
+23
+]
+],
+"N-E-S-D-A": [
+[
+"next day",
+7
+]
+],
+"TH-A-S": [
+[
+"that's",
+39
+],
+[
+"that's a",
+5
+]
+],
+"M-U-T-R-D": [
+[
+"muttered",
+3
+]
+],
+"K-R-E-T-R-S": [
+[
+"creatures",
+4
+]
+],
+"T-U-D-R-I-V": [
+[
+"to drive",
+5
+]
+],
+"S-N-E-S-'": [
+[
+"sneezing",
+3
+]
+],
+"O-S-TH": [
+[
+"was the",
+29
+]
+],
+"S-O-B-'": [
+[
+"sobbing",
+3
+]
+],
+"NT-U": [
+[
+"into a",
+33
+]
+],
+"TH-E-L-E-T": [
+[
+"the little",
+4
+]
+],
+"A-A": [
+[
+"away",
+120
+],
+[
+"away from",
+5
+]
+],
+"TH-'": [
+[
+"thinking",
+51
+]
+],
+"O-S": [
+[
+"was a",
+113
+],
+[
+"was an",
+12
+]
+],
+"N-A-T-R-D": [
+[
+"natured",
+3
+]
+],
+"B-I": [
+[
+"buy a",
+6
+],
+[
+"bye",
+3
+]
+],
+"I-D": [
+[
+"i'd",
+13
+]
+],
+"F-G-TN": [
+[
+"forgotten",
+21
+]
+],
+"J-U-S-A-S": [
+[
+"just as",
+16
+]
+],
+"A-F-T": [
+[
+"after a",
+18
+]
+],
+"'-A-T-R-S": [
+[
+"hatters",
+3
+]
+],
+"I-U-SH": [
+[
+"i wish",
+4
+]
+],
+"G-R-E-N": [
+[
+"grin",
+4
+]
+],
+"'-A-T-R": [
+[
+"hatter",
+9
+]
+],
+"I-'-A-D": [
+[
+"i had",
+30
+],
+[
+"i had a",
+4
+]
+],
+"TH-U-U": [
+[
+"the world",
+7
+]
+],
+"T-R-A": [
+[
+"tray",
+5
+]
+],
+"U-S": [
+[
+"us",
+204
+],
+[
+"us a",
+12
+],
+[
+"us to",
+7
+]
+],
+"R-M-D": [
+[
+"remarked",
+6
+]
+],
+"U-D": [
+[
+"you'd",
+13
+]
+],
+"NT-E-G-N-E": [
+[
+"indignantly",
+3
+]
+],
+"TH-E-E-R": [
+[
+"they were",
+25
+]
+],
+"O-NT": [
+[
+"want a",
+3
+]
+],
+"L-E-S": [
+[
+"let's",
+5
+],
+[
+"lest",
+3
+]
+],
+"J-U-G": [
+[
+"jug",
+3
+]
+],
+"R-O-SS": [
+[
+"roses",
+3
+]
+],
+"F-I-V": [
+[
+"five",
+38
+],
+[
+"a five",
+3
+]
+],
+"S-E-V-N": [
+[
+"seven",
+21
+]
+],
+"P": [
+[
+"put a",
+8
+]
+],
+"U-E-R": [
+[
+"we're",
+17
+]
+],
+"G-A-TN-R-S": [
+[
+"gardeners",
+6
+]
+],
+"K-A-E-'": [
+[
+"carrying",
+18
+],
+[
+"carrying a",
+3
+]
+],
+"G-E-S-T-S": [
+[
+"guests",
+8
+]
+],
+"B-AU-D": [
+[
+"bowed",
+6
+]
+],
+"M-A-J-S-T-E": [
+[
+"majesty",
+6
+]
+],
+"TH-E-R": [
+[
+"they are",
+59
+],
+[
+"they're",
+11
+]
+],
+"K-A-D-S": [
+[
+"cards",
+7
+]
+],
+"G-L-A-'": [
+[
+"glaring",
+3
+]
+],
+"O-N-E": [
+[
+"only a",
+21
+]
+],
+"B-AU-'": [
+[
+"bowing",
+4
+]
+],
+"M-A-CH-T": [
+[
+"marched",
+5
+]
+],
+"R-O-D": [
+[
+"roared",
+3
+]
+],
+"U-O-K-'": [
+[
+"walking",
+10
+]
+],
+"P-E-P-'": [
+[
+"peeping",
+3
+]
+],
+"A-R-S": [
+[
+"where's",
+4
+]
+],
+"T-U-F-I": [
+[
+"to find",
+12
+]
+],
+"A-P-E-LD": [
+[
+"appealed",
+4
+]
+],
+"O-F": [
+[
+"off a",
+5
+]
+],
+"E-R-N-T": [
+[
+"weren't",
+4
+]
+],
+"O-S-N-T": [
+[
+"wasn't",
+15
+],
+[
+"wasn't a",
+3
+]
+],
+"K-P-'": [
+[
+"keeping",
+27
+],
+[
+"keeping a",
+3
+],
+[
+"completing",
+3
+]
+],
+"CH-E-N": [
+[
+"chin",
+6
+]
+],
+"D-E-G-'": [
+[
+"digging",
+4
+]
+],
+"T-M-A-T": [
+[
+"it might",
+5
+]
+],
+"M-A-T-V": [
+[
+"might have",
+4
+]
+],
+"N-E-L-NG-E": [
+[
+"any longer",
+3
+]
+],
+"A-S-M-CH": [
+[
+"as much",
+16
+]
+],
+"L-E-NK-T": [
+[
+"linked",
+4
+]
+],
+"N-F-R-NT": [
+[
+"in front",
+4
+]
+],
+"'-A-F": [
+[
+"half a",
+9
+],
+[
+"half an",
+4
+]
+],
+"A-CH-S": [
+[
+"arches",
+3
+]
+],
+"O-T": [
+[
+"what a",
+13
+]
+],
+"T-S-TH": [
+[
+"it's the",
+4
+]
+],
+"G-R-E-F-O-N": [
+[
+"gryphon",
+18
+]
+],
+"N-^-S-'": [
+[
+"interesting",
+16
+]
+],
+"T-U-K-M": [
+[
+"to come",
+15
+]
+],
+"S-E": [
+[
+"sea",
+36
+],
+[
+"c",
+6
+],
+[
+"z",
+4
+],
+[
+"c 0",
+3
+]
+],
+"D-O-N-B": [
+[
+"don't be",
+4
+]
+],
+"I-TD-N": [
+[
+"i didn't",
+6
+],
+[
+"i did not",
+4
+]
+],
+"U-E-'-A-D": [
+[
+"we had",
+14
+]
+],
+"T-U": [
+[
+"to a",
+66
+],
+[
+"to an",
+13
+]
+],
+"D-R-P-'": [
+[
+"dropping",
+3
+]
+],
+"L-O-B-S-T-E-S": [
+[
+"lobsters",
+4
+]
+],
+"G-A": [
+[
+"gave a",
+8
+]
+],
+"F-R-A-N-S": [
+[
+"france",
+28
+]
+],
+"'-L-E-T": [
+[
+"a little",
+8
+]
+],
+"E-TH-T": [
+[
+"without a",
+13
+],
+[
+"without an",
+3
+]
+],
+"E-F": [
+[
+"if a",
+8
+],
+[
+"if an",
+4
+],
+[
+"f",
+3
+]
+],
+"P-R-SS-D": [
+[
+"persisted",
+4
+]
+],
+"B-U-N": [
+[
+"boon",
+3
+]
+],
+"K-E_-K-E": [
+[
+"quickly",
+35
+]
+],
+"T-U-R-I": [
+[
+"to write",
+11
+],
+[
+"write",
+6
+]
+],
+"V-E-L-E-T": [
+[
+"very little",
+8
+]
+],
+"O-N": [
+[
+"on a",
+55
+],
+[
+"owen",
+10
+],
+[
+"on an",
+3
+]
+],
+"G-R-D-E": [
+[
+"a great deal",
+5
+],
+[
+"deal",
+3
+]
+],
+"'-A-D-N-T": [
+[
+"hadn't",
+8
+]
+],
+"S-^-S-D": [
+[
+"suppressed",
+3
+]
+],
+"O-S-R-S": [
+[
+"officers",
+27
+]
+],
+"T-I-D": [
+[
+"tied",
+9
+]
+],
+"S-T-R-E-NG-S": [
+[
+"strings",
+7
+]
+],
+"S-L-E-P-T": [
+[
+"slipped",
+7
+]
+],
+"N-S-P-S": [
+[
+"newspapers",
+17
+]
+],
+"T-R-I-L-S": [
+[
+"trials",
+3
+]
+],
+"M-A": [
+[
+"may",
+235
+],
+[
+"may be",
+5
+],
+[
+"mar",
+3
+]
+],
+"A-M-S": [
+[
+"arms",
+16
+],
+[
+"aims",
+4
+],
+[
+"ames",
+3
+]
+],
+"U-E-S-K-R-S": [
+[
+"whiskers",
+4
+]
+],
+"F-O-R-'-D": [
+[
+"forehead",
+9
+]
+],
+"SH-R-E-L": [
+[
+"shrill",
+4
+]
+],
+"P-N-S-E-L-S": [
+[
+"pencils",
+3
+]
+],
+"AU": [
+[
+"out a",
+14
+]
+],
+"S-E-P-TH": [
+[
+"except the",
+3
+]
+],
+"T-U-M-CH": [
+[
+"too much",
+7
+]
+],
+"T-U-D-U": [
+[
+"to do",
+54
+]
+],
+"G-A-S-'": [
+[
+"gazing",
+8
+]
+],
+"S-N-T": [
+[
+"isn't",
+28
+]
+],
+"K-L-A-P-'": [
+[
+"clapping",
+3
+]
+],
+"F-M-'-E-M": [
+[
+"from him",
+3
+]
+],
+"U-E-V": [
+[
+"we've",
+7
+],
+[
+"we have a",
+3
+]
+],
+"U-N-O-TH-M": [
+[
+"one of them",
+3
+]
+],
+"R-I-T-'": [
+[
+"writing",
+36
+],
+[
+"writing a",
+3
+]
+],
+"L-A-F-T": [
+[
+"laughed",
+24
+]
+],
+"T-E": [
+[
+"tea",
+21
+],
+[
+"t",
+16
+],
+[
+"till a",
+3
+]
+],
+"T-O-N-S": [
+[
+"tones",
+13
+]
+],
+"T-O-S": [
+[
+"toss",
+4
+]
+],
+"G-R-A-S": [
+[
+"grass",
+6
+]
+],
+"S-K-E_-K-'": [
+[
+"squeaking",
+3
+]
+],
+"NT-S": [
+[
+"and his",
+39
+]
+],
+"TH-A": [
+[
+"they",
+50
+],
+[
+"that a",
+35
+],
+[
+"that an",
+3
+]
+],
+"S-E-MT-T-U-B": [
+[
+"seemed to be",
+5
+]
+],
+"G-E-T-E-S-B-R-G": [
+[
+"gettysburg",
+6
+]
+],
+"P-R-E-S-TN-S": [
+[
+"president's",
+15
+]
+],
+"E-TH-S": [
+[
+"with his",
+4
+]
+],
+"'-E-R-NT-TH": [
+[
+"here and there",
+4
+]
+],
+"T-A-B-S": [
+[
+"tables",
+7
+]
+],
+"G-L-A-N-S-T": [
+[
+"glanced",
+11
+]
+],
+"E-V-R-T": [
+[
+"everett",
+4
+]
+],
+"B-R-E-D-'": [
+[
+"breeding",
+3
+]
+],
+"R-S-O-SS": [
+[
+"resources",
+9
+]
+],
+"G-A-S-D": [
+[
+"gazed",
+7
+]
+],
+"U-E-S-DF-A-E": [
+[
+"wistfully",
+4
+]
+],
+"G-E-T": [
+[
+"get a",
+31
+],
+[
+"get an",
+5
+]
+],
+"L-E-NK-N": [
+[
+"lincoln",
+19
+]
+],
+"E-V-R-T-S": [
+[
+"everett's",
+3
+]
+],
+"S-E-N-TN-SS": [
+[
+"sentences",
+11
+]
+],
+"S-I-D": [
+[
+"sighed",
+7
+]
+],
+"B-D-N": [
+[
+"be done",
+4
+]
+],
+"T-U-E-M": [
+[
+"to him",
+23
+]
+],
+"E-S-E-D": [
+[
+"he said",
+44
+],
+[
+"said",
+11
+]
+],
+"L-E-F-TD": [
+[
+"lifted",
+14
+]
+],
+"F-O-LD-D": [
+[
+"folded",
+6
+]
+],
+"M-A-T-N": [
+[
+"might not",
+6
+]
+],
+"T-O-K-T": [
+[
+"talked",
+19
+]
+],
+"O-K-L-O-K": [
+[
+"o'clock",
+4
+]
+],
+"TH-MN-'": [
+[
+"the morning",
+9
+]
+],
+"'-U-'-A-D": [
+[
+"who had",
+5
+]
+],
+"F-O": [
+[
+"four",
+42
+],
+[
+"follow a",
+4
+]
+],
+"F-E-LD-S": [
+[
+"fields",
+22
+]
+],
+"'-U-U-E": [
+[
+"who were",
+5
+]
+],
+"T-O-D-S": [
+[
+"towards",
+13
+]
+],
+"G-R-A-S-P": [
+[
+"grasp",
+12
+]
+],
+"'-A-D-B-N": [
+[
+"had been",
+40
+]
+],
+"A-MN-S": [
+[
+"americans",
+11
+]
+],
+"D-V-B-N": [
+[
+"would have been",
+5
+]
+],
+"B-E-T-R-N": [
+[
+"bitterness",
+4
+]
+],
+"G-O-NT": [
+[
+"gaunt",
+4
+]
+],
+"E-'-A-D": [
+[
+"he had",
+55
+]
+],
+"B-R-E-TH-'": [
+[
+"breathing",
+4
+]
+],
+"E-TH-E-N": [
+[
+"within a",
+6
+]
+],
+"E-R-S-A-G": [
+[
+"ago",
+6
+],
+[
+"years ago",
+6
+]
+],
+"F-E-T-'": [
+[
+"fitting",
+3
+]
+],
+"L-E-V-'": [
+[
+"living",
+21
+]
+],
+"A-D": [
+[
+"add",
+15
+],
+[
+"ad",
+5
+],
+[
+"add a",
+4
+],
+[
+"eyed",
+3
+]
+],
+"O-N-E-D": [
+[
+"honored",
+7
+]
+],
+"U-^-G-O-D": [
+[
+"under god",
+3
+]
+],
+"N-U": [
+[
+"a new",
+11
+]
+],
+"SH-N": [
+[
+"shall not",
+4
+]
+],
+"TH-M": [
+[
+"them a",
+7
+]
+],
+"S-A-NK": [
+[
+"sank",
+3
+]
+],
+"S-I": [
+[
+"sigh",
+3
+]
+],
+"L-E-NK-N-S": [
+[
+"lincoln's",
+3
+]
+],
+"E-V-N": [
+[
+"even a",
+4
+]
+],
+"TH-O-T-F-E": [
+[
+"thoughtfully",
+5
+]
+],
+"S-P-S": [
+[
+"speeches",
+5
+]
+],
+"SH-R-U-D-N": [
+[
+"shrewdness",
+3
+]
+],
+"A-G-N-NT-A-G-N": [
+[
+"again and again",
+3
+]
+],
+"E-R-E-MN-D": [
+[
+"he remembered",
+5
+]
+],
+"V-B-N": [
+[
+"have been",
+45
+]
+],
+"F-A-R": [
+[
+"a fair",
+3
+]
+],
+"R-SH-'": [
+[
+"rushing",
+5
+]
+],
+"T-O-S-T": [
+[
+"tossed",
+4
+]
+],
+"R-E-'": [
+[
+"regarding",
+12
+]
+],
+"S-T-R-S": [
+[
+"streets",
+14
+]
+],
+"B-OE": [
+[
+"boy",
+119
+],
+[
+"a boy",
+15
+]
+],
+"N-^-F-E-R-'": [
+[
+"interfering",
+3
+]
+],
+"O-T-S": [
+[
+"what's",
+6
+],
+[
+"oates",
+4
+]
+],
+"I-M-A-T": [
+[
+"i might",
+3
+]
+],
+"N-CH-S": [
+[
+"inches",
+4
+]
+],
+"F-I": [
+[
+"find a",
+19
+]
+],
+"S-F-K-^-L": [
+[
+"self control",
+5
+]
+],
+"E-S": [
+[
+"he's",
+46
+],
+[
+"s",
+10
+],
+[
+"he's a",
+6
+]
+],
+"D-I-'": [
+[
+"dying",
+9
+]
+],
+"T-M-A-B": [
+[
+"it may be",
+9
+]
+],
+"I-S-E": [
+[
+"i see",
+12
+]
+],
+"F-NT": [
+[
+"found a",
+4
+]
+],
+"E-S-O": [
+[
+"he saw",
+15
+]
+],
+"E-F-E-L-T": [
+[
+"he felt",
+12
+]
+],
+"K-O-K": [
+[
+"cock",
+4
+]
+],
+"K-A-T-R": [
+[
+"carter",
+10
+]
+],
+"'-A-M-P-TN": [
+[
+"hampton",
+3
+]
+],
+"B-L-A": [
+[
+"blair",
+6
+]
+],
+"N-E-L-E": [
+[
+"nellie",
+10
+]
+],
+"SH-E-D": [
+[
+"she would",
+3
+]
+],
+"U-E-U-E": [
+[
+"we were",
+9
+]
+],
+"L-A-D-S": [
+[
+"lads",
+17
+],
+[
+"lad's",
+4
+]
+],
+"CH-I-LD-S": [
+[
+"child's",
+3
+]
+],
+"K-B-I-D": [
+[
+"combined",
+5
+]
+],
+"J-U-L-S": [
+[
+"jewels",
+3
+]
+],
+"SH-O-D": [
+[
+"showed a",
+3
+]
+],
+"E-O-NT-S": [
+[
+"he wants",
+6
+]
+],
+"E-D-U-S-N": [
+[
+"he doesn't",
+3
+]
+],
+"M-A-K": [
+[
+"make a",
+39
+],
+[
+"make an",
+8
+]
+],
+"U-U-E-'": [
+[
+"worrying",
+3
+]
+],
+"TH-E-'-A-D": [
+[
+"they had",
+15
+]
+],
+"O-^-S": [
+[
+"over his",
+5
+]
+],
+"D-A-SH-'": [
+[
+"dashing",
+6
+]
+],
+"F-L-U": [
+[
+"flew",
+8
+]
+],
+"P-A-L": [
+[
+"pale",
+4
+]
+],
+"B-R-U-TH-S": [
+[
+"brother's",
+5
+]
+],
+"TH-'-U": [
+[
+"thank you",
+6
+]
+],
+"P-E-L-O-S": [
+[
+"pillows",
+3
+]
+],
+"T-E_-S-TD": [
+[
+"twisted",
+5
+]
+],
+"U-E-D": [
+[
+"we'd",
+4
+]
+],
+"U-N-O-TH-S": [
+[
+"one of those",
+5
+]
+],
+"O-N-T-S": [
+[
+"on its",
+10
+]
+],
+"F-E-L-T": [
+[
+"felt a",
+3
+]
+],
+"B-OE-S": [
+[
+"boys",
+85
+],
+[
+"boy's",
+17
+]
+],
+"U-E-L": [
+[
+"we'll",
+15
+],
+[
+"wel",
+3
+]
+],
+"M-I-N-S": [
+[
+"mines",
+8
+],
+[
+"minds",
+7
+],
+[
+"mind's",
+3
+]
+],
+"SH-O-N": [
+[
+"shone",
+4
+]
+],
+"P-L-E-D-E-D": [
+[
+"pleaded",
+3
+]
+],
+"U-E-N-'": [
+[
+"winning",
+9
+]
+],
+"I-L-A": [
+[
+"i like",
+8
+]
+],
+"B-F-S": [
+[
+"before his",
+9
+]
+],
+"S-T-R-E-CH-T": [
+[
+"stretched",
+5
+]
+],
+"P-R-E-S-T": [
+[
+"pressed",
+8
+]
+],
+"J-O-V": [
+[
+"jove",
+6
+]
+],
+"V-N-T": [
+[
+"haven't",
+4
+]
+],
+"I-O-NT": [
+[
+"i want",
+13
+]
+],
+"S": [
+[
+"is a",
+113
+],
+[
+"is an",
+19
+]
+],
+"L-O-R-S": [
+[
+"lawyers",
+6
+]
+],
+"S-PNT": [
+[
+"spend a",
+3
+]
+],
+"U-O-NT": [
+[
+"you want",
+16
+],
+[
+"you want to",
+3
+]
+],
+"S-T-A-'": [
+[
+"staring",
+9
+]
+],
+"B-R-E-CH-E-S": [
+[
+"breeches",
+4
+]
+],
+"G-R": [
+[
+"a great",
+12
+]
+],
+"S-E-X": [
+[
+"six",
+37
+],
+[
+"sex",
+3
+]
+],
+"T-U-'-U-M": [
+[
+"to whom",
+10
+]
+],
+"L-NG": [
+[
+"a long",
+3
+]
+],
+"B-N-E": [
+[
+"by any",
+3
+]
+],
+"R-E-NG-'": [
+[
+"ringing",
+5
+]
+],
+"U-V-N-T": [
+[
+"you haven't",
+4
+]
+],
+"E-L-B-O-S": [
+[
+"elbows",
+3
+]
+],
+"L-U-MT": [
+[
+"loomed",
+3
+]
+],
+"T-E_-NT-E-F-O": [
+[
+"twenty four",
+4
+]
+],
+"T-U-N-E": [
+[
+"to any",
+6
+]
+],
+"F-I-N-R": [
+[
+"finer",
+4
+]
+],
+"S-T-E-'": [
+[
+"stirring",
+3
+]
+],
+"B-R-E-TH-D": [
+[
+"breathed",
+4
+]
+],
+"F-M": [
+[
+"from a",
+25
+],
+[
+"form a",
+5
+]
+],
+"CH-A-M-'": [
+[
+"charming",
+3
+]
+],
+"L-E-T": [
+[
+"lit",
+5
+]
+],
+"O-U-S": [
+[
+"of us",
+25
+]
+],
+"'-U-SH-T": [
+[
+"hushed",
+4
+]
+],
+"F-E-L-S": [
+[
+"feels",
+7
+],
+[
+"fills",
+3
+]
+],
+"F-A-TD": [
+[
+"faded",
+4
+]
+],
+"F-T": [
+[
+"for it",
+11
+]
+],
+"I-D-L-A": [
+[
+"i would like",
+4
+]
+],
+"B-R-A-NT": [
+[
+"brant",
+7
+]
+],
+"L-E-D-'": [
+[
+"leading",
+21
+]
+],
+"'-A-NG-'": [
+[
+"hanging",
+11
+]
+],
+"O-K": [
+[
+"york",
+19
+],
+[
+"oak",
+11
+]
+],
+"D-E-F-E": [
+[
+"durfee",
+3
+]
+],
+"A-L": [
+[
+"yale",
+30
+],
+[
+"al",
+14
+]
+],
+"S-K-U-L": [
+[
+"skull",
+3
+]
+],
+"F-E-F-T-E-N": [
+[
+"fifteen",
+12
+]
+],
+"A-L-O-TD": [
+[
+"allotted",
+3
+]
+],
+"T-A-P": [
+[
+"tap",
+7
+]
+],
+"N-O-U-N": [
+[
+"no one",
+15
+]
+],
+"M-E-N": [
+[
+"men",
+44
+]
+],
+"SH-I-N-'": [
+[
+"shining",
+4
+]
+],
+"O-LD-M-A-N": [
+[
+"old man",
+12
+]
+],
+"O-N-R": [
+[
+"honor",
+5
+],
+[
+"honour",
+3
+]
+],
+"G-R-E-S-LD": [
+[
+"grizzled",
+5
+]
+],
+"'-A-T-S": [
+[
+"hats",
+23
+]
+],
+"E-V-U-N": [
+[
+"every one",
+10
+]
+],
+"P-R-A-P-S": [
+[
+"perhaps a",
+3
+]
+],
+"K-R-J-S": [
+[
+"carriages",
+3
+]
+],
+"R-I-SS": [
+[
+"rises",
+5
+]
+],
+"T-U-S-E": [
+[
+"to see",
+16
+]
+],
+"S-E-N-R-S": [
+[
+"seniors",
+7
+]
+],
+"'-A-TD": [
+[
+"hearted",
+12
+]
+],
+"V-'-B-N": [
+[
+"having been",
+7
+]
+],
+"E-R-S": [
+[
+"years",
+150
+],
+[
+"year's",
+3
+]
+],
+"SH-O-S": [
+[
+"shows",
+22
+]
+],
+"G-E-L": [
+[
+"girl",
+8
+]
+],
+"DF-L-D": [
+[
+"developed",
+6
+]
+],
+"S-I-L-E-NT-E": [
+[
+"silently",
+3
+]
+],
+"NT-T-S": [
+[
+"and its",
+5
+],
+[
+"and it's",
+4
+]
+],
+"TH-'-O-L": [
+[
+"the whole",
+5
+]
+],
+"M-R-S": [
+[
+"mrs",
+43
+]
+],
+"S-^-M-K-O-T": [
+[
+"supreme court",
+3
+]
+],
+"T-M-A": [
+[
+"at my",
+5
+]
+],
+"L-E-N-'": [
+[
+"leaning",
+4
+]
+],
+"E-F-E-L-S": [
+[
+"he feels",
+5
+]
+],
+"J-O-N-E": [
+[
+"johnny",
+34
+]
+],
+"M-K-L-A-N": [
+[
+"mclean",
+19
+]
+],
+"T-E_-NT-E": [
+[
+"twenty",
+18
+]
+],
+"S-K-U-L-P-T-R": [
+[
+"sculptor",
+4
+]
+],
+"T-U-M-A-K": [
+[
+"to make",
+33
+],
+[
+"to make a",
+5
+],
+[
+"make",
+4
+]
+],
+"O-T-T-U-B": [
+[
+"ought to be",
+6
+]
+],
+"S-M-D-A": [
+[
+"some day",
+7
+]
+],
+"K-U-T-'": [
+[
+"cutting",
+11
+]
+],
+"'-A-P-E-N": [
+[
+"happiness",
+4
+]
+],
+"B-L-A-D": [
+[
+"blade",
+3
+]
+],
+"TH-E-K-D": [
+[
+"they could",
+8
+]
+],
+"S-G-'": [
+[
+"is going",
+7
+]
+],
+"F-O-T-E-N": [
+[
+"fourteen",
+4
+]
+],
+"T-U-CH": [
+[
+"to which",
+12
+],
+[
+"touch",
+7
+],
+[
+"to change",
+6
+]
+],
+"T-U-O-TH-E": [
+[
+"two or three",
+6
+]
+],
+"TH-R-E-L-'": [
+[
+"thrilling",
+4
+]
+],
+"T-U-U": [
+[
+"to your",
+17
+]
+],
+"SH-AU-T": [
+[
+"shout",
+5
+],
+[
+"a shout",
+4
+]
+],
+"B-TH": [
+[
+"but the",
+3
+]
+],
+"NT-N-AU": [
+[
+"and now",
+3
+]
+],
+"J-O-N": [
+[
+"john",
+58
+],
+[
+"joan",
+11
+]
+],
+"F-E-F-T-E": [
+[
+"fifty",
+19
+]
+],
+"E-L-E-V-D": [
+[
+"he lived",
+6
+]
+],
+"M-E-T": [
+[
+"meet",
+57
+],
+[
+"met a",
+3
+]
+],
+"SH-E-'-A-D": [
+[
+"she had",
+8
+],
+[
+"she had a",
+3
+]
+],
+"T-O-M-S": [
+[
+"thomas",
+6
+]
+],
+"T-U-SH-U-T": [
+[
+"to shut",
+6
+]
+],
+"D-O-R-S": [
+[
+"doors",
+15
+]
+],
+"AU-N-S": [
+[
+"ounce",
+4
+]
+],
+"F-A-D-'": [
+[
+"fading",
+3
+]
+],
+"F-A-TH-S": [
+[
+"father's",
+10
+]
+],
+"T-U-E-M-S": [
+[
+"to himself",
+4
+],
+[
+"himself",
+3
+]
+],
+"R-A-TH-TH-N": [
+[
+"rather than",
+11
+]
+],
+"S-T-A-B-D": [
+[
+"stabbed",
+3
+]
+],
+"E-N-E-O-S": [
+[
+"when he was",
+5
+]
+],
+"U-E-S-LD": [
+[
+"whistled",
+4
+]
+],
+"'-U-E-S-L-'": [
+[
+"whistling",
+4
+]
+],
+"E-F-TH-O-S": [
+[
+"if there was",
+3
+]
+],
+"B-U-K": [
+[
+"buck",
+4
+]
+],
+"CH-A-P-S": [
+[
+"chaps",
+4
+]
+],
+"O-MN-E": [
+[
+"of money",
+7
+],
+[
+"of many",
+4
+]
+],
+"D-E-K": [
+[
+"dick",
+23
+],
+[
+"deck",
+7
+]
+],
+"CH-E-K-T": [
+[
+"checked",
+13
+]
+],
+"K-R-V-D": [
+[
+"carved",
+4
+]
+],
+"S-P-K-T-^-K-S": [
+[
+"spectacles",
+4
+]
+],
+"U-A-TD": [
+[
+"waited a",
+3
+]
+],
+"S-U-N-S": [
+[
+"sons",
+12
+]
+],
+"K-O-LD": [
+[
+"cold",
+27
+]
+],
+"T-E-D": [
+[
+"ted",
+3
+]
+],
+"'-A-R-E": [
+[
+"harry",
+6
+]
+],
+"I-S-O": [
+[
+"i saw",
+18
+]
+],
+"I-O-NT-D": [
+[
+"i wanted",
+5
+]
+],
+"I-N-U": [
+[
+"i knew",
+10
+]
+],
+"E-TH-U": [
+[
+"with your",
+18
+]
+],
+"S-TD-E-S": [
+[
+"studies",
+15
+]
+],
+"N-O-TD": [
+[
+"nodded",
+3
+]
+],
+"P-L-D": [
+[
+"pleased",
+22
+]
+],
+"B-N": [
+[
+"been a",
+6
+]
+],
+"G-A-N-'": [
+[
+"gaining",
+6
+]
+],
+"S-CH-E-S": [
+[
+"such as",
+14
+]
+],
+"R-A-L-'": [
+[
+"railing",
+4
+]
+],
+"S-T-R-E-K-N": [
+[
+"stricken",
+3
+]
+],
+"P-^-L-I-S-D": [
+[
+"paralyzed",
+3
+]
+],
+"NT-E-TH-TH": [
+[
+"and with the",
+4
+]
+],
+"S-E-L-'": [
+[
+"ceiling",
+8
+]
+],
+"B-E-M-'": [
+[
+"beaming",
+3
+]
+],
+"D-R-A-NK": [
+[
+"drank",
+4
+]
+],
+"M-O-L-E-S": [
+[
+"more or less",
+5
+]
+],
+"N-E-V-S": [
+[
+"nervous",
+6
+],
+[
+"nerves",
+4
+]
+],
+"E-S-K-T": [
+[
+"he asked",
+11
+]
+],
+"E-O-NT-D": [
+[
+"he wanted",
+5
+]
+],
+"R-M-S": [
+[
+"remarks",
+13
+]
+],
+"I-T-O-K-T": [
+[
+"i talked",
+4
+]
+],
+"N-E-U-A": [
+[
+"anyway",
+4
+]
+],
+"I-V-N-T": [
+[
+"i haven't",
+7
+]
+],
+"G-A-S-P-T": [
+[
+"gasped",
+3
+]
+],
+"B-E": [
+[
+"burr",
+7
+],
+[
+"but he",
+5
+],
+[
+"b",
+5
+],
+[
+"beer",
+4
+]
+],
+"M-A-SS": [
+[
+"masses",
+3
+]
+],
+"E-S-F-A-E-S": [
+[
+"as far as",
+3
+]
+],
+"E-T-R-I-D": [
+[
+"he tried",
+4
+]
+],
+"AU-P": [
+[
+"output",
+4
+]
+],
+"E-R": [
+[
+"her a",
+6
+],
+[
+"were a",
+5
+],
+[
+"a year",
+4
+],
+[
+"year a",
+3
+]
+],
+"TH-N": [
+[
+"than a",
+12
+],
+[
+"then a",
+4
+]
+],
+"U-P-TH": [
+[
+"up the",
+5
+]
+],
+"N-O-K-T": [
+[
+"knocked",
+9
+]
+],
+"K-A-P-S": [
+[
+"caps",
+5
+]
+],
+"E-S-A-T": [
+[
+"he sat",
+6
+],
+[
+"sat",
+3
+]
+],
+"M-O-R-E-S": [
+[
+"morris",
+7
+]
+],
+"MN-G-TH": [
+[
+"among the",
+22
+]
+],
+"U-U-D-S": [
+[
+"woods",
+22
+]
+],
+"E-B-E-D": [
+[
+"he believed",
+3
+]
+],
+"SH-E-TD-N": [
+[
+"she did not",
+4
+]
+],
+"M-I-N-'": [
+[
+"mining",
+4
+]
+],
+"O-F-TH": [
+[
+"off the",
+7
+]
+],
+"D-A": [
+[
+"a day",
+6
+],
+[
+"day a",
+5
+]
+],
+"T-O-S-N": [
+[
+"it was not",
+3
+]
+],
+"N-E-S-MN-'": [
+[
+"next morning",
+6
+]
+],
+"A-F-TH": [
+[
+"after the",
+3
+]
+],
+"L-O-K-T": [
+[
+"locked",
+6
+]
+],
+"F-A-S-T": [
+[
+"faced",
+8
+]
+],
+"TH-E-D": [
+[
+"third",
+21
+],
+[
+"a third",
+3
+]
+],
+"E-MN-T": [
+[
+"he meant",
+3
+]
+],
+"K-O_-T-E": [
+[
+"a quarter of",
+3
+]
+],
+"E-T-O-K-T": [
+[
+"he talked",
+4
+]
+],
+"U-MN-S": [
+[
+"woman's",
+5
+],
+[
+"a woman's",
+3
+]
+],
+"T-U-K-S": [
+[
+"to consider",
+3
+]
+],
+"D-V": [
+[
+"would have",
+12
+]
+],
+"R-O-S": [
+[
+"rows",
+8
+],
+[
+"arose",
+4
+],
+[
+"ross",
+4
+]
+],
+"D-A-B-R-A-K": [
+[
+"daybreak",
+4
+]
+],
+"A-T-E-N": [
+[
+"eighteen",
+9
+]
+],
+"R-A-NG": [
+[
+"rang",
+5
+]
+],
+"S-E-T-'": [
+[
+"sitting",
+17
+]
+],
+"T-O-M": [
+[
+"tom",
+15
+]
+],
+"E-V-NT-S": [
+[
+"events",
+11
+]
+],
+"D-R-P-S": [
+[
+"drops",
+3
+]
+],
+"A-L-D": [
+[
+"allowed",
+11
+],
+[
+"allowed to",
+3
+]
+],
+"'-E-N-R-E": [
+[
+"henry",
+6
+]
+],
+"O-^-TH": [
+[
+"over the",
+31
+]
+],
+"N-U-E-NG": [
+[
+"new england",
+5
+]
+],
+"D-R-AU-S-E": [
+[
+"drowsy",
+3
+]
+],
+"R-E-NG-S": [
+[
+"rings",
+10
+]
+],
+"G-N-S": [
+[
+"gowns",
+4
+]
+],
+"K-A-L-F-O-N-A": [
+[
+"california",
+8
+]
+],
+"CH-I-N-A": [
+[
+"china",
+6
+]
+],
+"U-NG-S-T-E-S": [
+[
+"youngsters",
+3
+]
+],
+"G-R-A-D-EU-T-'": [
+[
+"graduating",
+5
+]
+],
+"'-TH-AU": [
+[
+"a thousand",
+6
+]
+],
+"V-OE-SS": [
+[
+"voices",
+27
+]
+],
+"K-L-A-D": [
+[
+"clad",
+4
+]
+],
+"O-X-F-R-D": [
+[
+"oxford",
+4
+]
+],
+"O-D-S": [
+[
+"odds",
+3
+]
+],
+"K-R-S": [
+[
+"cars",
+28
+],
+[
+"a course",
+3
+]
+],
+"B-A-NT-S": [
+[
+"bands",
+7
+]
+],
+"R-A-S": [
+[
+"rays",
+6
+]
+],
+"J-A-P-N-E-S": [
+[
+"japanese",
+3
+]
+],
+"TH-E-K-M": [
+[
+"they come",
+3
+]
+],
+"'-E-L-S": [
+[
+"heels",
+10
+]
+],
+"D-U-CH": [
+[
+"dutch",
+18
+]
+],
+"A-L-M-A": [
+[
+"alma",
+4
+]
+],
+"M-A-T-R": [
+[
+"mater",
+3
+]
+],
+"O-^-'": [
+[
+"over a",
+14
+]
+],
+"S-E-T-S": [
+[
+"seats",
+8
+]
+],
+"M-E-N-S": [
+[
+"men's",
+6
+],
+[
+"means a",
+3
+]
+],
+"N-O": [
+[
+"in all",
+22
+]
+],
+"U-E-N-S": [
+[
+"wins",
+7
+]
+],
+"'-NT-N-'-NT": [
+[
+"hand in hand",
+3
+]
+],
+"D-E-S-E-'": [
+[
+"a dizzying",
+3
+]
+],
+"K-O-S-TM-S": [
+[
+"costumes",
+3
+]
+],
+"G-R-A-D-EU-T-S": [
+[
+"graduates",
+8
+]
+],
+"S-T-E-P-S": [
+[
+"steps",
+17
+]
+],
+"L-N-O-N": [
+[
+"well known",
+4
+]
+],
+"F-S": [
+[
+"for his",
+11
+]
+],
+"E-G-T": [
+[
+"he got",
+14
+]
+],
+"V-D-N": [
+[
+"have done",
+4
+]
+],
+"E-TD-N": [
+[
+"he did not",
+10
+],
+[
+"he didn't",
+6
+]
+],
+"R-E-D": [
+[
+"regarded",
+7
+],
+[
+"rid",
+5
+]
+],
+"T-E-M": [
+[
+"tim",
+16
+]
+],
+"CH-E": [
+[
+"which he",
+7
+]
+],
+"R-E-B-N-S": [
+[
+"ribbons",
+3
+]
+],
+"'-U-N-U": [
+[
+"who knew",
+4
+]
+],
+"NT-TH-A-S": [
+[
+"and that's",
+6
+]
+],
+"S-E-V-N-TH": [
+[
+"seventh",
+4
+]
+],
+"F-U-L-E-SH": [
+[
+"foolish",
+3
+]
+],
+"N-T-S": [
+[
+"in its",
+18
+]
+],
+"K-L-A-S-M-A-T-S": [
+[
+"classmates",
+3
+]
+],
+"F-E-M-E": [
+[
+"firmly",
+6
+]
+],
+"SH-E-TD": [
+[
+"she did",
+4
+]
+],
+"SH-AU-T-'": [
+[
+"shouting",
+3
+]
+],
+"B-R-S-T-'": [
+[
+"bursting",
+3
+]
+],
+"TH-NT-R-D": [
+[
+"thundered",
+4
+]
+],
+"'-E-P-T": [
+[
+"heaped",
+4
+]
+],
+"U-^-TH-A": [
+[
+"under that",
+3
+]
+],
+"O-S-O-N": [
+[
+"of his own",
+3
+]
+],
+"R-I-S-'": [
+[
+"rising",
+4
+]
+],
+"L-E-P-T": [
+[
+"leaped",
+3
+]
+],
+"A-B-E-M": [
+[
+"about him",
+7
+]
+],
+"NT-B": [
+[
+"and be",
+4
+]
+],
+"NT-TH-O-S": [
+[
+"and there was",
+3
+]
+],
+"U-^-S-TN-'": [
+[
+"understanding",
+18
+]
+],
+"P-L-O-T": [
+[
+"plot",
+5
+]
+],
+"F-U-TD": [
+[
+"footed",
+3
+]
+],
+"CH-E-S": [
+[
+"cheers",
+4
+],
+[
+"chess",
+4
+]
+],
+"SH-AU-T-S": [
+[
+"shouts",
+3
+]
+],
+"N-OE-SS": [
+[
+"noises",
+3
+]
+],
+"R-O": [
+[
+"roar",
+4
+],
+[
+"a roar",
+3
+]
+],
+"TH-A-E": [
+[
+"that he",
+4
+]
+],
+"S-E-'": [
+[
+"seeing",
+16
+]
+],
+"J-A-K": [
+[
+"jack",
+53
+]
+],
+"M-S-E-R": [
+[
+"m'sieur",
+15
+]
+],
+"N-E-U-N": [
+[
+"any one",
+8
+]
+],
+"E-K-R-I-D": [
+[
+"he cried",
+3
+]
+],
+"J-O-S-F": [
+[
+"josef",
+12
+]
+],
+"O-S-N": [
+[
+"was not",
+11
+]
+],
+"T-U-S-P": [
+[
+"to speak",
+6
+]
+],
+"F-L-U-NG": [
+[
+"flung",
+6
+]
+],
+"S-O-F-T-E": [
+[
+"softly",
+4
+]
+],
+"'-O-L-TD": [
+[
+"halted",
+4
+]
+],
+"L-O-S": [
+[
+"laws",
+15
+],
+[
+"lost",
+3
+]
+],
+"S-T-E-P-T": [
+[
+"stepped",
+4
+]
+],
+"R-O-K-S": [
+[
+"rocks",
+5
+]
+],
+"E-K-O-S": [
+[
+"echoes",
+3
+]
+],
+"B-U-SH-S": [
+[
+"bushes",
+3
+]
+],
+"T-E-A-CH": [
+[
+"th",
+6
+]
+],
+"N-O-D": [
+[
+"nod",
+4
+]
+],
+"A-D-L-A-D": [
+[
+"adelard",
+4
+]
+],
+"G-T": [
+[
+"got a",
+6
+]
+],
+"E-TH-R-U": [
+[
+"he threw",
+4
+]
+],
+"E-B-R-O-T": [
+[
+"he brought",
+4
+]
+],
+"L-A-NT-'": [
+[
+"landing",
+4
+]
+],
+"E-K": [
+[
+"a week",
+3
+]
+],
+"T-U-F-E-SH": [
+[
+"to fish",
+3
+]
+],
+"I-D-O-N-N-O": [
+[
+"i don't know",
+7
+]
+],
+"J-A-K-S": [
+[
+"jack's",
+6
+]
+],
+"V-A-K-A-SH-S": [
+[
+"vacations",
+6
+]
+],
+"D-A-NT": [
+[
+"darned",
+4
+]
+],
+"N-O-'": [
+[
+"knowing",
+20
+]
+],
+"F-EU": [
+[
+"a few",
+4
+]
+],
+"E-S-P-L-D": [
+[
+"explained",
+13
+]
+],
+"L-A-K": [
+[
+"lake",
+56
+]
+],
+"D-A-SH-T": [
+[
+"dashed",
+4
+]
+],
+"S-T-J-E-S": [
+[
+"stranger's",
+3
+]
+],
+"AU-N-SS": [
+[
+"ounces",
+3
+]
+],
+"E-S-E-T": [
+[
+"he set",
+3
+]
+],
+"R-E-L": [
+[
+"reel",
+5
+]
+],
+"R-O-D-S": [
+[
+"roads",
+7
+],
+[
+"rods",
+3
+]
+],
+"E-T-K-T": [
+[
+"etiquette",
+4
+]
+],
+"SH-R-U-G-D": [
+[
+"shrugged",
+3
+]
+],
+"U-^-'": [
+[
+"under a",
+4
+]
+],
+"F-R-I-'": [
+[
+"frying",
+3
+]
+],
+"B-R-A-D-L-E": [
+[
+"bradlee",
+19
+]
+],
+"F-E-SH-T": [
+[
+"fished",
+3
+]
+],
+"A-D-E": [
+[
+"an idea",
+3
+]
+],
+"TH-S-O-S": [
+[
+"this was",
+14
+],
+[
+"this was a",
+3
+]
+],
+"N-I-S": [
+[
+"night's",
+3
+]
+],
+"L-O-G": [
+[
+"log",
+7
+]
+],
+"F-L-O-TD": [
+[
+"floated",
+4
+]
+],
+"F-L-SH-D": [
+[
+"flushed",
+5
+]
+],
+"E-D-R-U": [
+[
+"he drew",
+3
+]
+],
+"T-E_-S-T-S": [
+[
+"twists",
+3
+]
+],
+"F-L-I-S": [
+[
+"flies",
+6
+]
+],
+"N-U-O-K-S-E-T-E": [
+[
+"new york city",
+7
+]
+],
+"E-T": [
+[
+"yet a",
+3
+]
+],
+"V-A-N-S": [
+[
+"vance",
+5
+]
+],
+"S-I-N-S": [
+[
+"signs",
+7
+],
+[
+"science",
+3
+]
+],
+"P-A-S": [
+[
+"pace",
+4
+]
+],
+"E-F-T": [
+[
+"if it",
+6
+]
+],
+"T-U-G-R-O": [
+[
+"to grow",
+3
+]
+],
+"'-A-V-R-D": [
+[
+"harvard",
+9
+]
+],
+"N-U-O-K": [
+[
+"new york",
+24
+]
+],
+"E-N-E-TD": [
+[
+"he needed",
+7
+]
+],
+"T-U-CH-T": [
+[
+"touched",
+5
+]
+],
+"F-E-SH-'": [
+[
+"fishing",
+12
+]
+],
+"A-CH": [
+[
+"h",
+5
+],
+[
+"arch",
+5
+]
+],
+"S-E-N": [
+[
+"send a",
+3
+]
+],
+"O-S-T": [
+[
+"was it",
+3
+]
+],
+"E-B-G-A-N": [
+[
+"he began",
+5
+],
+[
+"began",
+3
+]
+],
+"M-U-T": [
+[
+"moot",
+3
+]
+],
+"T-U-M-O-R-O": [
+[
+"to morrow",
+3
+]
+],
+"M-^-A-T-S": [
+[
+"magnates",
+4
+]
+],
+"O-M-R": [
+[
+"of mr",
+3
+]
+],
+"J-E": [
+[
+"g",
+6
+],
+[
+"gee",
+3
+]
+],
+"P-R-S-J-S": [
+[
+"personages",
+4
+]
+],
+"T-U-M-E-T": [
+[
+"to meet",
+11
+]
+],
+"N-O-S": [
+[
+"knows",
+26
+]
+],
+"'-E-R": [
+[
+"hear a",
+3
+]
+],
+"T-U-'-E-L-P": [
+[
+"to help",
+5
+]
+],
+"F-E-T-S-EU": [
+[
+"fitzhugh",
+3
+]
+],
+"S-K-S": [
+[
+"asks",
+4
+]
+],
+"U-U-E": [
+[
+"you were",
+19
+]
+],
+"T-E_-L-V": [
+[
+"twelve",
+13
+]
+],
+"S-K-A-N-E-T-L-S": [
+[
+"skaneateles",
+6
+]
+],
+"B-L-D": [
+[
+"billed",
+3
+]
+],
+"N-J-U-D": [
+[
+"injured",
+6
+]
+],
+"K-A-R-L": [
+[
+"carroll",
+5
+]
+],
+"A-S-O-SH-T-S": [
+[
+"associates",
+6
+]
+],
+"E-V-D-A": [
+[
+"every day",
+13
+]
+],
+"M-P-L-D": [
+[
+"employed",
+8
+]
+],
+"R-R-S": [
+[
+"railroads",
+13
+]
+],
+"D-E": [
+[
+"d",
+15
+],
+[
+"de",
+3
+]
+],
+"TH-A-S-B-N": [
+[
+"there has been",
+3
+]
+],
+"K-U-K-T": [
+[
+"cooked",
+5
+]
+],
+"B-E-D": [
+[
+"bird",
+6
+],
+[
+"beard",
+4
+]
+],
+"U-P": [
+[
+"up a",
+15
+]
+],
+"S-E-G-R-S": [
+[
+"cigars",
+3
+]
+],
+"T-U-B-E": [
+[
+"to believe",
+5
+]
+],
+"G-O-D-S": [
+[
+"gods",
+3
+]
+],
+"R-E-N-A": [
+[
+"arena",
+5
+]
+],
+"F-R-A": [
+[
+"fray",
+4
+]
+],
+"K-R-E-S": [
+[
+"crest",
+3
+]
+],
+"B-OE-E-SH": [
+[
+"boyish",
+4
+]
+],
+"E-F-U-D": [
+[
+"if you'd",
+3
+]
+],
+"J-E-M": [
+[
+"jim",
+33
+]
+],
+"A-R": [
+[
+"where a",
+5
+]
+],
+"B-E-NT": [
+[
+"bent",
+11
+]
+],
+"P-A-L-S": [
+[
+"pals",
+4
+]
+],
+"K-A-L": [
+[
+"carl",
+5
+]
+],
+"J-O": [
+[
+"joe",
+3
+]
+],
+"B-K-S": [
+[
+"books",
+88
+]
+],
+"TH-A-D-A": [
+[
+"that day",
+9
+]
+],
+"M-A-N": [
+[
+"a man",
+12
+],
+[
+"maine",
+5
+]
+],
+"N-U-O-L-E-N-S": [
+[
+"new orleans",
+4
+]
+],
+"TH-E-S-MN": [
+[
+"these men",
+6
+]
+],
+"K-P": [
+[
+"keep a",
+6
+],
+[
+"company a",
+3
+]
+],
+"B-O-LD": [
+[
+"bald",
+5
+]
+],
+"M-A-R-K-A": [
+[
+"america",
+31
+]
+],
+"E-L-S-O_-TH": [
+[
+"ellsworth",
+21
+]
+],
+"P-E-T-R": [
+[
+"peter",
+15
+]
+],
+"'-U-S": [
+[
+"who's",
+5
+]
+],
+"F-L-I-'": [
+[
+"flying",
+8
+]
+],
+"M-A-G-R-E-T": [
+[
+"margaret",
+5
+]
+],
+"V": [
+[
+"have a",
+42
+],
+[
+"have an",
+5
+]
+],
+"N-TH-U-U": [
+[
+"in the world",
+16
+],
+[
+"world",
+4
+]
+],
+"K-S-'": [
+[
+"considering",
+13
+]
+],
+"'-U-E-R-L-D": [
+[
+"whirled",
+3
+]
+],
+"P-E-P-S": [
+[
+"people's",
+13
+]
+],
+"K-P-S": [
+[
+"keeps",
+7
+],
+[
+"company's",
+3
+]
+],
+"O-NT-V": [
+[
+"won't have",
+3
+]
+],
+"O-E-M": [
+[
+"of him",
+5
+]
+],
+"B-I-T-'": [
+[
+"biting",
+3
+]
+],
+"U-'-A-D": [
+[
+"you had",
+4
+]
+],
+"S-K-'": [
+[
+"asking",
+19
+]
+],
+"F-M-E": [
+[
+"for me",
+11
+]
+],
+"N-U-N-O": [
+[
+"none of",
+4
+]
+],
+"TH-A-S-N": [
+[
+"that's not",
+3
+]
+],
+"S-F-R-E-S": [
+[
+"self respect",
+3
+]
+],
+"J-A-K-E": [
+[
+"jacky",
+3
+]
+],
+"S-TD-E-'": [
+[
+"studying",
+16
+]
+],
+"T-U-V": [
+[
+"to have",
+39
+],
+[
+"to have a",
+6
+]
+],
+"G-S": [
+[
+"goods",
+124
+]
+],
+"TH-E-T-E-S": [
+[
+"thirties",
+5
+],
+[
+"theaters",
+3
+]
+],
+"B-L-AU-SS": [
+[
+"blouses",
+3
+]
+],
+"R-K-MN": [
+[
+"workmen",
+8
+]
+],
+"U-U-S": [
+[
+"world's",
+12
+]
+],
+"F-U-L-'": [
+[
+"fooling",
+4
+]
+],
+"F-O-T-E": [
+[
+"forty",
+14
+]
+],
+"M-O-E": [
+[
+"molly",
+12
+]
+],
+"A-L-N": [
+[
+"allen",
+9
+]
+],
+"S-T-R-A-NT": [
+[
+"strained",
+4
+]
+],
+"F-R-E-L-S": [
+[
+"frills",
+3
+]
+],
+"R-I-D-R": [
+[
+"ryder",
+4
+]
+],
+"P-E-NT-L-TN": [
+[
+"pendleton",
+14
+]
+],
+"B-L-AU-S-D": [
+[
+"bloused",
+3
+]
+],
+"U-NG-MN": [
+[
+"young men",
+10
+]
+],
+"R-U-B-D": [
+[
+"rubbed",
+3
+]
+],
+"I-M-N": [
+[
+"i am not",
+10
+],
+[
+"i'm not",
+5
+]
+],
+"J-E-M-E": [
+[
+"jimmy",
+18
+]
+],
+"AU-O-TH": [
+[
+"out of the",
+14
+]
+],
+"O-N-CH": [
+[
+"on which",
+7
+],
+[
+"which",
+5
+]
+],
+"U-TH-S": [
+[
+"other's",
+5
+]
+],
+"D-R-O-'": [
+[
+"drawing",
+13
+]
+],
+"N-M-I-N": [
+[
+"in mind",
+6
+]
+],
+"E-L-S-O_-TH-S": [
+[
+"ellsworth's",
+5
+]
+],
+"NT-E": [
+[
+"until a",
+3
+]
+],
+"F-TH-S": [
+[
+"for those",
+6
+]
+],
+"R-O-LD": [
+[
+"rolled",
+3
+]
+],
+"D-E-G-B-E": [
+[
+"digby",
+4
+]
+],
+"S-E-CH-T": [
+[
+"searched",
+3
+]
+],
+"N-B": [
+[
+"not be",
+5
+]
+],
+"A-CH-A_": [
+[
+"archway",
+3
+]
+],
+"NK-I-D": [
+[
+"inquired",
+10
+]
+],
+"D-O-U-N-O": [
+[
+"do you know",
+4
+]
+],
+"T-U-N-U": [
+[
+"to new",
+4
+]
+],
+"'-A-V-N": [
+[
+"haven",
+7
+]
+],
+"L-U-M-E-S": [
+[
+"loomis",
+3
+]
+],
+"T-R-E-M-B-D": [
+[
+"trembled",
+3
+]
+],
+"B-U-S": [
+[
+"boost",
+3
+]
+],
+"U-V": [
+[
+"you've",
+14
+]
+],
+"S-P": [
+[
+"a special",
+3
+]
+],
+"E-S-K-P-'": [
+[
+"escaping",
+3
+]
+],
+"O-P-O-D": [
+[
+"opposed",
+4
+]
+],
+"T-U-K-TH": [
+[
+"took the",
+5
+]
+],
+"A-B-V-TH": [
+[
+"above the",
+3
+]
+],
+"L-E-D": [
+[
+"led",
+14
+]
+],
+"M-A-K-S": [
+[
+"makes a",
+8
+],
+[
+"marcus",
+6
+]
+],
+"T-R-E-F-E-TH-N": [
+[
+"trefethen",
+35
+]
+],
+"D-O-S": [
+[
+"dollars",
+22
+]
+],
+"F-E-S-TH-'": [
+[
+"first thing",
+7
+]
+],
+"A-S-L-NG-A-S": [
+[
+"as long as",
+3
+]
+],
+"K-P-TN": [
+[
+"compton",
+3
+]
+],
+"S-AU-U-E-S-TN": [
+[
+"southwestern",
+11
+]
+],
+"P-R-E-S-NT": [
+[
+"present",
+3
+]
+],
+"B-O-NT-S": [
+[
+"bonds",
+17
+]
+],
+"P-OE-T-S": [
+[
+"poet's",
+7
+]
+],
+"S-L-E-D": [
+[
+"slid",
+4
+]
+],
+"P-A-S-J-E-S": [
+[
+"passengers",
+5
+]
+],
+"F-R": [
+[
+"for our",
+13
+]
+],
+"T-U-S-E-L": [
+[
+"to sell",
+7
+]
+],
+"CH-E-E": [
+[
+"chilly",
+3
+]
+],
+"K-L-R-S": [
+[
+"clerks",
+13
+]
+],
+"T-U-L-U": [
+[
+"to look",
+9
+],
+[
+"look",
+3
+]
+],
+"S-P-A-S-T": [
+[
+"spaced",
+4
+]
+],
+"U-O-SH-'-TN": [
+[
+"washington",
+3
+]
+],
+"T-R-E-F-E-TH-N-S": [
+[
+"trefethen's",
+4
+]
+],
+"F-K-V-E": [
+[
+"effectively",
+6
+]
+],
+"T-U-S-K-L": [
+[
+"to school",
+3
+]
+],
+"S-A-R-A": [
+[
+"sarah",
+4
+]
+],
+"O-NT-B": [
+[
+"won't be",
+3
+]
+],
+"'-U-A-TD": [
+[
+"awaited",
+3
+]
+],
+"'-U-S-S": [
+[
+"husband's",
+5
+]
+],
+"E-N-I-O-S": [
+[
+"when i was",
+7
+]
+],
+"TH-O-LD": [
+[
+"the old",
+3
+]
+],
+"V-A-S-E-T-E": [
+[
+"varsity",
+4
+]
+],
+"J-E-MN-E": [
+[
+"germany",
+4
+]
+],
+"D-O-N-S-E": [
+[
+"don't see",
+5
+]
+],
+"R-U-TH-V-N": [
+[
+"ruthven",
+4
+]
+],
+"F-U": [
+[
+"for your",
+31
+]
+],
+"T-U-S-A": [
+[
+"to say",
+4
+]
+],
+"E-SH-D-V": [
+[
+"he should have",
+3
+]
+],
+"NT-TH": [
+[
+"there",
+3
+],
+[
+"and there",
+3
+]
+],
+"T-U-B-D": [
+[
+"to bed",
+4
+]
+],
+"E-T-E-N-^-T": [
+[
+"he turned",
+7
+]
+],
+"F-'-M-O-M": [
+[
+"for a moment",
+3
+]
+],
+"B-E-S": [
+[
+"beast",
+3
+],
+[
+"beliefs",
+3
+]
+],
+"G-A-E-M": [
+[
+"gave him",
+4
+]
+],
+"E-R-E-D": [
+[
+"he read",
+6
+]
+],
+"M-E-S-'": [
+[
+"missing",
+13
+]
+],
+"G-R-E-P": [
+[
+"grip",
+7
+]
+],
+"B-O-T": [
+[
+"boat",
+21
+],
+[
+"bought a",
+4
+]
+],
+"R-A-SS": [
+[
+"races",
+3
+]
+],
+"TH-R-U-S": [
+[
+"through his",
+4
+]
+],
+"'-O-M-S": [
+[
+"homes",
+23
+]
+],
+"R-E-CH-R-D": [
+[
+"richard",
+3
+]
+],
+"E-L-E-T": [
+[
+"elliot",
+10
+]
+],
+"T-U-R-E-T": [
+[
+"to return",
+5
+]
+],
+"E-F-TH-S": [
+[
+"if there is",
+7
+],
+[
+"if there's",
+3
+]
+],
+"E-TH-M-E": [
+[
+"with me",
+6
+]
+],
+"S-N-E-K-T": [
+[
+"sneaked",
+3
+]
+],
+"A-D-R-D": [
+[
+"addressed",
+4
+]
+],
+"N-TH-U-A": [
+[
+"in the way",
+6
+]
+],
+"D-O-N-U": [
+[
+"don't you",
+3
+]
+],
+"O-^-SH-A-D-O-D": [
+[
+"overshadowed",
+3
+]
+],
+"B-O-T-S": [
+[
+"boats",
+8
+]
+],
+"'-A-NT-LD": [
+[
+"handled",
+7
+]
+],
+"F-E-S-K-L-A-S": [
+[
+"first class",
+5
+]
+],
+"TH-U-TH": [
+[
+"the other",
+11
+]
+],
+"S-P-^-R-S": [
+[
+"speaker's",
+4
+]
+],
+"G": [
+[
+"a good",
+16
+]
+],
+"MN-E-S": [
+[
+"manners",
+7
+],
+[
+"money's",
+5
+]
+],
+"CH-O-P-S": [
+[
+"chops",
+6
+]
+],
+"R-E-K-'": [
+[
+"wrecking",
+3
+]
+],
+"AU-O": [
+[
+"out of",
+4
+]
+],
+"B-O-N-TH": [
+[
+"beyond the",
+3
+]
+],
+"CH-O-K-T": [
+[
+"choked",
+4
+]
+],
+"S-E-LD-N": [
+[
+"selden",
+6
+]
+],
+"E-L-E-T-S": [
+[
+"elliot's",
+3
+]
+],
+"E-L-V-N": [
+[
+"eleven",
+4
+]
+],
+"P-R-E-NT-S": [
+[
+"prints",
+5
+]
+],
+"S-M-O-TH": [
+[
+"some of the",
+19
+]
+],
+"TN-R-S": [
+[
+"dinners",
+5
+]
+],
+"MN-E-O-TH-M": [
+[
+"many of them",
+3
+]
+],
+"K-T-S": [
+[
+"country's",
+3
+]
+],
+"V-A-N": [
+[
+"van",
+24
+]
+],
+"A-TN": [
+[
+"arden",
+4
+]
+],
+"M-O-V-L-S": [
+[
+"marvellous",
+6
+]
+],
+"G-A-T-S": [
+[
+"gates",
+9
+]
+],
+"K-E-K-T": [
+[
+"kicked",
+9
+]
+],
+"A-B": [
+[
+"about a",
+16
+],
+[
+"about an",
+3
+]
+],
+"CH-O-P": [
+[
+"chop",
+4
+]
+],
+"D-U-U": [
+[
+"do your",
+3
+]
+],
+"I-G-T": [
+[
+"i got",
+9
+]
+],
+"I-E-NT": [
+[
+"i went",
+9
+]
+],
+"T-U-N-O": [
+[
+"to know",
+22
+]
+],
+"E-LD": [
+[
+"yelled",
+3
+]
+],
+"D-E-N-R": [
+[
+"dinner",
+3
+]
+],
+"J-U-S": [
+[
+"just a",
+7
+]
+],
+"K-A-P-TN-S": [
+[
+"captain's",
+5
+]
+],
+"F-TN-S": [
+[
+"fortunes",
+4
+]
+],
+"D-O-N": [
+[
+"don",
+8
+],
+[
+"do not",
+7
+]
+],
+"U-K-T": [
+[
+"you can't",
+3
+]
+],
+"U-U-TH-I-L": [
+[
+"worth while",
+7
+]
+],
+"S-T-A-K": [
+[
+"stake",
+5
+]
+],
+"SH-E-L-S": [
+[
+"shells",
+3
+]
+],
+"K-O": [
+[
+"co",
+3
+]
+],
+"E-L": [
+[
+"l",
+4
+],
+[
+"he'll",
+3
+]
+],
+"O-LD": [
+[
+"an old",
+4
+]
+],
+"A-D-A-P-D": [
+[
+"adapted",
+3
+]
+],
+"E-L-M": [
+[
+"elm",
+5
+]
+],
+"U-A-L-S": [
+[
+"wales",
+4
+]
+],
+"S-M-O-K-'": [
+[
+"smoking",
+7
+]
+],
+"'-U-E-L-S": [
+[
+"wheels",
+7
+]
+],
+"'-E-R-E-'": [
+[
+"hurrying",
+5
+]
+],
+"I-K-A-M": [
+[
+"i came",
+3
+]
+],
+"A-SH": [
+[
+"ash",
+4
+]
+],
+"T-U-S-T-A": [
+[
+"to stay",
+3
+]
+],
+"T-'-O-M": [
+[
+"at home",
+14
+],
+[
+"home",
+6
+]
+],
+"CH-E-K-S": [
+[
+"cheeks",
+5
+]
+],
+"B-U": [
+[
+"by you",
+4
+]
+],
+"S-T": [
+[
+"is it",
+5
+]
+],
+"NT-I-L": [
+[
+"and i'll",
+3
+]
+],
+"R-E-MN-TH-A": [
+[
+"remember that",
+5
+]
+],
+"'-A-F-TH": [
+[
+"half the",
+9
+]
+],
+"S-K-O-T": [
+[
+"scott",
+3
+]
+],
+"O-T-U": [
+[
+"what you",
+3
+]
+],
+"TH-R-U-U": [
+[
+"through your",
+4
+]
+],
+"I-K-O-T": [
+[
+"i caught",
+3
+],
+[
+"i called",
+3
+]
+],
+"M-A-L-E": [
+[
+"marley",
+9
+]
+],
+"S-K-R-U-J": [
+[
+"scrooge",
+89
+]
+],
+"M-A-L-E-S": [
+[
+"marley's",
+9
+]
+],
+"'-A-M-L-T-S": [
+[
+"hamlet's",
+6
+]
+],
+"TH-D": [
+[
+"there would",
+3
+]
+],
+"P-O-N-S": [
+[
+"upon his",
+17
+]
+],
+"F-O-G": [
+[
+"fog",
+4
+]
+],
+"S-K-R-U-J-S": [
+[
+"scrooge's",
+7
+]
+],
+"S-P-A-K-LD": [
+[
+"sparkled",
+3
+]
+],
+"I-M-SH-U": [
+[
+"i am sure",
+5
+]
+],
+"MN-NT": [
+[
+"men and",
+5
+]
+],
+"T-U-O-P-N": [
+[
+"to open",
+4
+]
+],
+"F-A-NT-E": [
+[
+"faintly",
+3
+]
+],
+"D-N": [
+[
+"down a",
+3
+]
+],
+"S-K-R-S-E": [
+[
+"scarcely",
+10
+]
+],
+"D-R-E-R-E": [
+[
+"dreary",
+4
+]
+],
+"O-S-O": [
+[
+"also a",
+6
+]
+],
+"S-T-E-K-'": [
+[
+"sticking",
+6
+]
+],
+"N-U-T-S": [
+[
+"nuts",
+5
+]
+],
+"O-B-L-D": [
+[
+"obliged",
+10
+]
+],
+"O-^-T": [
+[
+"over it",
+3
+]
+],
+"F-L-R-S": [
+[
+"floors",
+3
+]
+],
+"K-L-A-S-P-T": [
+[
+"clasped",
+5
+]
+],
+"R-O-T": [
+[
+"wrought",
+3
+]
+],
+"N-L-A-F": [
+[
+"in life",
+12
+]
+],
+"J-A-K-B": [
+[
+"jacob",
+5
+]
+],
+"T-A-K": [
+[
+"take a",
+21
+],
+[
+"take an",
+3
+]
+],
+"O-R-N": [
+[
+"or not",
+4
+]
+],
+"S-E-X-T-E": [
+[
+"sixty",
+4
+]
+],
+"O-MN": [
+[
+"of men",
+7
+]
+],
+"K-S-E": [
+[
+"can see",
+3
+]
+],
+"MN-E": [
+[
+"many a",
+10
+]
+],
+"V-E-S-E-T-S": [
+[
+"visits",
+6
+]
+],
+"CH-I-M-S": [
+[
+"chimes",
+3
+]
+],
+"A-T": [
+[
+"eight",
+28
+]
+],
+"E-TH-O-T": [
+[
+"he thought",
+6
+]
+],
+"K-O_-T-E-S": [
+[
+"quarters",
+7
+]
+],
+"S-O-L-NG": [
+[
+"so long",
+3
+]
+],
+"K-E-TN-S": [
+[
+"curtains",
+7
+]
+],
+"I-T-E": [
+[
+"i tell",
+3
+]
+],
+"NT-I-M": [
+[
+"and i am",
+3
+]
+],
+"N-AU": [
+[
+"now a",
+5
+]
+],
+"P-T-S": [
+[
+"parts",
+39
+],
+[
+"parts of",
+3
+]
+],
+"T-N-E": [
+[
+"at any",
+3
+]
+],
+"E-R-N": [
+[
+"were not",
+10
+]
+],
+"R-O-B": [
+[
+"robe",
+6
+]
+],
+"O-LD-M-A-N-S": [
+[
+"old man's",
+4
+]
+],
+"'-O-P-S": [
+[
+"hopes",
+16
+]
+],
+"CH-E-K": [
+[
+"cheek",
+3
+]
+],
+"L-E-U-S": [
+[
+"let us",
+6
+]
+],
+"U-I-NT-'": [
+[
+"winding",
+4
+]
+],
+"T-R-O-T-'": [
+[
+"trotting",
+3
+]
+],
+"T-U-U-TH": [
+[
+"to other",
+3
+]
+],
+"SH-E-D-S": [
+[
+"sheds",
+4
+]
+],
+"N-^-'": [
+[
+"entering",
+4
+]
+],
+"D-E-S-K-S": [
+[
+"desks",
+8
+]
+],
+"B-K-A": [
+[
+"became a",
+4
+]
+],
+"K-R-A-K-T": [
+[
+"cracked",
+3
+]
+],
+"N-A-K-D": [
+[
+"naked",
+3
+]
+],
+"T-U-B-R": [
+[
+"to bring",
+4
+]
+],
+"B-E-NT-'": [
+[
+"bending",
+4
+]
+],
+"E-TH-'-E-M": [
+[
+"with him",
+16
+]
+],
+"P-O-N-TH": [
+[
+"upon the",
+34
+]
+],
+"K-A-K": [
+[
+"cake",
+10
+],
+[
+"a cake",
+4
+]
+],
+"S-A-M-TM": [
+[
+"same time",
+8
+]
+],
+"S-E-N-'": [
+[
+"sending",
+22
+]
+],
+"TH-A-K": [
+[
+"that can",
+4
+]
+],
+"S-P-E-K-T-R": [
+[
+"spectre",
+6
+]
+],
+"F-N-E-'": [
+[
+"for anything",
+3
+]
+],
+"A-P-R-N-SS": [
+[
+"appearances",
+3
+]
+],
+"B-L-A-S": [
+[
+"blaze",
+3
+]
+],
+"'-U-N-O-S": [
+[
+"who knows",
+4
+]
+],
+"G-R-O-V": [
+[
+"grove",
+3
+]
+],
+"R-F-L-D": [
+[
+"reflected",
+6
+]
+],
+"G-E-S": [
+[
+"geese",
+3
+]
+],
+"P-O-N-TH-S": [
+[
+"upon this",
+4
+]
+],
+"K-R-A-T-CH-E-T": [
+[
+"cratchit",
+11
+]
+],
+"K-R-A-T-CH-E-T-S": [
+[
+"cratchits",
+4
+],
+[
+"cratchit's",
+3
+]
+],
+"K-O-N-E-S": [
+[
+"corners",
+3
+]
+],
+"B-O-B-S": [
+[
+"bob's",
+3
+]
+],
+"G-A-L-A-NT-E": [
+[
+"gallantly",
+3
+]
+],
+"E-N-D": [
+[
+"yearned",
+3
+]
+],
+"K-R-E-S-D-A": [
+[
+"christmas day",
+3
+]
+],
+"B-O-B": [
+[
+"bob",
+46
+]
+],
+"M-A-TH-A": [
+[
+"martha",
+6
+]
+],
+"A-S-G-A-S": [
+[
+"as good as",
+4
+]
+],
+"E-T-O": [
+[
+"he told",
+8
+]
+],
+"P-O-S-T-S": [
+[
+"posts",
+11
+]
+],
+"B-L-A-S-'": [
+[
+"blazing",
+3
+]
+],
+"B-A-K-'": [
+[
+"baking",
+5
+]
+],
+"T-U-G-R-E-T": [
+[
+"to greet",
+4
+]
+],
+"U-E-CH-S": [
+[
+"witches",
+4
+]
+],
+"'-O-L-E-D-A-S": [
+[
+"holidays",
+6
+]
+],
+"O-TM": [
+[
+"of time",
+5
+]
+],
+"R-E-MN-D": [
+[
+"remained",
+3
+]
+],
+"D-U-M": [
+[
+"doom",
+3
+]
+],
+"I-U-^-S-TN": [
+[
+"i understand",
+3
+]
+],
+"V-N": [
+[
+"have not",
+11
+]
+],
+"NT-E-TH": [
+[
+"and with",
+4
+]
+],
+"T-U-'-E-R": [
+[
+"to hear",
+5
+]
+],
+"CH-E-L-S": [
+[
+"children's",
+5
+]
+],
+"S-E-TD": [
+[
+"seated",
+5
+]
+],
+"I-T-O-E-M": [
+[
+"i told him",
+9
+]
+],
+"B-A-B-L": [
+[
+"be able",
+12
+],
+[
+"be able to",
+5
+]
+],
+"CH-E-CH-A-D": [
+[
+"churchyard",
+7
+]
+],
+"U-E-D-S": [
+[
+"weeds",
+3
+]
+],
+"G-R-A-V-S": [
+[
+"graves",
+3
+]
+],
+"I-L-N": [
+[
+"i will not",
+6
+]
+],
+"I-M-S": [
+[
+"i must",
+6
+]
+],
+"N-M-A": [
+[
+"in my",
+8
+]
+],
+"L-E-S-N-S": [
+[
+"lessons",
+5
+]
+],
+"I-M-A": [
+[
+"i may",
+4
+]
+],
+"G-A-R-M-S": [
+[
+"garments",
+5
+]
+],
+"K-D-U": [
+[
+"can do",
+7
+]
+],
+"I-TD": [
+[
+"i did",
+7
+]
+],
+"M-E-L-R": [
+[
+"miller",
+6
+]
+],
+"D-A-SH": [
+[
+"a dash",
+3
+],
+[
+"dash",
+3
+]
+],
+"F-R-E-D": [
+[
+"fred",
+4
+]
+],
+"N-I-N": [
+[
+"nine",
+14
+]
+],
+"T-U-R-A-S": [
+[
+"to raise",
+5
+]
+],
+"N-E-U-TH": [
+[
+"any other",
+27
+]
+],
+"V-E-F-EU": [
+[
+"very few",
+3
+]
+],
+"N-O-L-N": [
+[
+"nolan",
+48
+]
+],
+"D-E-V-AU-R-'": [
+[
+"devouring",
+3
+]
+],
+"L-S-E": [
+[
+"will see",
+9
+]
+],
+"F-E-L-P": [
+[
+"philip",
+4
+]
+],
+"A-S-B-N": [
+[
+"has been",
+38
+]
+],
+"B-E-N-D": [
+[
+"burned",
+4
+]
+],
+"SH-O-'": [
+[
+"showing",
+17
+]
+],
+"K-P-E-D": [
+[
+"copied",
+3
+]
+],
+"U-N-D-A": [
+[
+"one day",
+13
+]
+],
+"J-E-F-R-S-N": [
+[
+"jefferson",
+4
+]
+],
+"S-T-U": [
+[
+"is to",
+4
+]
+],
+"F-O-T": [
+[
+"fort",
+5
+]
+],
+"A-TM-S": [
+[
+"items",
+8
+],
+[
+"adams",
+5
+]
+],
+"T-U-F-E-L": [
+[
+"to fill",
+4
+]
+],
+"EU-N-I-^-T-S-T-S": [
+[
+"united states",
+17
+]
+],
+"M-O-G-N": [
+[
+"morgan",
+7
+]
+],
+"O-L-E-N-S": [
+[
+"orleans",
+5
+]
+],
+"'-O-R-SS": [
+[
+"horses",
+13
+]
+],
+"N-A": [
+[
+"nay",
+4
+]
+],
+"J-O-J": [
+[
+"george",
+11
+]
+],
+"T-A-K-TH": [
+[
+"take the",
+17
+]
+],
+"TH-E-V": [
+[
+"they have",
+26
+]
+],
+"SH-O": [
+[
+"shaw",
+6
+]
+],
+"I-V-B-N": [
+[
+"i have been",
+4
+]
+],
+"N-E-K-I": [
+[
+"any kind",
+5
+]
+],
+"T-A-K-K-A": [
+[
+"take care",
+9
+]
+],
+"NT-I": [
+[
+"and i",
+4
+]
+],
+"T-^-M-E-TD": [
+[
+"transmitted",
+3
+]
+],
+"S-M-O": [
+[
+"some of",
+18
+]
+],
+"S-N-E-O-L-A-T-E": [
+[
+"sooner or later",
+4
+]
+],
+"N-A-P-O-L-E-N-S": [
+[
+"napoleon's",
+6
+]
+],
+"F-E-L-E-P-S": [
+[
+"phillips",
+5
+]
+],
+"N-O-L-N-S": [
+[
+"nolan's",
+8
+]
+],
+"P-B-D": [
+[
+"published",
+6
+]
+],
+"'-A-TH": [
+[
+"hath",
+4
+]
+],
+"B-R-E-TH": [
+[
+"breathe",
+3
+]
+],
+"T-I-T-S": [
+[
+"titles",
+7
+],
+[
+"tights",
+3
+]
+],
+"S-M-'-L-S": [
+[
+"something else",
+3
+]
+],
+"TH-E-K-A-M": [
+[
+"they came",
+3
+]
+],
+"S-E-V-D-A-S": [
+[
+"several days",
+5
+]
+],
+"V-E-S-L-S": [
+[
+"vessels",
+6
+]
+],
+"G-E": [
+[
+"gear",
+5
+],
+[
+"give a",
+3
+],
+[
+"given a",
+3
+]
+],
+"M-SH-U": [
+[
+"am sure",
+6
+]
+],
+"D-A-N-SS": [
+[
+"dances",
+9
+]
+],
+"TH-E-T-E-N": [
+[
+"thirteen",
+7
+]
+],
+"P-L-A-SS": [
+[
+"places",
+23
+]
+],
+"TH-E-S-R": [
+[
+"these are",
+5
+]
+],
+"M-A-S-K": [
+[
+"mask",
+4
+]
+],
+"U-N-O-R": [
+[
+"one of our",
+8
+]
+],
+"P-E-K-T": [
+[
+"picked",
+9
+]
+],
+"L-O-TD": [
+[
+"loaded",
+5
+]
+],
+"TH-K-A-P-TN": [
+[
+"the captain",
+3
+]
+],
+"L-E-PNT-S": [
+[
+"legends",
+3
+]
+],
+"T-O-M-E": [
+[
+"told me",
+3
+]
+],
+"E-T-U-K": [
+[
+"he took",
+7
+]
+],
+"P-O-T-R": [
+[
+"porter",
+3
+]
+],
+"E-S-E-X": [
+[
+"essex",
+3
+]
+],
+"M-A-D-S-N": [
+[
+"madison",
+3
+]
+],
+"A-T-E": [
+[
+"eighty",
+5
+]
+],
+"I-V-S-E-N": [
+[
+"i have seen",
+3
+]
+],
+"N-E-'-L-S": [
+[
+"anything else",
+7
+]
+],
+"D-R-O-E-NG-S": [
+[
+"drawings",
+3
+]
+],
+"E-CH-D-A": [
+[
+"each day",
+5
+]
+],
+"K-T-E": [
+[
+"can tell",
+5
+]
+],
+"E-G-R-U": [
+[
+"he grew",
+3
+]
+],
+"F-M-TH-TM": [
+[
+"from the time",
+3
+]
+],
+"O-S-G-E": [
+[
+"was given",
+3
+]
+],
+"N-U-N-O-TH": [
+[
+"none of the",
+3
+]
+],
+"U-E-G-T": [
+[
+"we got",
+3
+]
+],
+"N-E-G-R-O-S": [
+[
+"negroes",
+3
+]
+],
+"V-O-N": [
+[
+"vaughan",
+5
+]
+],
+"O-N-CH-E": [
+[
+"on which he",
+3
+]
+],
+"T-U-R": [
+[
+"to our",
+31
+],
+[
+"our",
+4
+]
+],
+"E-L-F-T": [
+[
+"he left",
+4
+]
+],
+"A-S-N-V": [
+[
+"has never",
+3
+]
+],
+"MN-TN-S": [
+[
+"mountains",
+15
+]
+],
+"TH-E-L": [
+[
+"they will",
+24
+]
+],
+"N-O-M-A-T": [
+[
+"no matter",
+10
+]
+],
+"T-N-I": [
+[
+"at night",
+6
+]
+],
+"I-K-T-E": [
+[
+"i can tell",
+4
+]
+],
+"G-E-T-'": [
+[
+"getting a",
+8
+]
+],
+"O-N-E-S": [
+[
+"honors",
+4
+]
+],
+"A-S-O-SH-S": [
+[
+"associations",
+4
+]
+],
+"TH-A-TH": [
+[
+"that their",
+8
+]
+],
+"T-'-TM": [
+[
+"at a time",
+3
+]
+],
+"T-I_-S": [
+[
+"twice a",
+5
+]
+],
+"B-A-R-'": [
+[
+"bearing",
+6
+]
+],
+"A-P-R-NT-E": [
+[
+"apparently",
+9
+]
+],
+"T-U-S-E-V": [
+[
+"to serve",
+4
+]
+],
+"'-O-M": [
+[
+"a home",
+3
+]
+],
+"I-A-M": [
+[
+"i am",
+3
+]
+],
+"'-E-R-S": [
+[
+"here is",
+3
+]
+],
+"B-SH-U": [
+[
+"be sure",
+9
+]
+],
+"B-F": [
+[
+"before a",
+4
+]
+],
+"D-A-N-F-R-TH": [
+[
+"danforth",
+4
+]
+],
+"T-O-E-M": [
+[
+"told him",
+5
+]
+],
+"F-U-R-S": [
+[
+"furs",
+16
+]
+],
+"D-A-V-E-D": [
+[
+"david",
+7
+]
+],
+"D-U-U-TH-'": [
+[
+"do you think",
+3
+]
+],
+"R-A-NK-S": [
+[
+"ranks",
+4
+]
+],
+"T-U-U-S": [
+[
+"to us",
+3
+]
+],
+"I-R-E-D": [
+[
+"i read",
+4
+]
+],
+"T-A-S-B-N": [
+[
+"it has been",
+5
+]
+],
+"B-S-M-A-N": [
+[
+"business man",
+12
+],
+[
+"a business man",
+3
+]
+],
+"P-L-A-S-T": [
+[
+"placed",
+27
+]
+],
+"B-L-A-K-S-M-E-TH": [
+[
+"blacksmith",
+5
+]
+],
+"P-R-E-CH-T": [
+[
+"preached",
+3
+]
+],
+"F-E-S-P-L-A-S": [
+[
+"first place",
+3
+]
+],
+"D-E-T": [
+[
+"dirt",
+3
+]
+],
+"K-AU-S": [
+[
+"cows",
+4
+]
+],
+"B-F-E-M": [
+[
+"before him",
+3
+]
+],
+"D-I-N-'": [
+[
+"dining",
+4
+]
+],
+"O-L-A-F": [
+[
+"of life",
+20
+]
+],
+"F-E-L-O-MN": [
+[
+"fellow men",
+3
+]
+],
+"B-A-T-R": [
+[
+"barter",
+5
+],
+[
+"batter",
+3
+]
+],
+"TH-F-R-E-N-CH": [
+[
+"the french",
+4
+]
+],
+"T-I-S": [
+[
+"ties",
+4
+]
+],
+"R-O-B-R-T": [
+[
+"robert",
+6
+]
+],
+"T-R-A-M-A-R-K": [
+[
+"trade mark",
+4
+]
+],
+"D-A-L": [
+[
+"dale",
+6
+]
+],
+"K-R-E-D": [
+[
+"creed",
+5
+]
+],
+"E-S-T-B-D": [
+[
+"established a",
+4
+]
+],
+"P-R-O-D-U-S": [
+[
+"produce a",
+4
+]
+],
+"AU-O-TH-S": [
+[
+"out of this",
+4
+]
+],
+"S-I-T-S": [
+[
+"sights",
+6
+]
+],
+"R-O-TH-S-CH-I-LD": [
+[
+"rothschild",
+4
+]
+],
+"B-A-NK-'": [
+[
+"banking",
+17
+]
+],
+"R-E-NT-S": [
+[
+"rents",
+4
+]
+],
+"P-I-L-S": [
+[
+"piles",
+3
+]
+],
+"N-A-TH-N": [
+[
+"nathan",
+3
+]
+],
+"F-EU-R-S": [
+[
+"a few years",
+3
+]
+],
+"E-N-V": [
+[
+"he never",
+3
+]
+],
+"E-S-A": [
+[
+"isa",
+3
+]
+],
+"U-E-R-SH-U": [
+[
+"we are sure",
+3
+]
+],
+"O-R-M": [
+[
+"more",
+3
+]
+],
+"P-E-B-O-D-E": [
+[
+"peabody",
+3
+]
+],
+"M-E-CH-D-I-S-'": [
+[
+"merchandising",
+4
+]
+],
+"E-D-I-D": [
+[
+"he died",
+3
+]
+],
+"N-E-S-E-K": [
+[
+"next week",
+6
+]
+],
+"T-R-A-SS": [
+[
+"traces",
+4
+]
+],
+"F-E-NG-E-S": [
+[
+"fingers",
+3
+]
+],
+"P-I-N-E": [
+[
+"pioneer",
+5
+]
+],
+"D-E-K-R-A-D": [
+[
+"decorated",
+5
+]
+],
+"J-O-S-I-A": [
+[
+"josiah",
+3
+]
+],
+"U-E-J-U_-D": [
+[
+"wedgwood",
+5
+]
+],
+"A-T-E-SS": [
+[
+"artists",
+7
+]
+],
+"P-R-E-N-S": [
+[
+"principles",
+16
+]
+],
+"T-U-K": [
+[
+"took a",
+6
+]
+],
+"O-M": [
+[
+"or more",
+5
+]
+],
+"F-O-TH": [
+[
+"fourth",
+9
+]
+],
+"J-R-A-D": [
+[
+"girard",
+7
+]
+],
+"B-E-N-J-MN": [
+[
+"benjamin",
+5
+]
+],
+"E-B-O-T": [
+[
+"he bought",
+4
+]
+],
+"S-A-L-'": [
+[
+"sailing",
+6
+]
+],
+"F-U-D": [
+[
+"food",
+36
+]
+],
+"P-O-E": [
+[
+"polly",
+3
+]
+],
+"T-U-V-E-S-E-T": [
+[
+"to visit",
+5
+]
+],
+"A-NK-R": [
+[
+"anchor",
+6
+]
+],
+"E-R-O-T": [
+[
+"he wrote",
+3
+]
+],
+"N-I-NT-E": [
+[
+"ninety",
+3
+]
+],
+"K-U-P-R": [
+[
+"cooper",
+5
+]
+],
+"MN-F-'": [
+[
+"manufacturing",
+9
+]
+],
+"N-K-R-E-SS": [
+[
+"increases",
+3
+]
+],
+"'-U-TH-'": [
+[
+"who think",
+3
+]
+],
+"N-M-A-K-'": [
+[
+"in making",
+6
+]
+],
+"A-S-T-R": [
+[
+"astor",
+9
+]
+],
+"T-R-A-^-R-S": [
+[
+"traders",
+5
+]
+],
+"NT-A&'-N-S": [
+[
+"indians",
+15
+]
+],
+"S-E-T-E-S": [
+[
+"cities",
+40
+]
+],
+"P-O-L": [
+[
+"paul",
+9
+]
+],
+"N-M-A-R-K-A": [
+[
+"in america",
+3
+]
+],
+"F-L-E-T": [
+[
+"flirt",
+3
+]
+],
+"F-U-NT-S": [
+[
+"funds",
+17
+]
+],
+"'-EU-MN-N-A-T-R": [
+[
+"human nature",
+4
+]
+],
+"D-R-E-S-'": [
+[
+"dressing",
+5
+]
+],
+"SH-E-L": [
+[
+"she will",
+4
+]
+],
+"P-P-L-S": [
+[
+"pupils",
+8
+]
+],
+"U-A-N-M-A-K-R": [
+[
+"wanamaker",
+4
+]
+],
+"R-O-B-D": [
+[
+"robbed",
+5
+]
+],
+"B-I-R-S": [
+[
+"buyers",
+8
+]
+],
+"K-O-D": [
+[
+"cord",
+3
+]
+],
+"TH-E-O-NT": [
+[
+"they want",
+7
+]
+],
+"E-L-A-P-S-T": [
+[
+"elapsed",
+3
+]
+],
+"S-P-E-D": [
+[
+"experienced",
+4
+]
+],
+"M-A-T": [
+[
+"a matter",
+3
+]
+],
+"T-U-R-E-L-I-S": [
+[
+"to realize",
+6
+]
+],
+"P-A-S-'": [
+[
+"passing",
+14
+],
+[
+"passing as",
+3
+]
+],
+"S-T-A-N-F-R-D": [
+[
+"stanford",
+7
+]
+],
+"B-L": [
+[
+"built a",
+3
+]
+],
+"K-A-M-R-A": [
+[
+"camera",
+3
+]
+],
+"F-A-S-NT": [
+[
+"fastened",
+4
+]
+],
+"D-R-E-M-E-S": [
+[
+"dreamers",
+3
+]
+],
+"F-L-A-G-L-R": [
+[
+"flagler",
+4
+]
+],
+"R-B-'": [
+[
+"are being",
+5
+]
+],
+"U-N-O-TH-E-S": [
+[
+"one of these",
+8
+]
+],
+"S-E-D": [
+[
+"said a",
+3
+]
+],
+"M-K-O-M-E-K": [
+[
+"mccormick",
+8
+]
+],
+"'-U-K": [
+[
+"hook",
+4
+]
+],
+"K-O-B": [
+[
+"cobb",
+4
+]
+],
+"P-U-L-MN": [
+[
+"pullman",
+6
+]
+],
+"D-R-E-M-'": [
+[
+"dreaming",
+3
+]
+],
+"A-^-S-E-P-'": [
+[
+"anticipating",
+3
+]
+],
+"O-^-CH": [
+[
+"over which",
+3
+]
+],
+"T-U-L-E-N": [
+[
+"to learn",
+6
+]
+],
+"S-T-E-T-S-N": [
+[
+"stetson",
+9
+]
+],
+"D-S-A": [
+[
+"would say",
+4
+]
+],
+"K-R-A&'-TD": [
+[
+"created a",
+3
+]
+],
+"B-O-S": [
+[
+"boss",
+8
+]
+],
+"T-R-E-T-M": [
+[
+"treatment",
+10
+]
+],
+"M-P-L-S": [
+[
+"employes",
+4
+],
+[
+"employs",
+3
+]
+],
+"'-A-R-V-E-S-'": [
+[
+"harvesting",
+3
+]
+],
+"A-M-R": [
+[
+"armour",
+8
+]
+],
+"P-A-K-'": [
+[
+"packing",
+19
+]
+],
+"B-I-'": [
+[
+"buying",
+33
+],
+[
+"buying a",
+3
+]
+],
+"A-D-S": [
+[
+"yards",
+6
+],
+[
+"ads",
+3
+]
+],
+"'-O-G-S": [
+[
+"hogs",
+4
+]
+],
+"N-O-L-NG-E": [
+[
+"no longer",
+6
+]
+],
+"F-A-M-'": [
+[
+"farming",
+4
+]
+],
+"R-A-NK-E-N": [
+[
+"rankin",
+3
+]
+],
+"P-E-D-S": [
+[
+"periods",
+19
+]
+],
+"E-R-E-CH-T": [
+[
+"he reached",
+3
+]
+],
+"A-M": [
+[
+"aim",
+23
+]
+],
+"R-E-P-R": [
+[
+"reaper",
+5
+]
+],
+"E-N-E": [
+[
+"when he",
+3
+]
+],
+"T-U-N-V-E-S": [
+[
+"to invest",
+6
+]
+],
+"F-A-M-S": [
+[
+"farms",
+5
+]
+],
+"M": [
+[
+"more a",
+3
+]
+],
+"K-R-P-S": [
+[
+"crops",
+12
+]
+],
+"B-OE-S-NT": [
+[
+"boys and",
+3
+]
+],
+"N-V-NT-D": [
+[
+"invented",
+6
+]
+],
+"MN-F-D": [
+[
+"manufactured",
+3
+]
+],
+"A-K-R-S": [
+[
+"acres",
+7
+]
+],
+"R-E-L-E-S-T": [
+[
+"released",
+8
+]
+],
+"D-E-'": [
+[
+"dealing",
+13
+],
+[
+"deering",
+6
+]
+],
+"T-U-R-E-T-I": [
+[
+"to retire",
+3
+]
+],
+"T-U-R-E-L-E-V": [
+[
+"to relieve",
+5
+]
+],
+"S-P-E-N-'": [
+[
+"spinning",
+6
+]
+],
+"E-N-O-S": [
+[
+"he knows",
+7
+]
+],
+"F-E-L-O-S": [
+[
+"fellow's",
+6
+]
+],
+"K-A-N-D-A": [
+[
+"canada",
+8
+]
+],
+"N-O-TH-U-E-S": [
+[
+"northwest",
+3
+]
+],
+"T-U-K-A-E": [
+[
+"to carry",
+5
+]
+],
+"'-U-B-R-D": [
+[
+"hubbard",
+3
+]
+],
+"U-E-V-'-A-D": [
+[
+"we have had",
+7
+]
+],
+"P-L-A-S": [
+[
+"plays",
+9
+],
+[
+"place a",
+7
+]
+],
+"TH-E-D-S": [
+[
+"thirds",
+3
+]
+],
+"P-E-L-S-B-A-R-E": [
+[
+"pillsbury",
+4
+]
+],
+"T-U-'-O-LD": [
+[
+"to hold",
+9
+]
+],
+"A-F-T-E": [
+[
+"after he",
+3
+]
+],
+"O-N-O": [
+[
+"ona",
+3
+]
+],
+"F-N-E": [
+[
+"for any",
+4
+]
+],
+"CH-A-R-L-S": [
+[
+"charles",
+9
+]
+],
+"U-N-E-D": [
+[
+"you need",
+13
+]
+],
+"G-L-E-N": [
+[
+"glen",
+7
+]
+],
+"D-A-D": [
+[
+"dad",
+7
+]
+],
+"L-M-E-T": [
+[
+"will meet",
+10
+]
+],
+"'-E-L-P-U": [
+[
+"help you",
+4
+]
+],
+"O-R-K": [
+[
+"of work",
+9
+]
+],
+"TM-S": [
+[
+"time is",
+3
+]
+],
+"T-U-R-E-D": [
+[
+"to read",
+7
+]
+],
+"M-R-'": [
+[
+"marketing",
+7
+]
+],
+"U-L-A": [
+[
+"you like",
+8
+]
+],
+"B-A-K": [
+[
+"bark",
+4
+],
+[
+"bake a",
+3
+]
+],
+"B-A-S": [
+[
+"bass",
+4
+]
+],
+"'-D-O": [
+[
+"a dollar",
+4
+]
+],
+"A-M-'": [
+[
+"aiming",
+3
+]
+],
+"P-E": [
+[
+"per",
+13
+]
+],
+"B-A-K-R-E": [
+[
+"bakery",
+4
+]
+],
+"B-A-K-T": [
+[
+"baked",
+6
+]
+],
+"A-P-L-A-N": [
+[
+"airplane",
+8
+],
+[
+"an airplane",
+6
+]
+],
+"E-L-N-E-D": [
+[
+"he will need",
+3
+]
+],
+"TH-E-D-U": [
+[
+"they do",
+4
+]
+],
+"K-G-E-T": [
+[
+"can get",
+8
+],
+[
+"can get a",
+3
+]
+],
+"I-F-E-L": [
+[
+"i feel",
+4
+]
+],
+"T-U-S-E-L-E-K": [
+[
+"to select",
+3
+]
+],
+"T-U-'-NT-L": [
+[
+"to handle",
+3
+]
+],
+"F-'-U-M": [
+[
+"for whom",
+4
+]
+],
+"T-U-D-U-U": [
+[
+"to do your",
+4
+]
+],
+"T-U-F-E-N-SH": [
+[
+"to finish",
+3
+]
+],
+"TH-E-G-E-T": [
+[
+"they get",
+4
+]
+],
+"N-E-D-N": [
+[
+"need not",
+3
+]
+],
+"U-D-L-A": [
+[
+"you would like",
+4
+]
+],
+"TN-E": [
+[
+"tne",
+5
+]
+],
+"P-L-A-N-'": [
+[
+"planning",
+17
+],
+[
+"planning a",
+4
+]
+],
+"T-U-S-TD-E-'": [
+[
+"to studying",
+3
+]
+],
+"SH-D-L-A": [
+[
+"should like",
+10
+],
+[
+"should like to",
+4
+]
+],
+"P-A-R-E-S": [
+[
+"paris",
+8
+]
+],
+"S-P-T-E-M-B-R": [
+[
+"september",
+7
+]
+],
+"T-U-S-TD-E": [
+[
+"to study",
+5
+]
+],
+"N-E-S-M-E-T-'": [
+[
+"next meeting",
+3
+]
+],
+"N-E-TM": [
+[
+"any time",
+5
+]
+],
+"F-E-L-'": [
+[
+"filling",
+9
+]
+],
+"L-N-E-D": [
+[
+"will need",
+10
+]
+],
+"SH-'": [
+[
+"shipping",
+17
+]
+],
+"'-E-R-F-M-U": [
+[
+"hear from you",
+8
+]
+],
+"N-K-A-S": [
+[
+"in case",
+3
+]
+],
+"G-E-U": [
+[
+"give you",
+7
+],
+[
+"give you an",
+3
+]
+],
+"N-M-O": [
+[
+"in most",
+4
+]
+],
+"S-P-L-'": [
+[
+"spelling",
+3
+]
+],
+"O-U-TH-S": [
+[
+"of others",
+3
+]
+],
+"T-A-S-K-S": [
+[
+"tasks",
+9
+]
+],
+"TH-E-V-B-N": [
+[
+"they have been",
+5
+]
+],
+"T-R-A-T-S": [
+[
+"traits",
+19
+]
+],
+"F-M-U": [
+[
+"from your",
+9
+]
+],
+"I-G-E-T": [
+[
+"i get",
+9
+]
+],
+"J-A-M-S": [
+[
+"james",
+11
+]
+],
+"S-A-T-MN-'": [
+[
+"saturday morning",
+3
+]
+],
+"S-O-R-O-S": [
+[
+"sorrows",
+4
+]
+],
+"U-G-E-T": [
+[
+"you get",
+4
+]
+],
+"S-G-E": [
+[
+"is given",
+4
+]
+],
+"E-S-N": [
+[
+"he is not",
+3
+]
+],
+"R-K": [
+[
+"work a",
+5
+]
+],
+"R": [
+[
+"or",
+11
+],
+[
+"an hour",
+8
+],
+[
+"are a",
+5
+]
+],
+"T-U-S-A-V": [
+[
+"to save",
+6
+]
+],
+"B-A-R-S": [
+[
+"bars",
+3
+]
+],
+"'-O-T-E-L-S": [
+[
+"hotels",
+7
+]
+],
+"L-E": [
+[
+"lee",
+12
+],
+[
+"a letter",
+4
+],
+[
+"le",
+3
+]
+],
+"L-B-A-B-L": [
+[
+"will be able",
+5
+]
+],
+"U-V-'-A-D": [
+[
+"you have had",
+4
+]
+],
+"O-T-O": [
+[
+"auto",
+7
+]
+],
+"E-K-NT": [
+[
+"week end",
+6
+]
+],
+"L-O-R-A": [
+[
+"laura",
+3
+]
+],
+"V-'": [
+[
+"having a",
+11
+]
+],
+"E-R-S-E-D": [
+[
+"he received",
+4
+]
+],
+"T-U-T-A-K-TH": [
+[
+"to take the",
+3
+]
+],
+"J-O-B-R": [
+[
+"jobber",
+3
+]
+],
+"O-R-G-N": [
+[
+"oregon",
+3
+]
+],
+"D-O-L-S": [
+[
+"dolls",
+12
+]
+],
+"S-T-O-V-S": [
+[
+"stoves",
+4
+]
+],
+"M-A-R-E": [
+[
+"mary",
+32
+]
+],
+"SH-D-N": [
+[
+"should not",
+8
+]
+],
+"O-T-T-U-D-U": [
+[
+"what to do",
+4
+]
+],
+"P-T": [
+[
+"a part",
+3
+]
+],
+"T-E-E-M": [
+[
+"tell him",
+3
+]
+],
+"NT-A-S": [
+[
+"and has",
+7
+]
+],
+"S-L-E-P-S": [
+[
+"slips",
+3
+]
+],
+"M-A-K-'": [
+[
+"making a",
+11
+]
+],
+"T-TM-S": [
+[
+"at times",
+4
+]
+],
+"S-M-O-TH-S": [
+[
+"some of those",
+3
+]
+],
+"O-N-TH-M-R": [
+[
+"on the market",
+4
+]
+],
+"L-A-S-E-K": [
+[
+"last week",
+7
+]
+],
+"S-M-E-TH": [
+[
+"smith",
+23
+]
+],
+"SS-T-E": [
+[
+"sister's",
+4
+]
+],
+"M-O-D": [
+[
+"maude",
+5
+],
+[
+"maud",
+3
+]
+],
+"'-U-N-O": [
+[
+"who know",
+5
+]
+],
+"K-L-A-K": [
+[
+"clark",
+5
+]
+],
+"G-R-O-R-S": [
+[
+"growers",
+3
+]
+],
+"O-N-E-S-E-K": [
+[
+"of next week",
+3
+]
+],
+"T-E-'-M-E": [
+[
+"telling me",
+4
+]
+],
+"M-S-B-A-B-L": [
+[
+"must be able",
+5
+]
+],
+"K-G": [
+[
+"can go",
+5
+]
+],
+"A-S-E-T": [
+[
+"asset",
+5
+],
+[
+"an asset",
+3
+]
+],
+"S-O-A-S": [
+[
+"so as",
+4
+]
+],
+"R-I-S": [
+[
+"arise",
+7
+],
+[
+"writes",
+3
+]
+],
+"T-U-SH-O": [
+[
+"to show",
+4
+]
+],
+"K-D-E-S": [
+[
+"candies",
+3
+]
+],
+"K-O-D-A-K": [
+[
+"kodak",
+3
+]
+],
+"E-V-TM": [
+[
+"every time",
+5
+]
+],
+"'-O-P-TH-A": [
+[
+"hope that",
+7
+]
+],
+"R-S-E-D": [
+[
+"received a",
+5
+]
+],
+"A-P-R-L": [
+[
+"april",
+8
+],
+[
+"april 16",
+4
+]
+],
+"F-U-D-S": [
+[
+"foods",
+9
+]
+],
+"F-R-A-SS": [
+[
+"phrases",
+8
+]
+],
+"F-A-K-T-E-S": [
+[
+"factors",
+5
+]
+],
+"L-U-K-E": [
+[
+"lucky",
+5
+]
+],
+"TH-'-U-F": [
+[
+"thank you for",
+6
+]
+],
+"T-U-B-S": [
+[
+"tubs",
+3
+]
+],
+"B-D-S": [
+[
+"beds",
+7
+]
+],
+"O-^-U": [
+[
+"over your",
+4
+]
+],
+"P-R-E-T-E-R": [
+[
+"prettier",
+3
+]
+],
+"B-O-T-R-E": [
+[
+"bootery",
+4
+]
+],
+"U-A-R-'": [
+[
+"wearing",
+3
+],
+[
+"wearing a",
+3
+]
+],
+"K-U-T-S": [
+[
+"cuts",
+5
+]
+],
+"A-K-S-D": [
+[
+"accepted",
+15
+]
+],
+"U-A-G-N-S": [
+[
+"wagons",
+4
+]
+],
+"G-U-L-F": [
+[
+"gulf",
+3
+]
+],
+"T-U-R-E-D-U-S": [
+[
+"to reduce",
+5
+]
+],
+"B-T-E-TH-N": [
+[
+"better than",
+8
+]
+],
+"'-U-V-R": [
+[
+"hoover",
+3
+]
+],
+"L-A-K-S": [
+[
+"lakes",
+8
+]
+],
+"F-U-L-E": [
+[
+"for your letter",
+3
+]
+],
+"U-S-A": [
+[
+"you say",
+3
+]
+],
+"U-E-L-M-S": [
+[
+"williams",
+5
+]
+],
+"U-E-TH-TH": [
+[
+"whether the",
+3
+]
+],
+"A-S-P-O-S": [
+[
+"as possible",
+3
+]
+],
+"S-L-A-NG": [
+[
+"slang",
+6
+]
+],
+"U-E-MN-S": [
+[
+"women's",
+5
+]
+],
+"K-A-N": [
+[
+"can",
+9
+]
+],
+"'-A-S-T-E": [
+[
+"hasty",
+3
+]
+],
+"S-E-M-S-T-U-B": [
+[
+"seems to be",
+6
+]
+],
+"F-M-D": [
+[
+"formed",
+8
+]
+],
+"B-A-NK-S": [
+[
+"banks",
+13
+]
+],
+"L-E-S-T": [
+[
+"least a",
+6
+]
+],
+"F-E-F-T-E-N-TH": [
+[
+"fifteenth",
+3
+]
+],
+"V-E-L-U": [
+[
+"velour",
+3
+]
+],
+"EU-TH-S": [
+[
+"youths",
+4
+]
+],
+"B-A-NK-R": [
+[
+"banker",
+3
+]
+],
+"S-P-E-S": [
+[
+"experiences",
+9
+]
+],
+"S-E-N-S": [
+[
+"a sense",
+3
+]
+],
+"N-U-TH-U-D-S": [
+[
+"in other words",
+6
+]
+],
+"T-E-U-S": [
+[
+"tell us",
+6
+]
+],
+"K-T-A-K-S": [
+[
+"contacts",
+7
+]
+],
+"P-O-N-CH": [
+[
+"upon which",
+3
+]
+],
+"R-N-AU": [
+[
+"are now",
+5
+]
+],
+"F-K-D": [
+[
+"effected",
+7
+]
+],
+"'-AU-S-I_-V-S": [
+[
+"housewives",
+7
+]
+],
+"D-R-A-P-R-E-S": [
+[
+"draperies",
+4
+]
+],
+"EU": [
+[
+"use a",
+7
+]
+],
+"T-U-B-I": [
+[
+"to buy",
+9
+]
+],
+"D-E-^-R-S": [
+[
+"dealers",
+11
+]
+],
+"K-A-B-S": [
+[
+"cabinets",
+3
+]
+],
+"R-SH-U": [
+[
+"are sure",
+6
+]
+],
+"D-R-O-R-S": [
+[
+"drawers",
+3
+]
+],
+"V-'-A-D": [
+[
+"have had",
+11
+]
+],
+"'-I-S-K-L": [
+[
+"high school",
+8
+]
+],
+"J-A": [
+[
+"j",
+11
+]
+],
+"S-U-T-S": [
+[
+"suits",
+11
+]
+],
+"O-P-R-S": [
+[
+"opportunities",
+14
+]
+],
+"U-SH-S": [
+[
+"wishes",
+4
+]
+],
+"L-U-P-L": [
+[
+"will you please",
+5
+]
+],
+"L-E-M-E-N-O": [
+[
+"let me know",
+4
+]
+],
+"R-U-SH-N": [
+[
+"russian",
+3
+]
+],
+"A-R-E-A": [
+[
+"area",
+4
+]
+],
+"L-M-A-K": [
+[
+"will make",
+3
+]
+],
+"S-T-P-S": [
+[
+"stops",
+3
+]
+],
+"S-E-R-A&'-L-S": [
+[
+"cereals",
+3
+]
+],
+"TH-E-R-N": [
+[
+"they are not",
+6
+]
+],
+"D-A-S": [
+[
+"day's",
+11
+]
+],
+"K-P-E": [
+[
+"a copy",
+5
+]
+],
+"U-^-K-S": [
+[
+"under consideration",
+5
+]
+],
+"E-S-P-N-SS": [
+[
+"expenses",
+15
+]
+],
+"S-I-TD": [
+[
+"sighted",
+3
+]
+],
+"U-N-M-P-L-OE-D": [
+[
+"unemployed",
+8
+]
+],
+"E-N-V-A-R-E-B-E": [
+[
+"invariably",
+3
+]
+],
+"M-P-L-R-S": [
+[
+"employers",
+9
+]
+],
+"A-D-'": [
+[
+"adding",
+8
+]
+],
+"J-O-N-S": [
+[
+"jones",
+24
+],
+[
+"john's",
+3
+]
+],
+"TH-S-E-R": [
+[
+"this year",
+10
+]
+],
+"A-V-N-U-S": [
+[
+"avenues",
+4
+]
+],
+"N-A-SH": [
+[
+"nash",
+4
+],
+[
+"a nation",
+3
+]
+],
+"R-E-J": [
+[
+"ridge",
+5
+]
+],
+"D-R-S": [
+[
+"doctors",
+6
+]
+],
+"U-E-U-SH": [
+[
+"we wish",
+5
+]
+],
+"T-R-E-NT-S": [
+[
+"trends",
+4
+]
+],
+"M-E-T-L-S": [
+[
+"metals",
+8
+]
+],
+"D-E_-L-E-NG-S": [
+[
+"dwellings",
+3
+]
+],
+"G-R-A-NT-'": [
+[
+"granting",
+3
+]
+],
+"P-N-SH-S": [
+[
+"pensions",
+5
+]
+],
+"S-A-L-R-E-S": [
+[
+"salaries",
+5
+]
+],
+"K-P-E-S": [
+[
+"copies",
+10
+]
+],
+"P-A-NT-'-S": [
+[
+"paintings",
+5
+]
+],
+"TH-E-K-N": [
+[
+"they cannot",
+5
+]
+],
+"T-U-N-J-OE": [
+[
+"to enjoy",
+4
+]
+],
+"B-K": [
+[
+"become a",
+5
+]
+],
+"S-M-TM": [
+[
+"some time",
+5
+]
+],
+"DF-TN-S": [
+[
+"dividends",
+4
+]
+],
+"NK-'": [
+[
+"enclosing",
+7
+],
+[
+"enclosing a",
+4
+]
+],
+"J-O-B-S": [
+[
+"jobs",
+15
+]
+],
+"R-E-S-K-S": [
+[
+"risks",
+4
+]
+],
+"U-N-'-A-F": [
+[
+"one half",
+7
+]
+],
+"U-E-TH-R-N": [
+[
+"whether or not",
+6
+]
+],
+"R-L-S": [
+[
+"rules",
+15
+]
+],
+"F-L-O-S": [
+[
+"flaws",
+3
+]
+],
+"B-A-R-E-NG-S": [
+[
+"bearings",
+4
+]
+],
+"S-O-L-E": [
+[
+"solely",
+3
+]
+],
+"P-B-SH-S": [
+[
+"publications",
+4
+]
+],
+"U-E-F-NT": [
+[
+"we found",
+4
+]
+],
+"'-U-M-A-D": [
+[
+"who made",
+4
+]
+],
+"L-O-S-A-N-J-L-S": [
+[
+"los angeles",
+3
+]
+],
+"F-'-L-NG": [
+[
+"for a long",
+3
+]
+],
+"S-E-NT-U": [
+[
+"sent you",
+4
+]
+],
+"P-L-R-I-U-S": [
+[
+"please write us",
+3
+]
+],
+"MN-TN": [
+[
+"maintain a",
+3
+]
+],
+"R-S-E-TN-S": [
+[
+"residents",
+3
+]
+],
+"T-R-U-K-S": [
+[
+"trucks",
+4
+]
+],
+"V-E-L-J-S": [
+[
+"villages",
+3
+]
+],
+"S-P-A-SS": [
+[
+"spaces",
+3
+]
+],
+"M-E": [
+[
+"me a",
+6
+],
+[
+"me an",
+3
+]
+],
+"AU-O-T-N": [
+[
+"out of town",
+3
+]
+],
+"U-S-T-R-U-E": [
+[
+"yours truly",
+10
+]
+],
+"P-N-S": [
+[
+"pens",
+7
+]
+],
+"T-N-E-TM": [
+[
+"at any time",
+7
+]
+],
+"O-L-A-V-'": [
+[
+"of living",
+6
+]
+],
+"V-N-O": [
+[
+"have no",
+3
+]
+],
+"T-E-M-S": [
+[
+"terms",
+23
+],
+[
+"tim's",
+3
+]
+],
+"K-S-E-N-'": [
+[
+"concerning",
+18
+]
+],
+"M-E-T-S": [
+[
+"merits",
+4
+],
+[
+"meats",
+3
+]
+],
+"L-E-S-N-E-S": [
+[
+"listeners",
+4
+]
+],
+"CH-A-T": [
+[
+"chart",
+3
+]
+],
+"U-V-B-N": [
+[
+"you have been",
+5
+]
+],
+"T-U-M-A": [
+[
+"to my",
+4
+]
+],
+"R-S-O-R-E": [
+[
+"are sorry",
+6
+]
+],
+"A-SH-U-U": [
+[
+"assure you",
+5
+]
+],
+"N-TH-F-T": [
+[
+"in the future",
+4
+]
+],
+"R-E-NT-D": [
+[
+"rendered",
+8
+]
+],
+"S-K-O-R-S": [
+[
+"scores",
+4
+]
+],
+"SH-E-T-S": [
+[
+"shirts",
+5
+]
+],
+"G-O-J-S": [
+[
+"gorgeous",
+3
+]
+],
+"S-E-N-S-E-E-U-S": [
+[
+"sincerely yours",
+5
+]
+],
+"R-K-D-S": [
+[
+"records",
+14
+]
+],
+"S-E-N-'-U": [
+[
+"sending you a",
+3
+]
+],
+"S-T-O-N-CH": [
+[
+"staunch",
+4
+]
+],
+"D-E-G-N-F-D": [
+[
+"dignified",
+3
+]
+],
+"N-O-T-SH-S": [
+[
+"notations",
+5
+]
+],
+"T-U-G-E-TH-TH": [
+[
+"together with the",
+3
+]
+],
+"F-MN-E": [
+[
+"for many",
+3
+]
+],
+"M-CH-TM": [
+[
+"much time",
+10
+]
+],
+"B-'-D-N": [
+[
+"being done",
+3
+]
+],
+"T-L-B": [
+[
+"it will be",
+5
+]
+],
+"D-E-M-A-TM": [
+[
+"dear madam",
+4
+]
+],
+"L-E-U-S-N-O": [
+[
+"let us know",
+5
+]
+],
+"L-O-N-S": [
+[
+"loans",
+7
+]
+],
+"U-E-'-O-P": [
+[
+"we hope",
+14
+]
+],
+"F-M-A": [
+[
+"for my",
+6
+]
+],
+"O-U-TH": [
+[
+"of other",
+3
+]
+],
+"E-T-'": [
+[
+"eating",
+7
+]
+],
+"K-O-N-S": [
+[
+"cones",
+5
+]
+],
+"TN-D-S": [
+[
+"tends",
+3
+]
+],
+"T-U-V-T": [
+[
+"to vote",
+4
+]
+],
+"M-A-S": [
+[
+"males",
+3
+]
+],
+"T-R-U-E-U-S": [
+[
+"truly yours",
+8
+]
+],
+"F-E-M-S": [
+[
+"firms",
+9
+]
+],
+"L-O-T-S": [
+[
+"lots",
+11
+]
+],
+"U-P-T-U-TD": [
+[
+"up to date",
+3
+]
+],
+"R-U-G-S": [
+[
+"rugs",
+9
+]
+],
+"S-U-J-TH-A": [
+[
+"suggest that",
+4
+]
+],
+"O-N-A-K-T": [
+[
+"on account",
+5
+]
+],
+"S-O-F-A-E-S": [
+[
+"so far as",
+3
+]
+],
+"SH-M-S": [
+[
+"shipments",
+7
+]
+],
+"DF-S": [
+[
+"differences",
+3
+]
+],
+"L-E-S-TH-N-TH": [
+[
+"less than the",
+3
+]
+],
+"R-P-DF-S": [
+[
+"representatives",
+3
+]
+],
+"K-N-U-^-S-TN": [
+[
+"cannot understand",
+3
+]
+],
+"K-S-U-L-S": [
+[
+"consuls",
+4
+]
+],
+"B-'": [
+[
+"being a",
+7
+]
+],
+"K-EU-D": [
+[
+"cured",
+3
+]
+],
+"'-A-M-S": [
+[
+"hams",
+3
+]
+],
+"U-S-V-E-T-R-U-E": [
+[
+"yours very truly",
+8
+]
+],
+"K-A-D": [
+[
+"card",
+12
+]
+],
+"TM-T-'": [
+[
+"tempting",
+3
+]
+],
+"NT-E-K-D": [
+[
+"indicated",
+3
+]
+],
+"S-A-M-P-S": [
+[
+"samples",
+8
+]
+],
+"B-L-S": [
+[
+"bills",
+17
+]
+],
+"TH-S-E-K": [
+[
+"this week",
+3
+]
+],
+"O-N-TH-P-T": [
+[
+"on the part",
+5
+]
+],
+"E-K-M-E-K-S": [
+[
+"economics",
+3
+]
+],
+"T-U-R-E-CH": [
+[
+"to reach",
+8
+]
+],
+"O-F-S": [
+[
+"offers",
+6
+]
+],
+"E-J-'": [
+[
+"urging",
+3
+]
+],
+"S-M-S": [
+[
+"sums",
+4
+]
+],
+"A-R-E-S": [
+[
+"areas",
+4
+]
+],
+"O-S-TN": [
+[
+"austin",
+3
+]
+],
+"V-E-S-E-N-S-E-E": [
+[
+"very sincerely",
+3
+]
+],
+"V-E-T-R-U-E": [
+[
+"very truly",
+20
+]
+],
+"DF-I-SS": [
+[
+"devices",
+5
+]
+],
+"T-U-M-R": [
+[
+"to mr",
+4
+]
+],
+"NT-SS": [
+[
+"industries",
+6
+]
+],
+"R-E-CH": [
+[
+"reach a",
+3
+]
+],
+"B-R-N-'": [
+[
+"browning",
+7
+]
+],
+"J-O-N-S-N": [
+[
+"johnson",
+5
+]
+],
+"R-A-L-F": [
+[
+"ralph",
+6
+]
+],
+"B-A-S-K-E-T-S": [
+[
+"baskets",
+5
+]
+],
+"R-I": [
+[
+"write a",
+3
+]
+],
+"N-^-PNT-E": [
+[
+"intelligently",
+4
+]
+],
+"U-D-O-N": [
+[
+"you do not",
+4
+]
+],
+"N-^-V-L-S": [
+[
+"intervals",
+3
+]
+],
+"U-L-N-E-D": [
+[
+"you will need",
+3
+]
+],
+"E-TH-U-TH": [
+[
+"with other",
+3
+]
+],
+"T-U-R-S-E": [
+[
+"to receive",
+3
+]
+],
+"N-^-D-U-SS": [
+[
+"introduces",
+4
+]
+],
+"F-A-M-A-S": [
+[
+"family's",
+4
+]
+],
+"P-R-L-NG-D": [
+[
+"prolonged",
+3
+]
+],
+"O-'-I-O": [
+[
+"ohio",
+8
+]
+],
+"U-E-B-S-T-R": [
+[
+"webster",
+3
+]
+],
+"A-P-L-I-N-SS": [
+[
+"appliances",
+4
+]
+],
+"D-S-^-K-S": [
+[
+"districts",
+3
+]
+],
+"O-N-TH-K-^-R-E": [
+[
+"on the contrary",
+4
+]
+],
+"K-S-M-E-S": [
+[
+"consumers",
+4
+]
+],
+"T-A-L-E-NT-S": [
+[
+"talents",
+4
+]
+],
+"S-F-R-E-L-I-N-S": [
+[
+"self reliance",
+3
+]
+],
+"S-F-K-F": [
+[
+"self confidence",
+5
+]
+],
+"O-^-A-G-N": [
+[
+"over again",
+3
+]
+],
+"A-N-S": [
+[
+"yarns",
+3
+]
+],
+"A-^-B-S": [
+[
+"abilities",
+3
+]
+],
+"S-O-L-NG-E-S": [
+[
+"so long as",
+3
+]
+],
+"A-^-S-E-P-D": [
+[
+"anticipated",
+4
+]
+],
+"CH-A-N-S": [
+[
+"chains",
+5
+]
+],
+"D-R-U-G-S": [
+[
+"drugs",
+3
+]
+],
+"L-A-J-S": [
+[
+"largest",
+3
+]
+],
+"K-\\-T-S": [
+[
+"quantities",
+5
+]
+],
+"TH-R-U-T-TH": [
+[
+"throughout the",
+7
+]
+],
+"SH-O-P-R-S": [
+[
+"shoppers",
+3
+]
+],
+"G-E-U-S": [
+[
+"give us",
+5
+]
+],
+"S-T-E-N-G-R-A-F-E-K": [
+[
+"stenographic",
+4
+]
+],
+"M-A-'": [
+[
+"mailing",
+7
+]
+],
+"O-B-L-SH-S": [
+[
+"obligations",
+12
+]
+],
+"D-S-P-L-A-D": [
+[
+"displayed",
+3
+]
+],
+"S-U-K-D-S": [
+[
+"succeeds",
+4
+]
+],
+"S-A-L-S-D-P-TM": [
+[
+"sales department",
+3
+]
+],
+"P-R-S-P-S": [
+[
+"prospects",
+8
+]
+],
+"I-R-S-E-D": [
+[
+"i received",
+4
+]
+],
+"K-O-J-E-U-S": [
+[
+"cordially yours",
+3
+]
+],
+"S-E-K-R": [
+[
+"secure a",
+4
+]
+],
+"N-TH-N-E-F-T": [
+[
+"near future",
+3
+]
+],
+"B-I-NT": [
+[
+"bind",
+3
+]
+],
+"K-L-I-NT-S": [
+[
+"clients",
+6
+]
+],
+"U-I-D-E": [
+[
+"widely",
+4
+]
+],
+"K-T-E-S": [
+[
+"counties",
+3
+]
+],
+"B-R-A-NT-S": [
+[
+"brands",
+5
+]
+],
+"E-T-S-E-T-R-A": [
+[
+"etc",
+4
+]
+],
+"O-N-TH-U-TH-'-NT": [
+[
+"other hand",
+3
+]
+],
+"U-S-V-E": [
+[
+"yours very",
+7
+]
+],
+"CH-A-S": [
+[
+"which has",
+3
+]
+],
+"R-E-L-A-SH-SH": [
+[
+"relationship",
+3
+]
+],
+"E-F-T-S": [
+[
+"efforts",
+14
+]
+],
+"T-U-V-OE": [
+[
+"to avoid",
+4
+]
+],
+"S-E-K-^-R-S": [
+[
+"securities",
+15
+]
+],
+"U-^-R": [
+[
+"under our",
+3
+]
+],
+"E-N-E-NG-S": [
+[
+"earnings",
+9
+]
+],
+"S-E-B-O-D": [
+[
+"seaboard",
+3
+]
+],
+"P-R-F-T-NT-L-O-S": [
+[
+"profit and loss",
+3
+]
+],
+"F-NT-^-M-S": [
+[
+"fundamentals",
+7
+]
+],
+"S-E-T-L-R-S": [
+[
+"settlers",
+3
+]
+],
+"'-U-D-S-N": [
+[
+"hudson",
+8
+]
+],
+"SH-O-R-S": [
+[
+"shores",
+4
+]
+],
+"K-A_-K-R-S": [
+[
+"quakers",
+4
+]
+],
+"R-E-J-N-S": [
+[
+"regions",
+4
+]
+],
+"T-E-N-S-E": [
+[
+"tennessee",
+3
+]
+],
+"R-E-S-E-P-E-S": [
+[
+"recipes",
+5
+]
+],
+"N-O-S-CH": [
+[
+"no such",
+4
+]
+],
+"O-N-S": [
+[
+"owns",
+3
+]
+],
+"E-'-A-V": [
+[
+"ihave",
+3
+]
+],
+"I-N-E-D": [
+[
+"i need",
+3
+]
+],
+"E-A-M": [
+[
+"iam",
+4
+]
+],
+"I-'-O-P": [
+[
+"i hope",
+8
+]
+],
+"P-O-N": [
+[
+"upon a",
+4
+]
+],
+"U-E-V-B-N": [
+[
+"we have been",
+8
+]
+],
+"U-E-D-O-N": [
+[
+"we do not",
+5
+]
+],
+"U-E-R-S-E-D": [
+[
+"we received",
+4
+]
+],
+"E-S-P-R": [
+[
+"express a",
+3
+]
+],
+"T-U-R-N": [
+[
+"to run",
+9
+]
+],
+"'-A-M": [
+[
+"ham",
+9
+]
+],
+"A-N": [
+[
+"ann",
+4
+]
+],
+"A-M-E": [
+[
+"amy",
+6
+]
+],
+"E-D-E": [
+[
+"eddy",
+4
+]
+],
+"E-L-A": [
+[
+"ella",
+3
+]
+],
+"TH-E-TD": [
+[
+"they did",
+3
+]
+],
+"MN-TD": [
+[
+"mended",
+3
+]
+],
+"I-D-B": [
+[
+"i would be",
+3
+]
+],
+"L-E-G": [
+[
+"leg",
+7
+]
+],
+"D-R-A-K": [
+[
+"drake",
+4
+]
+],
+"R-A-G-D": [
+[
+"ragged",
+5
+]
+],
+"MN-TH": [
+[
+"a month",
+3
+]
+],
+"A-T-E-K": [
+[
+"attic",
+12
+]
+],
+"CH-L-B": [
+[
+"which will be",
+3
+]
+],
+"'-A-P-E": [
+[
+"a happy",
+4
+]
+],
+"T-U-P-L-A": [
+[
+"to play",
+3
+]
+],
+"U-S-D-E": [
+[
+"yours dear",
+4
+]
+],
+"K-R-E-M-E": [
+[
+"creamy",
+3
+]
+],
+"D-E-S": [
+[
+"dear sir",
+24
+]
+],
+"K-R-A-N": [
+[
+"crane",
+6
+]
+],
+"T-U-SH": [
+[
+"to ship",
+6
+]
+],
+"T-R-U-E-D-E": [
+[
+"truly dear",
+3
+]
+],
+"S-A-K-S": [
+[
+"sacks",
+3
+]
+],
+"CH-E-S-T-S": [
+[
+"chests",
+5
+]
+],
+"TH-E-L-B": [
+[
+"they will be",
+4
+]
+],
+"S-K-R-E-N-S": [
+[
+"screens",
+4
+]
+],
+"K-A-S-T": [
+[
+"cast a",
+4
+]
+],
+"R-A-G-S": [
+[
+"rags",
+3
+]
+],
+"T-A-L-S": [
+[
+"tales",
+10
+]
+],
+"T-U-P-A": [
+[
+"to pay",
+4
+]
+],
+"SH-E-F-TD": [
+[
+"shifted",
+3
+]
+],
+"P-A": [
+[
+"pay a",
+7
+]
+],
+"J-A-K-E-T": [
+[
+"jacket",
+4
+]
+],
+"D-R-TH": [
+[
+"during the",
+3
+]
+],
+"A-P-O-L-'": [
+[
+"appalling",
+4
+]
+],
+"L-O-F-T-E": [
+[
+"lofty",
+6
+]
+],
+"S-T-E-K-S": [
+[
+"sticks",
+5
+]
+],
+"'-O-B-E": [
+[
+"hobby",
+5
+]
+],
+"A-R-O": [
+[
+"arrow",
+3
+]
+],
+"D-A-'": [
+[
+"daring",
+3
+]
+],
+"A-CH-E": [
+[
+"archie",
+4
+]
+],
+"P-L-A": [
+[
+"play a",
+4
+]
+],
+"E-D-B": [
+[
+"he would be",
+3
+]
+],
+"F-L-A-T-E-'": [
+[
+"flattering",
+4
+]
+],
+"R-S-E": [
+[
+"receive a",
+4
+]
+],
+"T-E-'": [
+[
+"tearing",
+4
+]
+],
+"E-L-V-D": [
+[
+"he loved",
+3
+]
+],
+"O-L-S": [
+[
+"always a",
+6
+]
+],
+"S-A-L-R-S": [
+[
+"sailors",
+4
+]
+],
+"E-R-B-S": [
+[
+"herbs",
+3
+]
+],
+"K-A-V": [
+[
+"cave",
+5
+]
+],
+"T-A-K-'": [
+[
+"taking a",
+4
+]
+],
+"S-E-T-SH-S": [
+[
+"situations",
+4
+]
+],
+"L-B-G-L": [
+[
+"will be glad",
+3
+]
+],
+"TH-R-E": [
+[
+"the real",
+3
+]
+],
+"D-AU-F-E-N": [
+[
+"dauphin",
+3
+]
+],
+"S-E-J": [
+[
+"siege",
+5
+]
+],
+"R-P-'": [
+[
+"representing",
+6
+]
+],
+"M-E-D": [
+[
+"amid",
+5
+]
+],
+"O-T-O-S-TH": [
+[
+"what was the",
+3
+]
+],
+"D-U-K": [
+[
+"duck",
+3
+]
+],
+"O-N-M-A": [
+[
+"on my",
+3
+]
+],
+"S-U": [
+[
+"sir your",
+3
+]
+],
+"U-E-SH-D-U": [
+[
+"we shall do",
+3
+]
+],
+"TH-R-N": [
+[
+"there are not",
+3
+]
+],
+"O-S-TH-A": [
+[
+"was that",
+3
+]
+],
+"S-O": [
+[
+"saw a",
+5
+]
+],
+"S-U-E-T-E-S": [
+[
+"sweaters",
+4
+]
+],
+"K-E-K": [
+[
+"kick",
+4
+]
+],
+"R-U-S-L": [
+[
+"russell",
+5
+]
+],
+"E-S-P-L-'": [
+[
+"explaining",
+5
+]
+],
+"L-S-D": [
+[
+"listed",
+7
+]
+],
+"K-S": [
+[
+"cause a",
+3
+]
+],
+"S-K-A-T-S": [
+[
+"skates",
+5
+]
+],
+"G-R-E-K-S": [
+[
+"greeks",
+8
+]
+],
+"G-R-E-K": [
+[
+"greek",
+3
+]
+],
+"D-U-E-NG-S": [
+[
+"doings",
+4
+]
+],
+"TH-G-R-E-K-S": [
+[
+"the greeks",
+3
+]
+],
+"G-R-E-S": [
+[
+"greece",
+4
+]
+],
+"V-E-K-T-E-S": [
+[
+"victors",
+3
+]
+],
+"N-O-R-A_": [
+[
+"norway",
+3
+]
+],
+"TH-S-D": [
+[
+"this would",
+3
+]
+],
+"TN-S": [
+[
+"tons",
+3
+]
+],
+"T-R-NK-S": [
+[
+"trunks",
+3
+]
+],
+"K-T": [
+[
+"country a",
+3
+]
+],
+"A-S-M-TH-A": [
+[
+"assume that",
+4
+]
+],
+"V-I-K-E-NG-S": [
+[
+"vikings",
+3
+]
+],
+"U-E-V-N-O": [
+[
+"we have no",
+3
+]
+],
+"'-I-D-S": [
+[
+"hides",
+5
+]
+],
+"O-F-N": [
+[
+"often a",
+3
+]
+],
+"S-U-K": [
+[
+"a success",
+3
+]
+],
+"T-R-E-NT": [
+[
+"trent",
+4
+]
+],
+"I-F-NT": [
+[
+"i found",
+4
+]
+],
+"E-TH-M-R": [
+[
+"with mr",
+3
+]
+],
+"'-A-D-N": [
+[
+"had not",
+5
+]
+],
+"N-E-D": [
+[
+"need a",
+9
+]
+],
+"K-O-T-S": [
+[
+"coats",
+8
+]
+],
+"P-R-E-NT-D": [
+[
+"printed a",
+3
+]
+],
+"R-E-CH-U": [
+[
+"reach you",
+3
+]
+],
+"NT-L-U": [
+[
+"and look",
+3
+]
+],
+"S-E-NT": [
+[
+"sent a",
+3
+]
+],
+"B-G": [
+[
+"a big",
+4
+]
+],
+"NT-V-R-D": [
+[
+"endeavored",
+4
+]
+],
+"'-U-I-T": [
+[
+"a white",
+3
+]
+],
+"R-U-S-T-E": [
+[
+"rusty",
+5
+]
+],
+"I-R-E-L-I-S": [
+[
+"i realize",
+3
+]
+],
+"R-O-S-T-'": [
+[
+"roasting",
+3
+]
+],
+"R-E-S-E-S": [
+[
+"receipts",
+4
+]
+],
+"T-U-R-S-I-N": [
+[
+"to resign",
+3
+]
+],
+"O-'": [
+[
+"owing",
+10
+]
+],
+"P-R-E-NT-'": [
+[
+"printing",
+15
+]
+],
+"M-A-B-A-B-L": [
+[
+"may be able",
+4
+]
+],
+"K-TN-T-S": [
+[
+"contents",
+7
+]
+],
+"M-NT": [
+[
+"more and",
+3
+]
+],
+"O-TM-B-S": [
+[
+"automobiles",
+3
+]
+],
+"K-U-K-'": [
+[
+"cooking",
+3
+]
+],
+"F-I-N": [
+[
+"a fine",
+3
+]
+],
+"D-E-M-R": [
+[
+"dear mr",
+5
+]
+],
+"U-E-L-S-N": [
+[
+"wilson",
+9
+]
+],
+"K-R-L-O-D-S": [
+[
+"carloads",
+7
+]
+],
+"S-E-V-D-A-S-A-G": [
+[
+"several days ago",
+3
+]
+],
+"B-LD": [
+[
+"build a",
+3
+]
+],
+"T-U-S-TN": [
+[
+"to stand",
+3
+]
+],
+"S-K-A_-R-E": [
+[
+"squarely",
+3
+]
+],
+"A-S-T": [
+[
+"as it",
+4
+]
+],
+"E-L-N": [
+[
+"he will not",
+5
+]
+],
+"A-N-A": [
+[
+"anna",
+8
+]
+],
+"D-A-N": [
+[
+"dan",
+8
+]
+],
+"T-U-K-A-CH": [
+[
+"to catch",
+3
+]
+],
+"J-E-N-E": [
+[
+"jennie",
+6
+]
+],
+"O-^-T-U": [
+[
+"over to",
+4
+]
+],
+"I-G": [
+[
+"i go",
+4
+]
+],
+"B-E-N": [
+[
+"ben",
+3
+]
+],
+"S-A-M": [
+[
+"sam",
+4
+]
+],
+"S-L-E-P-E": [
+[
+"sleepy",
+14
+]
+],
+"V-E-S-E-T-'": [
+[
+"visiting",
+7
+]
+],
+"I-D-S": [
+[
+"i desire",
+4
+]
+],
+"B-S": [
+[
+"business a",
+3
+]
+],
+"F-O-R-A": [
+[
+"fora",
+3
+]
+],
+"K-L-A-R-A": [
+[
+"clara",
+3
+]
+],
+"TH-E-S-G-S": [
+[
+"these goods",
+3
+]
+],
+"O-^-R-K": [
+[
+"overwork",
+3
+]
+],
+"O-D-^-T": [
+[
+"ordered a",
+3
+]
+],
+"F-O-N": [
+[
+"phone",
+9
+]
+],
+"A-F-K-SH-S": [
+[
+"affections",
+4
+]
+],
+"R-U-T": [
+[
+"root",
+4
+]
+],
+"B-R-U-K-S": [
+[
+"brooks",
+3
+]
+],
+"S-T-O-N-S": [
+[
+"stones",
+5
+]
+],
+"P-A-R-E": [
+[
+"perry",
+3
+]
+],
+"A-S-'-A-D": [
+[
+"has had",
+4
+]
+],
+"L-S-A": [
+[
+"will say",
+5
+]
+],
+"P-E-P": [
+[
+"people a",
+3
+]
+],
+"P-E-CH-A-S-S": [
+[
+"pur chases",
+3
+]
+],
+"A-K-S-'": [
+[
+"accepting",
+4
+]
+],
+"O-D": [
+[
+"an order",
+3
+]
+],
+"P-L-S-E-N": [
+[
+"please send",
+3
+]
+],
+"E-V-N-S": [
+[
+"evans",
+3
+]
+],
+"TH-S-L-E": [
+[
+"this letter",
+7
+]
+],
+"R-E-NT-'": [
+[
+"renting",
+3
+]
+],
+"O-N-LD": [
+[
+"arnold",
+3
+]
+],
+"T-U-L-E-V": [
+[
+"to live",
+4
+]
+],
+"E-N-E-D-S": [
+[
+"he needs",
+3
+]
+],
+"U-E-O-NT": [
+[
+"we want",
+3
+]
+],
+"S-T-O-M-S": [
+[
+"storms",
+3
+]
+],
+"L-E-E-M": [
+[
+"let him",
+3
+]
+],
+"L-F-I": [
+[
+"will find",
+5
+]
+],
+"N-E-SS-T-S": [
+[
+"necessities",
+3
+]
+],
+"NT-M-A": [
+[
+"and my",
+3
+]
+],
+"K-A-N-S-D": [
+[
+"canceled",
+4
+]
+],
+"B-L-NG-S": [
+[
+"belongs",
+3
+]
+],
+"T-U-CH-U-S": [
+[
+"to choose",
+3
+]
+],
+"A-N-OE-'": [
+[
+"annoying",
+4
+]
+],
+"R-I-D-S": [
+[
+"rides",
+3
+]
+],
+"N-E-NT-R-S-T-'": [
+[
+"uninteresting",
+3
+]
+],
+"E-N-S": [
+[
+"ernest",
+48
+],
+[
+"earns",
+6
+]
+],
+"T-O-E-V-NT-S": [
+[
+"at all events",
+3
+]
+],
+"S-M-O-TH-E-S": [
+[
+"some of these",
+3
+]
+],
+"S-N-AU": [
+[
+"is now",
+3
+]
+],
+"I-F-E-R": [
+[
+"i fear",
+3
+]
+],
+"MN-F-R-S": [
+[
+"manufacturers",
+4
+]
+],
+"K-R-E-T-SS-S": [
+[
+"criticisms",
+3
+]
+],
+"M-E-NT": [
+[
+"ment",
+4
+]
+],
+"T-A-K-U-P": [
+[
+"take up",
+3
+]
+],
+"N-U-R-K": [
+[
+"newark",
+4
+]
+],
+"F-U-S": [
+[
+"for yourself",
+4
+]
+],
+"D-I-D": [
+[
+"dyed",
+3
+]
+],
+"O-B-TN": [
+[
+"obtain a",
+3
+]
+],
+"CH-E-S-E-S": [
+[
+"cheeses",
+4
+]
+],
+"N-S-T-O-L": [
+[
+"install a",
+3
+]
+],
+"I-S-U-J": [
+[
+"i suggest",
+3
+]
+],
+"E-CH-MN-TH": [
+[
+"each month",
+3
+]
+],
+"T-U-O-F": [
+[
+"to offer",
+4
+]
+],
+"K-N-E_-L": [
+[
+"commonweal",
+4
+]
+],
+"S-U-K-D-'": [
+[
+"succeeding",
+4
+]
+],
+"D-R-O-S": [
+[
+"draws",
+3
+]
+],
+"E-N-'": [
+[
+"earning",
+5
+],
+[
+"yearning",
+3
+]
+],
+"'-O-P-F": [
+[
+"hopeful",
+3
+]
+],
+"S-E-V-E-SS": [
+[
+"services",
+6
+]
+],
+"TH-A-R": [
+[
+"that our",
+5
+]
+],
+"P-R-CH-^-T": [
+[
+"purchased a",
+3
+]
+],
+"P-B-S": [
+[
+"public's",
+3
+]
+],
+"G-A-N-S": [
+[
+"gains",
+3
+]
+],
+"B-L-A-K": [
+[
+"blake",
+3
+]
+],
+"A-N-S-E-S-T-R-S": [
+[
+"ancestors",
+3
+]
+],
+"U-O-S": [
+[
+"wars",
+3
+]
+],
+"L-U-X-S": [
+[
+"luxuries",
+3
+]
+],
+"L-A-F-N-SH": [
+[
+"life insurance",
+4
+]
+],
+"P-E-L-^-G-S": [
+[
+"pilgrim's",
+3
+]
+],
+"S-T-R-I-'": [
+[
+"striking",
+3
+]
+],
+"'-A-S": [
+[
+"hast",
+4
+],
+[
+"hares",
+4
+]
+],
+"T-R-A-S-E-S": [
+[
+"tracy's",
+4
+]
+],
+"R-S": [
+[
+"hour's",
+3
+]
+],
+"B-T-E-E-S": [
+[
+"batteries",
+4
+]
+],
+"K-E-N-S-E-NG-TN": [
+[
+"kensington",
+8
+]
+],
+"D-U-B-L-EU": [
+[
+"w",
+9
+]
+],
+"R-O-K-F-R-D": [
+[
+"rockford",
+4
+]
+],
+"'-O": [
+[
+"ho",
+3
+]
+],
+"'-P-N": [
+[
+"pound",
+3
+]
+],
+"K-M-O-TD-E-S": [
+[
+"commodities",
+4
+]
+],
+"'-O-S": [
+[
+"a host",
+3
+]
+],
+"F-E-L-M": [
+[
+"film",
+14
+]
+],
+"U-E-NT-E": [
+[
+"a windy",
+5
+]
+],
+"U-I-V-S": [
+[
+"wives",
+7
+]
+],
+"B-A-N-S": [
+[
+"barns",
+3
+]
+],
+"S-N-U-G": [
+[
+"snug",
+5
+]
+],
+"L-A-NT-S": [
+[
+"lands",
+5
+]
+],
+"U-E-V-'": [
+[
+"weaving",
+3
+]
+],
+"B-A-R-G-N-S": [
+[
+"bargains",
+3
+]
+],
+"E-SS-S": [
+[
+"exists",
+3
+]
+],
+"OE-L-S": [
+[
+"oils",
+3
+]
+],
+"N-E-D-B": [
+[
+"need be",
+3
+]
+],
+"R-F-S": [
+[
+"refers",
+3
+]
+],
+"N-^-TH": [
+[
+"enter the",
+3
+]
+],
+"E": [
+[
+"e",
+4
+]
+],
+"'-I-N": [
+[
+"hawaiian",
+3
+]
+],
+"T-O-P-S": [
+[
+"tops",
+5
+]
+],
+"E-G-L": [
+[
+"eagle",
+5
+]
+],
+"G-L-A": [
+[
+"glare",
+3
+]
+],
+"S-E-TN-E": [
+[
+"sidney",
+3
+]
+],
+"S-A-R-A-P-E-S": [
+[
+"serapis",
+3
+]
+],
+"F-L-A-M-S": [
+[
+"flames",
+5
+]
+],
+"B-R-E-T-E-SH": [
+[
+"british",
+5
+]
+],
+"O-X": [
+[
+"ox",
+13
+]
+],
+"E-L-P-'": [
+[
+"yelping",
+3
+]
+],
+"M-U-F-N-S": [
+[
+"muffins",
+8
+]
+],
+"B-E-T-S": [
+[
+"beets",
+3
+]
+],
+"R-I-D-'": [
+[
+"riding",
+4
+]
+],
+"B-O-S-S": [
+[
+"boss's",
+5
+]
+],
+"'-E-M-P": [
+[
+"hemp",
+3
+]
+],
+"O-R-S": [
+[
+"ores",
+4
+]
+],
+"P-E-N": [
+[
+"penn",
+5
+]
+],
+"K-U-R-E": [
+[
+"curie",
+3
+]
+],
+"N-A-K-R-N-S": [
+[
+"in accordance",
+4
+]
+],
+"S-MN-D": [
+[
+"summoned",
+3
+]
+],
+"N-S-E-K-S": [
+[
+"insects",
+3
+]
+],
+"B-O-R-R-S": [
+[
+"borers",
+3
+]
+],
+"F-O-R-E-SS": [
+[
+"forests",
+3
+]
+],
+"'-O-L-NT": [
+[
+"holland",
+7
+]
+],
+"SH-'-D-P-TM": [
+[
+"shipping department",
+4
+]
+],
+"N-S-T-SH-S": [
+[
+"institutions",
+4
+]
+],
+"EU-S": [
+[
+"hughes",
+3
+]
+],
+"'-R-A-SH-O": [
+[
+"horatio",
+3
+]
+],
+"'-A-M-L-T": [
+[
+"hamlet",
+16
+]
+],
+"O-F-E-L-A": [
+[
+"ophelia",
+5
+]
+],
+"P-L-O-N-E-S": [
+[
+"polonius",
+5
+]
+],
+"P-E-R-A-P-O-NT": [
+[
+"pierrepont",
+4
+]
+],
+"P-R-F-E-S-R-S": [
+[
+"professors",
+3
+]
+],
+"S-K-A-R-D": [
+[
+"scared",
+3
+]
+],
+"'-O-L-S": [
+[
+"holes",
+3
+]
+],
+"B-E-F": [
+[
+"beef",
+6
+]
+],
+"U-O-D": [
+[
+"your order",
+8
+]
+],
+"TH-DF": [
+[
+"the difference",
+3
+]
+],
+"S-T-A-N": [
+[
+"stan",
+3
+]
+],
+"E-D": [
+[
+"he'd",
+14
+]
+],
+"I-D-O-N-O-NT": [
+[
+"i don't want",
+3
+]
+],
+"A-S-N-T": [
+[
+"hasn't",
+4
+]
+],
+"S-E-NT-S": [
+[
+"cents",
+4
+]
+],
+"I-S-K-T": [
+[
+"i asked",
+4
+]
+],
+"U-V-G-T": [
+[
+"you've got",
+7
+]
+],
+"S-P-O-T-E": [
+[
+"sporty",
+3
+]
+],
+"M-E-S-T-R": [
+[
+"mister",
+3
+]
+],
+"S-E-NT-R-O": [
+[
+"centre of",
+3
+]
+],
+"J-O-B": [
+[
+"a job",
+3
+]
+],
+"CH-A-L-E": [
+[
+"charlie",
+8
+]
+],
+"P-O-K": [
+[
+"pork",
+5
+]
+],
+"S-U-E-L-'": [
+[
+"swelling",
+3
+]
+],
+"J-O-SH": [
+[
+"josh",
+3
+]
+],
+"B-O-L-S": [
+[
+"balls",
+4
+]
+],
+"B-L-'": [
+[
+"billing",
+3
+]
+],
+"E-S-TH": [
+[
+"he's the",
+3
+]
+],
+"'-U-K-T": [
+[
+"who can't",
+4
+]
+],
+"L-E-M": [
+[
+"lem",
+6
+]
+],
+"B-L-U-M-'": [
+[
+"blooming",
+3
+]
+],
+"F-E-G-R-D": [
+[
+"figured",
+4
+]
+],
+"K-K-D": [
+[
+"concluded",
+3
+]
+],
+"'-E-N-P-E-K-T": [
+[
+"henpecked",
+3
+]
+],
+"R-E-P": [
+[
+"rip",
+25
+]
+],
+"U-E-NK-L": [
+[
+"winkle",
+8
+]
+],
+"R-E-P-S": [
+[
+"rip's",
+6
+]
+],
+"F-E-N-SS": [
+[
+"fences",
+3
+]
+],
+"OE-LD": [
+[
+"oiled",
+3
+]
+],
+"M-A-S-S": [
+[
+"master's",
+3
+]
+],
+"D-A-M": [
+[
+"dame",
+3
+]
+],
+"T-R-A-V-R": [
+[
+"traveller",
+3
+]
+],
+"N-E-K-L-S": [
+[
+"nicholas",
+3
+]
+],
+"V-E-D-R": [
+[
+"vedder",
+3
+]
+],
+"U-O-L-T": [
+[
+"wallet",
+4
+]
+],
+"K-E-G": [
+[
+"keg",
+3
+]
+],
+"F-L-A-G-O-N": [
+[
+"flagon",
+4
+]
+],
+"B-E-CH": [
+[
+"birch",
+5
+]
+],
+"'-O-NT-S": [
+[
+"haunts",
+4
+]
+],
+"K-O-K-T": [
+[
+"cocked",
+6
+]
+],
+"S-F-M-P": [
+[
+"self important",
+3
+]
+],
+"'-U-SH": [
+[
+"hush",
+4
+]
+],
+"K-S-E-N-S": [
+[
+"concerns",
+3
+]
+],
+"S-A-N-R-O-S-O-R-E-O": [
+[
+"san rosario",
+6
+]
+],
+"P-O-S-O-S": [
+[
+"post office",
+5
+]
+],
+"S-T-O-MN-S": [
+[
+"stockmen's",
+5
+]
+],
+"N-E-T-L-E-K": [
+[
+"nettlewick",
+8
+]
+],
+"E-S-A-MN-R": [
+[
+"examiner",
+17
+]
+],
+"T-E-N-R": [
+[
+"turner",
+3
+]
+],
+"R-OE": [
+[
+"roy",
+5
+]
+],
+"K-E-NG-MN": [
+[
+"kingman",
+4
+]
+],
+"M-A-J-E-S": [
+[
+"major's",
+3
+]
+],
+"K-O-T-'-U-S": [
+[
+"court house",
+3
+]
+],
+"U-E-CH-'": [
+[
+"witching",
+4
+]
+],
+"E-CH-A-B-O-D": [
+[
+"ichabod",
+20
+]
+],
+"B-R-U-K": [
+[
+"brook",
+8
+]
+],
+"B-E-S-E-T": [
+[
+"beset",
+4
+]
+],
+"K-T-R-E-N-A": [
+[
+"katrina",
+3
+]
+],
+"CH-A-M-S": [
+[
+"charms",
+3
+]
+],
+"B-R-O-M": [
+[
+"brom",
+6
+]
+],
+"T-A-S-L-S": [
+[
+"tassel's",
+4
+]
+],
+"K-L-A-T-R-'": [
+[
+"clattering",
+3
+]
+],
+"S-K-L-'-U-S": [
+[
+"school house",
+4
+]
+],
+"S-T-E-D": [
+[
+"steed",
+5
+]
+],
+"P-I-S": [
+[
+"pies",
+4
+]
+],
+"G-O-B-L-E-N": [
+[
+"goblin",
+4
+]
+],
+"G-U-N-P-AU-D-R": [
+[
+"gunpowder",
+3
+]
+],
+"'-A-N-S": [
+[
+"hans van",
+3
+]
+],
+"U-E": [
+[
+"weare",
+3
+]
+],
+"NT-AU-M-S": [
+[
+"endowments",
+3
+]
+],
+"T-R-S-E-S": [
+[
+"trustees",
+3
+]
+],
+"R-E-V-S": [
+[
+"rivers",
+3
+]
+],
+"U-E-'-O-P-TH-A": [
+[
+"we hope that",
+4
+]
+],
+"L-NG-E-TH-N": [
+[
+"longer than",
+3
+]
+],
+"K-A-N-SS": [
+[
+"kansas",
+3
+]
+],
+"A-R-E": [
+[
+"airy",
+3
+]
+],
+"G-A-TH-G-O-LD": [
+[
+"gathergold",
+7
+]
+],
+"MN-TN-S-I": [
+[
+"mountainside",
+5
+]
+],
+"B-AU-S": [
+[
+"boughs",
+3
+]
+],
+"TH-NT-R-S": [
+[
+"thunder's",
+4
+]
+],
+"F-E-S": [
+[
+"phiz",
+6
+]
+],
+"E-N-S-S": [
+[
+"ernest's",
+4
+]
+],
+"B-A-R-AU-CH": [
+[
+"barouche",
+3
+]
+],
+"K-A-M-R-N": [
+[
+"cameron",
+3
+]
+],
+"K-E-N-N": [
+[
+"1105 keenan",
+3
+]
+],
+"U-E-S-TN-P-O-T": [
+[
+"westernport",
+4
+]
+],
+"G-O-M-A-N-E-A": [
+[
+"gormania",
+7
+]
+],
+"G-O-P-S": [
+[
+"goops",
+3
+]
+],
+"B-A-L": [
+[
+"bale",
+3
+]
+],
+"E-N-E-S": [
+[
+"inez",
+4
+]
+],
+"K-U-L-S": [
+[
+"culls",
+3
+]
+]
+}

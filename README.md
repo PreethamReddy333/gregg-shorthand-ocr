@@ -76,29 +76,43 @@ cd gregg-shorthand-ocr
 python3 -m venv .venv
 .venv/bin/pip install -e ".[train,dsr]"
 
-# the Topaz reader (MIT), about 250 MB
+# the original Topaz reader and its code (MIT), ~250 MB
 .venv/bin/hf download amongglue/topaz-gregg-shorthand-61m --local-dir models/topaz-61m
 .venv/bin/pip install -r models/topaz-61m/requirements.txt
+
+# my trained models, ~550 MB together
+.venv/bin/hf download preetham9070/gregg-t5-grascii-to-english --local-dir models/gregg-t5-v2
+.venv/bin/hf download preetham9070/topaz-gregg-61m-finetuned --local-dir models/topaz-ft/control
 ```
+
+| Model | What it does | Where |
+|---|---|---|
+| Trained decoder v2 (flan-t5-small) | Grascii strokes → English. Best local decoder. | [preetham9070/gregg-t5-grascii-to-english](https://huggingface.co/preetham9070/gregg-t5-grascii-to-english) |
+| Topaz, fine-tuned | Image → strokes. Better on handwriting than the original. | [preetham9070/topaz-gregg-61m-finetuned](https://huggingface.co/preetham9070/topaz-gregg-61m-finetuned) |
+| Mined lexicon | 2,292 outline → word pairs from book keys | `models/mined_lexicon.json`, in this repo |
 
 **Read a page:**
 
 ```bash
-.venv/bin/python scripts/transcribe.py page.jpg                    # strokes + English (beam search)
-.venv/bin/python scripts/transcribe.py --decoder none page.jpg     # strokes + dictionary candidates only
-.venv/bin/python scripts/transcribe.py --decoder claude page.jpg   # needs ANTHROPIC_API_KEY
-.venv/bin/python scripts/read_photo.py notebook.jpg                # fallback for messy phone photos
+.venv/bin/python scripts/transcribe.py page.jpg                                   # strokes + English
+.venv/bin/python scripts/transcribe.py --topaz models/topaz-ft/control page.jpg   # fine-tuned reader, for handwriting
+.venv/bin/python scripts/transcribe.py --decoder none page.jpg                    # strokes + dictionary candidates only
+.venv/bin/python scripts/transcribe.py --decoder claude page.jpg                  # needs ANTHROPIC_API_KEY
+.venv/bin/python scripts/read_photo.py notebook.jpg                               # fallback for messy phone photos
 ```
 
-The beam and trained-model decoders need models you build once on your own machine. The
-trained weights aren't in this repo.
+The beam-search decoder needs a trigram language model that you build yourself. I don't publish
+it, because it's essentially a table of word sequences from Gregg textbook keys whose copyright
+varies by book.
 
 ```bash
 .venv/bin/python scripts/download_data.py      # ~4 GB download, ~1-2 GB kept
-.venv/bin/python scripts/build_corpus.py && .venv/bin/python scripts/train_lm.py   # trigram LM
-.venv/bin/python scripts/mine_lexicon.py                                           # outline → word pairs from book keys
-.venv/bin/python scripts/make_synthetic.py && .venv/bin/python scripts/train_seq2seq.py   # trained decoder
+.venv/bin/python scripts/build_corpus.py && .venv/bin/python scripts/train_lm.py   # trigram LM → models/trigram.pkl
+.venv/bin/python scripts/transcribe.py --decoder beam page.jpg
 ```
+
+To retrain everything from scratch: `mine_lexicon.py`, then `make_synthetic.py` and
+`train_seq2seq.py` for the decoder, and `finetune_topaz.py --arm control` for the reader.
 
 **Write English as Gregg, or play the reading game:**
 

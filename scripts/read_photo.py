@@ -111,6 +111,8 @@ def main():
     ap.add_argument("--white", action="store_true", help="light strokes on a dark background")
     ap.add_argument("--scales", type=float, nargs="+", default=[1.5, 2.0, 2.5])
     ap.add_argument("--t5-model", type=Path, default=ROOT / "models" / "gregg-t5-v2")
+    ap.add_argument("--topaz", type=Path, default=ROOT / "models" / "topaz-61m",
+                    help="Topaz model folder, e.g. models/topaz-ft/control")
     ap.add_argument("-o", "--out", type=Path, help="folder for the cleaned page, line crops and report")
     args = ap.parse_args()
 
@@ -131,7 +133,7 @@ def main():
     Image.fromarray(np.where(ink, 0, 255).astype(np.uint8)).save(out / "clean.png")
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    topaz = Topaz(ROOT / "models" / "topaz-61m", device)
+    topaz = Topaz(args.topaz, device)
     readings = {s: [topaz.read_line(even_strokes(m, s)) for m in lines] for s in args.scales}
     for i, m in enumerate(lines):
         Image.fromarray(even_strokes(m, args.scales[0])).save(out / f"line{i:02d}.png")
@@ -145,10 +147,11 @@ def main():
         stable = set.intersection(*(set(r.split()) for r in reads))
         report.append(f"line {i:02d}: {' '.join(o if o in stable else o + '?' for o in pick.split())}")
         report += [f"    x{s}: {r}" for s, r in zip(args.scales, reads)]
-    beam = BeamDecoder(TrigramLM.load(ROOT / "models" / "trigram.pkl"), Lexicon.load(ROOT))
-    t5 = T5Decoder(args.t5_model, device)
-    report += ["", "## English, beam search", *beam.decode(chosen), "", "## English, trained model", *t5.decode(chosen),
-               "", "Outlines marked ? read differently at different scales: treat them as guesses."]
+    report += ["", "## English, trained model", *T5Decoder(args.t5_model, device).decode(chosen)]
+    lm = ROOT / "models" / "trigram.pkl"
+    if lm.exists():  # built locally by train_lm.py, not downloadable
+        report += ["", "## English, beam search", *BeamDecoder(TrigramLM.load(lm), Lexicon.load(ROOT)).decode(chosen)]
+    report += ["", "Outlines marked ? read differently at different scales: treat them as guesses."]
     text = "\n".join(report)
     print(text)
     (out / "report.txt").write_text(text + "\n")
