@@ -3,6 +3,7 @@ name = "gregg-ocr"
 version = "0.1.0"
 description = "OCR for Gregg shorthand: page images -> Grascii strokes -> English"
 requires-python = ">=3.11"
+license = "MIT"
 dependencies = [
     "numpy",
     "pandas",
@@ -11,6 +12,8 @@ dependencies = [
     "huggingface_hub",
     "tqdm",
     "grascii",
+    "cmudict",
+    "opencv-python-headless",
 ]
 
 [project.optional-dependencies]
@@ -18,7 +21,7 @@ train = ["torch", "torchvision", "transformers"]
 dsr = ["scipy", "scikit-image", "opencv-python-headless", "matplotlib", "pytest"]
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
